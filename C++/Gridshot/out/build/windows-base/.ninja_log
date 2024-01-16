@@ -1,0 +1,7 @@
+# ninja log v5
+3	104	7270713483709972	CMakeFiles/Gridshot.dir/src/Vector2Int.cpp.obj	51c3b9c4368ac5a0
+16	467	7270713487303718	CMakeFiles/Gridshot.dir/src/Soldier.cpp.obj	d7b77222db3ad15a
+7	467	7270713487303718	CMakeFiles/Gridshot.dir/src/FieldObject.cpp.obj	e734a9ea92146cc7
+13	468	7270713487303718	CMakeFiles/Gridshot.dir/src/Projectile.cpp.obj	43f6243307f10adf
+20	936	7270713491991222	CMakeFiles/Gridshot.dir/Gridshot.cpp.obj	ed10c27cc9e10e53
+10	940	7270713491991222	CMakeFiles/Gridshot.dir/src/GameField.cpp.obj	841f364931ecd959

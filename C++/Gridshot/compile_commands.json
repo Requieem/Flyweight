@@ -1,0 +1,32 @@
+[
+{
+  "directory": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot",
+  "command": "/usr/bin/c++ -DPLATFORM_HEADER=\\\"UNIXGridshot.h\\\" -I/usr/include/ncursesw -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot\" -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/UNIXGridshot.h\" -g -std=gnu++20 -o CMakeFiles/Gridshot.dir/src/Vector2Int.cpp.o -c \"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/Vector2Int.cpp\"",
+  "file": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/Vector2Int.cpp"
+},
+{
+  "directory": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot",
+  "command": "/usr/bin/c++ -DPLATFORM_HEADER=\\\"UNIXGridshot.h\\\" -I/usr/include/ncursesw -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot\" -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/UNIXGridshot.h\" -g -std=gnu++20 -o CMakeFiles/Gridshot.dir/src/FieldObject.cpp.o -c \"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/FieldObject.cpp\"",
+  "file": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/FieldObject.cpp"
+},
+{
+  "directory": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot",
+  "command": "/usr/bin/c++ -DPLATFORM_HEADER=\\\"UNIXGridshot.h\\\" -I/usr/include/ncursesw -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot\" -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/UNIXGridshot.h\" -g -std=gnu++20 -o CMakeFiles/Gridshot.dir/src/GameField.cpp.o -c \"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/GameField.cpp\"",
+  "file": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/GameField.cpp"
+},
+{
+  "directory": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot",
+  "command": "/usr/bin/c++ -DPLATFORM_HEADER=\\\"UNIXGridshot.h\\\" -I/usr/include/ncursesw -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot\" -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/UNIXGridshot.h\" -g -std=gnu++20 -o CMakeFiles/Gridshot.dir/src/Projectile.cpp.o -c \"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/Projectile.cpp\"",
+  "file": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/Projectile.cpp"
+},
+{
+  "directory": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot",
+  "command": "/usr/bin/c++ -DPLATFORM_HEADER=\\\"UNIXGridshot.h\\\" -I/usr/include/ncursesw -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot\" -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/UNIXGridshot.h\" -g -std=gnu++20 -o CMakeFiles/Gridshot.dir/src/Soldier.cpp.o -c \"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/Soldier.cpp\"",
+  "file": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/src/Soldier.cpp"
+},
+{
+  "directory": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot",
+  "command": "/usr/bin/c++ -DPLATFORM_HEADER=\\\"UNIXGridshot.h\\\" -I/usr/include/ncursesw -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot\" -I\"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/UNIXGridshot.h\" -g -std=gnu++20 -o CMakeFiles/Gridshot.dir/Gridshot.cpp.o -c \"/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/Gridshot.cpp\"",
+  "file": "/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/Gridshot.cpp"
+}
+]

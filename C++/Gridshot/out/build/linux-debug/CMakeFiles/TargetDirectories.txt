@@ -1,0 +1,3 @@
+/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/out/build/linux-debug/CMakeFiles/Gridshot.dir
+/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/out/build/linux-debug/CMakeFiles/edit_cache.dir
+/mnt/c/Users/DevDeck/Documents/GitHub/Flyweight/C++/Gridshot/out/build/linux-debug/CMakeFiles/rebuild_cache.dir
