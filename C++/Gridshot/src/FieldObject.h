@@ -1,52 +1,45 @@
 #pragma once
-#ifndef FIELDOBJECT_H
-#define FIELDOBJECT_H
 
-#include "Vector2Int.h"
+#include <map>
 #include <vector>
 #include <memory>
-#include <map>
+
+#include "Colors.h"
+#include "Vector2Int.h"
 
 class FieldObject
 {
-	private:
-		int team;
-		int speed;
-		bool isMoving;
+private:
+	int teamColor;
+	int speed;
+	bool isMoving;
 
-		Vector2Int previousPosition;
-		Vector2Int position;
-		Vector2Int direction;
+	Vector2Int previousPosition;
+	Vector2Int position;
+	Vector2Int direction;
 
-	protected:
-		FieldObject(int team, int speed, Vector2Int position, Vector2Int direction);
-		virtual ~FieldObject() = default;
+protected:
+	FieldObject(int teamColor, int speed, Vector2Int position, Vector2Int direction);
 
-	public:
+public:
+	int Speed() const;
+	int TeamColor() const;
+	bool IsMoving() const;
+	virtual bool RemoveOnCollision() const;
+	virtual char DisplayChar() const = 0;
+	virtual int BackgroundColor() const = 0;
 
-		int GetTeam();
-		int GetSpeed();
-		bool IsMoving();
+	Vector2Int Position() const;
+	Vector2Int Direction() const;
+	Vector2Int NextPosition() const;
+	Vector2Int PreviousPosition() const;
 
-		Vector2Int Position();
-		Vector2Int PreviousPosition();
-		Vector2Int Direction();
-		Vector2Int NextPosition();
+	void Move();
+	void SetMoving(bool moving);
+	void SetPosition(Vector2Int newPosition);
+	void SetDirection(Vector2Int newDirection);
 
-		void Move();
-		void SetMoving(bool moving);
-		void SetPosition(Vector2Int newPosition);
-		void SetDirection(Vector2Int newDirection);
-
-		friend bool operator==(const std::shared_ptr<FieldObject>& lhs, const std::shared_ptr<FieldObject>& rhs) {
-			return lhs.get() == rhs.get();
-		}
+	friend bool operator==(const std::shared_ptr<FieldObject>& lhs, const std::shared_ptr<FieldObject>& rhs) {
+		return lhs.get() == rhs.get();
+	}
 };
-
-typedef std::vector<std::shared_ptr<FieldObject>> FieldObjectList;
-typedef std::map<Vector2Int, std::vector<std::shared_ptr<FieldObject>>> FieldObjectMap;
-using SharedFieldObject = std::shared_ptr<FieldObject>;
-
-
-#endif
-

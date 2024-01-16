@@ -1,8 +1,7 @@
 ﻿#include "GameField.h"
 
-GameField::GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Soldier> player, FieldObjectList* fieldObjects, float fillProbability, int iterations) : size(size), padding(padding), player(player)
+GameField::GameField(Vector2Int size, Vector2Int padding, SharedSoldier player, FieldObjectList* fieldObjects, float fillProbability, int iterations) : size(size), padding(padding), player(player), fieldObjects(fieldObjects)
 {
-	this->fieldObjects = fieldObjects;
 	this->caveGenerator = new CaveGenerator(size, fillProbability);
 	caveGenerator->GenerateCave(iterations, nullptr, nullptr);
 
@@ -28,35 +27,31 @@ bool GameField::Tick()
 		const SharedFieldObject& obj = *it;
 
 		bool hit = MakeFieldMove(obj);
-		bool isProjectile = dynamic_cast<Projectile*>(obj.get()) != nullptr;
+		bool remove = obj->RemoveOnCollision();
 
-		if (hit && isProjectile)
+		if (hit && remove)
 		{
 				it = fieldObjects->erase(it);
 		}
+
 		else ++it;
 	}
 
 	return player->IsDead() || IsOutOfBounds(player->Position());
 }
 
-#define COLOR_CAVE (COLOR_BLACK | COLOR_RED)
-
 void GameField::Draw() const {
 	// Initialize color pairs
 	start_color();
-	init_color(COLOR_CAVE, 300, 100, 50);
-	init_pair(4, COLOR_CAVE, COLOR_BLACK); // Environment
-	init_pair(1, COLOR_GREEN, COLOR_BLACK); // Player
-	init_pair(2, COLOR_YELLOW, COLOR_BLACK);   // Enemy
-	init_pair(3, COLOR_CYAN, COLOR_CAVE);  // Projectile
+	init_color(CAVE_COLOR, 300, 100, 50);
+	init_pair(1, CAVE_COLOR, COLOR_BLACK); // Environment
 
 	// Clear the screen
 	clear();
 
-	attron(COLOR_PAIR(4));
+	attron(COLOR_PAIR(1));
 
-	BoolGrid cave = caveGenerator->GetCave();
+	Cave cave = caveGenerator->GetCave();
 	Vector2Int caveSize = caveGenerator->GetSize();
 
 	for (int caveY = 0; caveY < size.y; ++caveY) {
@@ -68,27 +63,27 @@ void GameField::Draw() const {
 		}
 	}
 
-	attroff(COLOR_PAIR(4));
+	attroff(COLOR_PAIR(1));
+
+	std::map<std::pair<int, int>, int> colorMap;
+	int nextPair = 2;
 
 	// Drawing logic...
 	for (const auto& obj : *fieldObjects) {
-		char objectChar = ' ';
+		int color = obj->TeamColor();
+		int background = obj->BackgroundColor();
+		char objectChar = obj->DisplayChar();
 
-		// Set color based on object type
-		if (dynamic_cast<Soldier*>(obj.get()) != nullptr) {
-			if (obj == player) {
-				objectChar = 219;
-				attron(COLOR_PAIR(1)); // Set player color
-			}
-			else {
-				objectChar = 219;
-				attron(COLOR_PAIR(2)); // Set enemy color
-			}
+		std::pair<int, int> colorCombination = { color, background };
+
+		if (colorMap.find(colorCombination) == colorMap.end()) {
+			init_pair(nextPair, color, background);
+			colorMap[colorCombination] = nextPair;
+			nextPair++;
 		}
-		else if (dynamic_cast<Projectile*>(obj.get()) != nullptr) {
-			objectChar = 254;
-			attron(COLOR_PAIR(3)); // Set projectile color
-		}
+
+		int n = colorMap[colorCombination];
+		attron(COLOR_PAIR(n));
 
 		Vector2Int position = obj->Position();
 
@@ -100,9 +95,7 @@ void GameField::Draw() const {
 		mvprintw(gridY, gridX, "%c", objectChar);
 
 		// Turn off color
-		attroff(COLOR_PAIR(1));
-		attroff(COLOR_PAIR(2));
-		attroff(COLOR_PAIR(3));
+		attroff(COLOR_PAIR(n));
 	}
 
 	// Refresh to update the screen
@@ -122,11 +115,12 @@ bool GameField::MakeFieldMove(const SharedFieldObject& obj)
 {
 	if (!obj->IsMoving()) return false;
 
-	Vector2Int direction = obj->Direction();
 	Vector2Int position = obj->Position();
+	Vector2Int nextPosition = obj->NextPosition();
 
-	bool isCrossingBounds = IsCrossingBounds(position, direction);
-	bool collidesWithCave = CollidesWithCave(position, direction);
+	bool isCrossingBounds = IsOutOfBounds(nextPosition);
+	bool collidesWithCave = caveGenerator->Collision(nextPosition);
+
 	auto pairsIterator = objectMap.find(position);
 
 	if (pairsIterator != objectMap.end())
@@ -148,31 +142,3 @@ bool GameField::MakeFieldMove(const SharedFieldObject& obj)
 
 	return false;
 }
-
-bool GameField::IsCrossingBounds(Vector2Int position, Vector2Int direction)
-{
-	Vector2Int nextPosition = Vector2Int::Sum(position, direction);
-
-	int x = nextPosition.x;
-	int y = nextPosition.y;
-	int horizontalMax = size.x;
-	int verticalMax = size.y;
-
-	return x < 0 || y < 0 || x >= horizontalMax || y >= verticalMax;
-}
-
-bool GameField::CollidesWithCave(Vector2Int position, Vector2Int direction)
-{
-	Vector2Int nextPosition = Vector2Int::Sum(position, direction);
-	Vector2Int caveSize = caveGenerator->GetSize();
-
-	int x = nextPosition.x;
-	int y = nextPosition.y;
-	int xMax = caveSize.x;
-	int yMax = caveSize.y;
-
-	bool outOfBounds = x >= xMax || y >= yMax || x < 0 || y < 0;
-	BoolGrid cave = caveGenerator->GetCave();
-  	return outOfBounds || cave[y][x];
-}
-

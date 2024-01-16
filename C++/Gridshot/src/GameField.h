@@ -1,12 +1,15 @@
 #pragma once
 
-#include PLATFORM_HEADER
-#include <iostream>
+#include <stdexcept>
+
 #include "Soldier.h"
-#include "Projectile.h"
 #include "FieldObject.h"
 #include "CaveGenerator.h"
-#include <stdexcept>
+
+typedef std::vector<std::shared_ptr<FieldObject>> FieldObjectList;
+typedef std::map<Vector2Int, std::vector<std::shared_ptr<FieldObject>>> FieldObjectMap;
+using SharedFieldObject = std::shared_ptr<FieldObject>;
+using SharedSoldier = std::shared_ptr<Soldier>;
 
 class GameField
 {
@@ -16,14 +19,12 @@ private:
     FieldObjectMap objectMap;
     CaveGenerator* caveGenerator;
     FieldObjectList* fieldObjects;
-    std::shared_ptr<Soldier> player;
+    SharedSoldier player;
 
 public:
     bool Tick();
     void Draw() const;
-    bool IsOutOfBounds(Vector2Int position) const;
+    bool IsOutOfBounds(const Vector2Int position) const;
     bool MakeFieldMove(const SharedFieldObject& object);
-    bool IsCrossingBounds(Vector2Int position, Vector2Int move);
-    bool CollidesWithCave(Vector2Int position, Vector2Int move);
-    GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Soldier> player, FieldObjectList* fieldObjects, float fillProbability, int iterations);
+    GameField(Vector2Int size, Vector2Int padding, SharedSoldier player, FieldObjectList* fieldObjects, float fillProbability, int iterations);
 };

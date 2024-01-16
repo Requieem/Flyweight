@@ -1,5 +1,6 @@
 #pragma once
 #include "FieldObject.h"
+
 class Soldier : public FieldObject
 {
 	private:
@@ -9,9 +10,12 @@ class Soldier : public FieldObject
 
 	public:
 
-		Soldier(int team, int speed, float startingHealth, Vector2Int position, Vector2Int direction);
-		float GetHealth();
+		Soldier(int teamColor, int speed, float startingHealth, Vector2Int position, Vector2Int direction);
+		
+		bool IsDead() const;
+		float Health() const;
 		bool ChangeHealth(float change);
-		bool IsDead();
+		char DisplayChar() const override;
+		int BackgroundColor() const override;
 };
 

@@ -1,28 +1,21 @@
-// Problem.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+#include "Gridshot.h"
 
-#include PLATFORM_HEADER
-#include "src/GameField.h"
-#include "src/FieldObject.h"
-#include "src/Projectile.h"
-#include <thread>
-#include <mutex>
-#include <chrono>
+// --------------------------
+//		Global Variables
+// --------------------------
 
-// Shared variables
+Mutex mtx;
 int height, width;
-std::mutex mtx;
 GameField* gameField;
 
 // Thread function to check resizing
 void check_resize() {
 	int new_height, new_width;
 	while (true) {
-		std::this_thread::sleep_for(std::chrono::milliseconds(100));
-
+		ThisThread::sleep_for(Time::milliseconds(100));
 		getmaxyx(stdscr, new_height, new_width);
 
-		std::lock_guard<std::mutex> lock(mtx);
+		MutexLock lock(mtx);
 		if (new_height != height || new_width != width) {
 			height = new_height;
 			width = new_width;
@@ -36,9 +29,8 @@ void check_resize() {
 }
 
 int main() {
-	auto player = std::make_shared<Soldier>(0, 1, 10, Vector2Int(0, 0), Vector2Int(1, 0));
-	auto enemy = std::make_shared<Soldier>(0, 1, 10, Vector2Int(2, 2), Vector2Int(1, 0));
-	int rows, cols, new_rows, new_cols;
+	SharedSoldier player = std::make_shared<Soldier>(PLAYER_COLOR, 1, 10, Vector2Int(0, 0), Vector2Int(1, 0));
+	SharedSoldier enemy = std::make_shared<Soldier>(ENEMY_COLOR, 1, 10, Vector2Int(2, 2), Vector2Int(1, 0));
 
 	initscr();
 	cbreak();
@@ -49,28 +41,26 @@ int main() {
 	FieldObjectList* fieldObjects = new FieldObjectList;
 	fieldObjects->push_back(player);
 	fieldObjects->push_back(enemy);
-	mtx.lock();
-	getmaxyx(stdscr, height, width);
-	mtx.unlock();
-	gameField = new GameField(*new Vector2Int(width, height), *new Vector2Int(2, 0), player, fieldObjects, 0.45, 50);
 
+	getmaxyx(stdscr, height, width);
+	gameField = new GameField(*new Vector2Int(width, height), *new Vector2Int(2, 0), player, fieldObjects, 0.4, 50);
 
 	// Start resize thread
-	std::thread resize_thread(check_resize);
+	Thread resize_thread(check_resize);
 
 	bool gameRunning = true;
 	bool spawnProjectile = false;
 
 	Vector2Int playerDirection = player->Direction(); // Initial direction
-	std::shared_ptr<Projectile> newProjectile = nullptr;
+	SharedProjectile newProjectile = nullptr;
 
-	const std::chrono::milliseconds tickDuration(17); // 100 ms for each tick
+	const Time::milliseconds tickDuration(17); // 100 ms for each tick
 
 	while (gameRunning) {
-		auto start = std::chrono::high_resolution_clock::now();
+		auto start = Time::high_resolution_clock::now();
 
 		gameField->Draw();
-		std::lock_guard<std::mutex> lock(mtx);
+		MutexLock lock(mtx);
 
 		int key = getch(); // Get a single character input
 		switch (key)
@@ -104,7 +94,7 @@ int main() {
 		if (spawnProjectile) {
 			player->SetMoving(false);
 			// Create a new projectile and add it to fieldObjects
-			newProjectile = std::make_shared<Projectile>(0, 2, 1, player->NextPosition(), playerDirection);
+			newProjectile = std::make_shared<Projectile>(PROJECTILE_COLOR, 2, 1, player->NextPosition(), playerDirection);
 			fieldObjects->push_back(newProjectile);
 
 			// Reset the flag
@@ -115,11 +105,11 @@ int main() {
 		player->SetMoving(true);
 
 		// Calculate the time to sleep to maintain a consistent tick rate
-		auto end = std::chrono::high_resolution_clock::now();
+		auto end = Time::high_resolution_clock::now();
 		auto elapsed = end - start;
 		auto timeToWait = tickDuration - elapsed;
 		if (timeToWait.count() > 0) {
-			std::this_thread::sleep_for(timeToWait);
+			ThisThread::sleep_for(timeToWait);
 		}
 	}
 

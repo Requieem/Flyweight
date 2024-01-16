@@ -1,4 +1,7 @@
 #pragma once
+
+#include <vector>
+
 struct Vector2Int
 {
 	int x;
@@ -10,15 +13,16 @@ struct Vector2Int
 	static Vector2Int Sum(Vector2Int vec1, Vector2Int vec2);
 	static int Distance(Vector2Int vec1, Vector2Int vec2);
 
-	bool operator<(const Vector2Int& other) const;
 
 	static Vector2Int const Up;
 	static Vector2Int const Right;
 
 	Vector2Int operator-() const;
-	Vector2Int operator+(Vector2Int* other) const;
-	Vector2Int operator+(Vector2Int other) const;
 	Vector2Int operator/(int scalar) const;
-	Vector2Int operator/(Vector2Int* other) const;
+	Vector2Int operator+(Vector2Int other) const;
+	Vector2Int operator/(Vector2Int other) const;
+	bool operator<(const Vector2Int& other) const;
 };
+
+typedef std::vector<Vector2Int> Vector2IntList;
 
