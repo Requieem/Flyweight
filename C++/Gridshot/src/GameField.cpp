@@ -1,37 +1,44 @@
 ﻿#include "GameField.h"
 
-GameField::GameField(Vector2Int size, Vector2Int padding, SharedSoldier player, FieldObjectList* fieldObjects, float fillProbability, int iterations) : size(size), padding(padding), player(player), fieldObjects(fieldObjects)
+GameField::GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Soldier> player, FieldObjectList* fieldObjects, float fillProbability, int iterations) : size(size), padding(padding), player(player), fieldObjects(fieldObjects)
 {
 	this->caveGenerator = new CaveGenerator(size, fillProbability);
 	caveGenerator->GenerateCave(iterations, nullptr, nullptr);
 
 	Vector2Int playerStartingPos = caveGenerator->GetRandomEmptySpace();
 
-	for (const SharedFieldObject& current : *fieldObjects)
+	for (const std::shared_ptr<FieldObject>& current : *fieldObjects)
 	{
 		if (current == player) continue;
 
 		Vector2Int randomEmptySpace = caveGenerator->GetEnemySpace(playerStartingPos, 3);
 		current->SetPosition(randomEmptySpace);
-
-		objectMap[current->Position()].push_back(current);
 	}
 
 	player->SetPosition(playerStartingPos);
-	objectMap[player->Position()].push_back(player);
+}
+
+void GameField::Init()
+{
+	for (const std::shared_ptr<FieldObject> current : *fieldObjects)
+	{
+		current->SetCave(caveGenerator->GetCave());
+	}
 }
 
 bool GameField::Tick()
 {
 	for (auto it = fieldObjects->begin(); it != fieldObjects->end();) {
-		const SharedFieldObject& obj = *it;
+		const std::shared_ptr<FieldObject>& obj = *it;
 
 		bool hit = MakeFieldMove(obj);
 		bool remove = obj->RemoveOnCollision();
 
 		if (hit && remove)
 		{
-				it = fieldObjects->erase(it);
+			Vector2Int position = obj->Position();
+			it = fieldObjects->erase(it);
+			(*caveGenerator->GetCave())[position.y][position.x] = false;
 		}
 
 		else ++it;
@@ -48,15 +55,17 @@ void GameField::Draw() const {
 
 	// Clear the screen
 	clear();
+	curs_set(0);
 
 	attron(COLOR_PAIR(1));
 
-	Cave cave = caveGenerator->GetCave();
+	std::shared_ptr<std::vector<std::vector<bool>>> cave = caveGenerator->GetCave();
+	std::shared_ptr<std::vector<std::vector<bool>>> field = caveGenerator->GetCave();
 	Vector2Int caveSize = caveGenerator->GetSize();
 
 	for (int caveY = 0; caveY < size.y; ++caveY) {
 		for (int caveX = 0; caveX < size.x; ++caveX) {
-			if (cave[caveY][caveX])
+			if ((*cave)[caveY][caveX])
 				mvaddch(caveY, caveX, 176);
 			else
 				mvaddch(caveY, caveX, 219);
@@ -111,34 +120,23 @@ bool GameField::IsOutOfBounds(Vector2Int position) const
 
 	return x < 0 || y < 0 || x >= horizontalMax || y >= verticalMax;
 }
-bool GameField::MakeFieldMove(const SharedFieldObject& obj)
+bool GameField::MakeFieldMove(const std::shared_ptr<FieldObject> obj)
 {
 	if (!obj->IsMoving()) return false;
 
 	Vector2Int position = obj->Position();
-	Vector2Int nextPosition = obj->NextPosition();
+	Vector2Int direction = obj->Direction();
 
-	bool isCrossingBounds = IsOutOfBounds(nextPosition);
-	bool collidesWithCave = caveGenerator->Collision(nextPosition);
+	bool collidesWithCave = obj->WillCollideWithCave(direction);
 
-	auto pairsIterator = objectMap.find(position);
-
-	if (pairsIterator != objectMap.end())
-	{
-		FieldObjectList objectsAtThisPosition = pairsIterator->second;
-		auto valueIterator = std::find(objectsAtThisPosition.begin(), objectsAtThisPosition.end(), obj);
-
-		if (valueIterator != objectsAtThisPosition.end())
-		{
-			objectsAtThisPosition.erase(valueIterator);
-		}
-	}
-
-	if (isCrossingBounds || collidesWithCave) return true;
+	if (collidesWithCave) return true;
 
 	obj->Move();
-	position = obj->Position();
-	objectMap[position].push_back(obj);
-
 	return false;
+}
+
+void GameField::AddFieldObject(const std::shared_ptr<FieldObject> object)
+{
+	object->SetCave(caveGenerator->GetCave());
+	fieldObjects->push_back(object);
 }

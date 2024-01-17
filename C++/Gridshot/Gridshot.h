@@ -1,13 +1,17 @@
 ﻿#pragma once
 
+#include <ctime>
 #include <mutex>
 #include <thread>
 #include <chrono>
+#include <cstdlib>
 #include <iostream>
 
 #include PLATFORM_HEADER
 
 #include "src/Colors.h"
+#include <src/Enemy.h>
+#include "src/Soldier.h"
 #include "src/GameField.h"
 #include "src/Projectile.h"
 #include "src/FieldObject.h"

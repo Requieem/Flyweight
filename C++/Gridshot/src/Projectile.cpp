@@ -4,6 +4,7 @@ Projectile::Projectile(int teamColor, int speed, float damage, Vector2Int positi
 	: FieldObject(teamColor, speed, position, direction), damage(damage) {}
 
 bool Projectile::RemoveOnCollision() const { return true; }
+Vector2Int Projectile::Direction() { return direction; }
 float Projectile::GetDamage() const { return damage; }
 int Projectile::BackgroundColor() const { return CAVE_COLOR; }
-char Projectile::DisplayChar() const { return 254; }
+unsigned char Projectile::DisplayChar() const { return 254; }

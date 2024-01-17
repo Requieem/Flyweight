@@ -19,34 +19,45 @@ void check_resize() {
 		if (new_height != height || new_width != width) {
 			height = new_height;
 			width = new_width;
-
-			clear();
-			refresh();
-
-			gameField->Draw();
 		}
 	}
 }
 
 int main() {
-	SharedSoldier player = std::make_shared<Soldier>(PLAYER_COLOR, 1, 10, Vector2Int(0, 0), Vector2Int(1, 0));
-	SharedSoldier enemy = std::make_shared<Soldier>(ENEMY_COLOR, 1, 10, Vector2Int(2, 2), Vector2Int(1, 0));
+	// Initialize random seed
+	srand(static_cast<unsigned int>(time(nullptr)));
 
+	// Determine the upper bound for the number of enemies
+	const int maxEnemies = 25;  // Change this to your desired upper bound
+
+	// Generate a random number of enemies (between 0 and maxEnemies)
+	int numEnemies = rand() % (maxEnemies + 1);
+
+	// Instantiate the player
+	std::shared_ptr<Soldier> player = std::make_shared<Soldier>(PLAYER_COLOR, 1, 10, Vector2Int(0, 0), Vector2Int(1, 0));
+
+	// Initialize ncurses
 	initscr();
 	cbreak();
-	curs_set(0);
 	noecho();
 	nodelay(stdscr, TRUE);
 
+	// Create and populate the fieldObjects list
 	FieldObjectList* fieldObjects = new FieldObjectList;
 	fieldObjects->push_back(player);
-	fieldObjects->push_back(enemy);
+
+	// Instantiate and add enemies to fieldObjects
+	for (int i = 0; i < numEnemies; ++i) {
+		std::shared_ptr<Enemy> enemy = std::make_shared<Enemy>(ENEMY_COLOR, 1, 10, Vector2Int(0, 0), Vector2Int(0, 0), player);
+		fieldObjects->push_back(enemy);
+	}
 
 	getmaxyx(stdscr, height, width);
-	gameField = new GameField(*new Vector2Int(width, height), *new Vector2Int(2, 0), player, fieldObjects, 0.4, 50);
+	gameField = new GameField(*new Vector2Int(width, height), *new Vector2Int(2, 0), player, fieldObjects, 0.4f, 50);
+	gameField->Init();
 
 	// Start resize thread
-	Thread resize_thread(check_resize);
+	// Thread resize_thread(check_resize);
 
 	bool gameRunning = true;
 	bool spawnProjectile = false;
@@ -54,7 +65,7 @@ int main() {
 	Vector2Int playerDirection = player->Direction(); // Initial direction
 	SharedProjectile newProjectile = nullptr;
 
-	const Time::milliseconds tickDuration(17); // 100 ms for each tick
+	const Time::milliseconds tickDuration(50); // 100 ms for each tick
 
 	while (gameRunning) {
 		auto start = Time::high_resolution_clock::now();
@@ -95,7 +106,7 @@ int main() {
 			player->SetMoving(false);
 			// Create a new projectile and add it to fieldObjects
 			newProjectile = std::make_shared<Projectile>(PROJECTILE_COLOR, 2, 1, player->NextPosition(), playerDirection);
-			fieldObjects->push_back(newProjectile);
+			gameField->AddFieldObject(newProjectile);
 
 			// Reset the flag
 			spawnProjectile = false;
@@ -113,7 +124,7 @@ int main() {
 		}
 	}
 
-	resize_thread.join();
+	//resize_thread.join();
 	endwin();
 	return 0;
 }

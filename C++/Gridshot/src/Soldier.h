@@ -15,7 +15,8 @@ class Soldier : public FieldObject
 		bool IsDead() const;
 		float Health() const;
 		bool ChangeHealth(float change);
-		char DisplayChar() const override;
+		Vector2Int Direction() override;
+		unsigned char DisplayChar() const override;
 		int BackgroundColor() const override;
 };
 

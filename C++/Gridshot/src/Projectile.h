@@ -12,7 +12,8 @@ class Projectile : public FieldObject
 		Projectile(int teamColor, int speed, float damage, Vector2Int position, Vector2Int direction);
 		
 		float GetDamage() const;
-		char DisplayChar() const override;
+		Vector2Int Direction() override;
+		unsigned char DisplayChar() const override;
 		int BackgroundColor() const override;
 		bool RemoveOnCollision() const override;
 };

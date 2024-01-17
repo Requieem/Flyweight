@@ -2,22 +2,19 @@
 
 #include <ctime>
 #include <vector>
+#include <memory>
 #include <cstdlib>
 
 #include "Vector2Int.h"
 
-typedef std::vector<std::vector<bool>> Cave;
-
 class CaveGenerator
 {
 private:
-	Cave cave;
-	Cave minusCave;
+	std::shared_ptr<std::vector<std::vector<bool>>> cave;
 
 	float fillProbability;
-
 	Vector2Int size;
-	Vector2IntList emptySpaces;
+	std::vector<Vector2Int> emptySpaces;
 
 	void CaveIteration();
 	void GenerateInitialCave();
@@ -28,11 +25,8 @@ public:
 
 	void GenerateCave(const int iterations, const Vector2Int* size, const float* fillProbability);
 
-	Cave GetCave() const;
-	Cave GetMinusCave() const;
+	std::shared_ptr<std::vector<std::vector<bool>>> GetCave() const;
 	Vector2Int GetSize() const;
-	bool Collision(const Vector2Int position) const;
-
 	Vector2Int GetRandomEmptySpace();
 	Vector2Int GetEnemySpace(const Vector2Int fromPosition, const int minDistance);
 };

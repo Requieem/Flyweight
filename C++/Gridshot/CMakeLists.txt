@@ -30,6 +30,10 @@ set(SOURCES
 	"src/GameField.cpp"
 	"src/Projectile.cpp"
 	"src/Soldier.cpp"
+	"src/Enemy.cpp"
+	"src/Node.cpp" 
+	"src/AStar.cpp"
+	
 	"Gridshot.cpp"
 	"Gridshot.h"
 )

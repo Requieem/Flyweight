@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include <stdexcept>
 
 struct Vector2Int
 {
@@ -18,11 +19,15 @@ struct Vector2Int
 	static Vector2Int const Right;
 
 	Vector2Int operator-() const;
+	Vector2Int operator-(Vector2Int other) const;
 	Vector2Int operator/(int scalar) const;
 	Vector2Int operator+(Vector2Int other) const;
 	Vector2Int operator/(Vector2Int other) const;
-	bool operator<(const Vector2Int& other) const;
+	bool operator==(Vector2Int other) const;
+	bool operator<(const Vector2Int other) const;
+	int ManhattanDistance(const Vector2Int other) const;
 };
 
-typedef std::vector<Vector2Int> Vector2IntList;
-
+struct Vector2IntHash {
+	std::size_t operator()(const Vector2Int& v) const noexcept;
+};
