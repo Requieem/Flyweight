@@ -4,22 +4,23 @@
 #include <vector>
 #include <memory>
 
+#include "Life.h"
 #include "Colors.h"
+#include "Damage.h"
 #include "Vector2Int.h"
+class FieldObject : virtual public Life, virtual public Damage
 
-class FieldObject
 {
 protected:
-	int teamColor;
 	int speed;
+	int teamColor;
 	bool isMoving;
 
-	std::shared_ptr<std::vector<std::vector<bool>>> cave;
 	Vector2Int position;
 	Vector2Int direction;
 	Vector2Int previousPosition;
+	std::shared_ptr<std::vector<std::vector<bool>>> cave;
 
-protected:
 	FieldObject(int teamColor, int speed, Vector2Int position, Vector2Int direction);
 
 public:
@@ -27,22 +28,20 @@ public:
 	int TeamColor() const;
 	bool IsMoving() const;
 	virtual bool RemoveOnCollision() const;
-	virtual unsigned char DisplayChar() const = 0;
+
+	virtual Vector2Int NextDirection() = 0;
 	virtual int BackgroundColor() const = 0;
+	virtual unsigned char DisplayChar() const = 0;
 
 	Vector2Int Position() const;
-	virtual Vector2Int Direction() = 0;
-	Vector2Int NextPosition() const;
+	Vector2Int Direction() const;
+	Vector2Int NextPosition(Vector2Int dir) const;
 	Vector2Int PreviousPosition() const;
 
-	void Move();
-	void SetCave(std::shared_ptr<std::vector<std::vector<bool>>> field);
+	void Move(Vector2Int dir);
 	void SetMoving(bool moving);
 	void SetPosition(Vector2Int newPosition);
 	void SetDirection(Vector2Int newDirection);
+	void SetCave(std::shared_ptr<std::vector<std::vector<bool>>> field);
 	bool WillCollideWithCave(Vector2Int dir) const;
-
-	friend bool operator==(const std::shared_ptr<FieldObject>& lhs, const std::shared_ptr<FieldObject>& rhs) {
-		return lhs.get() == rhs.get();
-	}
 };

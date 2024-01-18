@@ -2,10 +2,11 @@
 
 #include <ctime>
 #include <mutex>
+#include <string>
+#include <random>
 #include <thread>
 #include <chrono>
 #include <cstdlib>
-#include <iostream>
 
 #include PLATFORM_HEADER
 
@@ -20,6 +21,3 @@ namespace Time = std::chrono;
 namespace ThisThread = std::this_thread;
 
 using Thread = std::thread;
-using Mutex = std::mutex;
-using MutexLock = std::lock_guard<std::mutex>;
-using SharedProjectile = std::shared_ptr<Projectile>;

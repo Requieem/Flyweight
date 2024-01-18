@@ -14,9 +14,12 @@ struct Vector2Int
 	static Vector2Int Sum(Vector2Int vec1, Vector2Int vec2);
 	static int Distance(Vector2Int vec1, Vector2Int vec2);
 
-
 	static Vector2Int const Up;
+	static Vector2Int const Down;
+	static Vector2Int const Left;
 	static Vector2Int const Right;
+	static Vector2Int const Zero;
+	static std::vector<Vector2Int> const Directions;
 
 	Vector2Int operator-() const;
 	Vector2Int operator-(Vector2Int other) const;

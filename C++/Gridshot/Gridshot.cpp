@@ -4,46 +4,67 @@
 //		Global Variables
 // --------------------------
 
-Mutex mtx;
 int height, width;
 GameField* gameField;
 
-// Thread function to check resizing
-void check_resize() {
-	int new_height, new_width;
-	while (true) {
-		ThisThread::sleep_for(Time::milliseconds(100));
-		getmaxyx(stdscr, new_height, new_width);
+const std::string gameover = R"(
+     ____                         ___                   
+    / ___| __ _ _ __ ___   ___   / _ \__   _____ _ __   
+   | |  _ / _` | '_ ` _ \ / _ \ | | | \ \ / / _ | '__|  
+   | |_| | (_| | | | | | |  __/ | |_| |\ V |  __| |     
+    \____|\__,_|_| |_| |_|\___|  \___/  \_/ \___|_|   _ 
+  _ __  _ __ ___ ___ ___   ___ _ __   __ _  ___ ___  | |
+ | '_ \| '__/ _ / __/ __| / __| '_ \ / _` |/ __/ _ \ | |
+ | |_) | | |  __\__ \__ \ \__ | |_) | (_| | (_|  __/ |_|
+ | .__/|_|  \___|___|___/ |___| .__/ \__,_|\___\___| (_)
+ |_|                          |_|                       
+                                                  
+)";
 
-		MutexLock lock(mtx);
-		if (new_height != height || new_width != width) {
-			height = new_height;
-			width = new_width;
-		}
-	}
-}
+const std::string title = R"(
+           ____      _     _ ____  _           _                  
+          / ___|_ __(_) __| / ___|| |__   ___ | |_   _            
+         | |  _| '__| |/ _` \___ \| '_ \ / _ \| __| (_)           
+         | |_| | |  | | (_| |___) | | | | (_) | |_   _            
+          \____|_|  |_|\__,_|____/|_| |_|\___/ \__| (_)           
+        _____ _             ____                                  
+       |_   _| |__   ___   / ___| __ _ _ __ ___   ___             
+         | | | '_ \ / _ \ | |  _ / _` | '_ ` _ \ / _ \            
+         | | | | | |  __/ | |_| | (_| | | | | | |  __/            
+         |_| |_| |_|\___|  \____|\__,_|_| |_| |_|\___|            
+  ____                         _          ____  _             _   
+ / ___| _ __   __ _  ___ ___  | |_ ___   / ___|| |_ __ _ _ __| |_ 
+ \___ \| '_ \ / _` |/ __/ _ \ | __/ _ \  \___ \| __/ _` | '__| __|
+  ___) | |_) | (_| | (_|  __/ | || (_) |  ___) | || (_| | |  | |_ 
+ |____/| .__/ \__,_|\___\___|  \__\___/  |____/ \__\__,_|_|   \__|
+       |_|                                                        
+)";
 
-int main() {
-	// Initialize random seed
-	srand(static_cast<unsigned int>(time(nullptr)));
 
-	// Determine the upper bound for the number of enemies
-	const int maxEnemies = 25;  // Change this to your desired upper bound
-
-	// Generate a random number of enemies (between 0 and maxEnemies)
-	int numEnemies = rand() % (maxEnemies + 1);
-
-	// Instantiate the player
-	std::shared_ptr<Soldier> player = std::make_shared<Soldier>(PLAYER_COLOR, 1, 10, Vector2Int(0, 0), Vector2Int(1, 0));
-
-	// Initialize ncurses
+void CursesInit()
+{
 	initscr();
 	cbreak();
 	noecho();
 	nodelay(stdscr, TRUE);
+	getmaxyx(stdscr, height, width);
+}
+void CursesClose()
+{
+	endwin();
+}
+void GameLoop()
+{
+	const int minEnemies = 10;
+	const int maxEnemies = 25;
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::uniform_int_distribution<int> distribution(minEnemies, maxEnemies);
+	int numEnemies = distribution(gen);
+	std::shared_ptr<Soldier> player = std::make_shared<Soldier>(PLAYER_COLOR, 1, 10, Vector2Int(0, 0), Vector2Int(1, 0));
 
 	// Create and populate the fieldObjects list
-	FieldObjectList* fieldObjects = new FieldObjectList;
+	FieldObjectList fieldObjects = std::make_shared<std::vector<std::shared_ptr<FieldObject>>>();
 	fieldObjects->push_back(player);
 
 	// Instantiate and add enemies to fieldObjects
@@ -52,38 +73,36 @@ int main() {
 		fieldObjects->push_back(enemy);
 	}
 
-	getmaxyx(stdscr, height, width);
-	gameField = new GameField(*new Vector2Int(width, height), *new Vector2Int(2, 0), player, fieldObjects, 0.4f, 50);
+	gameField = new GameField({ width, height }, *new Vector2Int(2, 0), player, fieldObjects, 0.4f, 50);
 	gameField->Init();
-
-	// Start resize thread
-	// Thread resize_thread(check_resize);
 
 	bool gameRunning = true;
 	bool spawnProjectile = false;
 
-	Vector2Int playerDirection = player->Direction(); // Initial direction
-	SharedProjectile newProjectile = nullptr;
+	int key = ERR;
 
-	const Time::milliseconds tickDuration(50); // 100 ms for each tick
+	Vector2Int playerDirection = player->NextDirection(); // Initial direction
+	std::shared_ptr<Projectile> newProjectile = nullptr;
+
+	const Time::milliseconds tickDuration(20); // 100 ms for each tick
 
 	while (gameRunning) {
 		auto start = Time::high_resolution_clock::now();
 
 		gameField->Draw();
-		MutexLock lock(mtx);
+		key = getch(); // Get a single character input
+		flushinp();
 
-		int key = getch(); // Get a single character input
 		switch (key)
 		{
 		case ERR:
 			player->SetMoving(false);
 			break;
 		case 119: // 'W' key
-			playerDirection = -Vector2Int::Up;
+			playerDirection = Vector2Int::Down;
 			break;
 		case 97: // 'A' key
-			playerDirection = -Vector2Int::Right;
+			playerDirection = Vector2Int::Left;
 			break;
 		case 115: // 'S' key
 			playerDirection = Vector2Int::Up;
@@ -105,7 +124,7 @@ int main() {
 		if (spawnProjectile) {
 			player->SetMoving(false);
 			// Create a new projectile and add it to fieldObjects
-			newProjectile = std::make_shared<Projectile>(PROJECTILE_COLOR, 2, 1, player->NextPosition(), playerDirection);
+			newProjectile = std::make_shared<Projectile>(PROJECTILE_COLOR, 2, 1, player->NextPosition(playerDirection), playerDirection);
 			gameField->AddFieldObject(newProjectile);
 
 			// Reset the flag
@@ -123,8 +142,25 @@ int main() {
 			ThisThread::sleep_for(timeToWait);
 		}
 	}
+}
 
-	//resize_thread.join();
-	endwin();
+int main() {
+	CursesInit();
+
+	addstr( title.c_str());
+
+	flushinp();
+	while (getch() == ERR) {}
+
+	GameLoop();
+
+	clear();
+	addstr(gameover.c_str());
+	
+	flushinp();
+	while (getch() == ERR) {}
+
+	CursesClose();
 	return 0;
 }
+

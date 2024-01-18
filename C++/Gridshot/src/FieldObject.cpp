@@ -11,13 +11,18 @@ bool FieldObject::RemoveOnCollision() const { return false; }
 void FieldObject::SetMoving(bool moving) { isMoving = moving; }
 
 Vector2Int FieldObject::Position() const { return position; }
+Vector2Int FieldObject::Direction() const { return direction; }
 Vector2Int FieldObject::PreviousPosition() const { return previousPosition; }
-Vector2Int FieldObject::NextPosition() const { return Vector2Int::Sum(position, direction); }
+
+Vector2Int FieldObject::NextPosition(Vector2Int dir) const { return Vector2Int::Sum(position, dir); }
 void FieldObject::SetPosition(Vector2Int newPosition) { position = newPosition; }
 void FieldObject::SetDirection(Vector2Int newDirection) { direction = newDirection; }
+void FieldObject::SetCave(std::shared_ptr<std::vector<std::vector<bool>>> cave) { this->cave = cave; }
 
 bool FieldObject::WillCollideWithCave(Vector2Int dir) const
 {
+	if (dir == Vector2Int::Zero) return false;
+
 	int x = position.x + dir.x;
 	int y = position.y + dir.y;
 	int maxX = (*cave)[0].size();
@@ -27,10 +32,9 @@ bool FieldObject::WillCollideWithCave(Vector2Int dir) const
 	return outOfBounds || (*cave)[y][x];
 }
 
-
-void FieldObject::Move() {
+void FieldObject::Move(Vector2Int dir) {
 	previousPosition = position;
-	position.Move(Direction());
+	position.Move(dir);
 
 	int previousX = previousPosition.x;
 	int previousY = previousPosition.y;
@@ -41,5 +45,3 @@ void FieldObject::Move() {
 	(*cave)[previousY][previousX] = false;
 	(*cave)[y][x] = true;
 }
-
-void FieldObject::SetCave(std::shared_ptr<std::vector<std::vector<bool>>> cave) { this->cave = cave; }

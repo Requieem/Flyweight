@@ -130,6 +130,24 @@ build CMakeFiles\Gridshot.dir\src\AStar.cpp.obj: CXX_COMPILER__Gridshot_unscanne
   TARGET_COMPILE_PDB = CMakeFiles\Gridshot.dir\
   TARGET_PDB = Gridshot.pdb
 
+build CMakeFiles\Gridshot.dir\src\Life.cpp.obj: CXX_COMPILER__Gridshot_unscanned_Debug C$:\Users\DevDeck\Documents\GitHub\Flyweight\C++\Gridshot\src\Life.cpp || cmake_object_order_depends_target_Gridshot
+  DEFINES = -DPLATFORM_HEADER=\"WINGridshot.h\"
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Users\DevDeck\Documents\Libraries\PDCurses-master -IC:\Users\DevDeck\Documents\GitHub\Flyweight\C++\Gridshot -IC:\Users\DevDeck\Documents\GitHub\Flyweight\C++\Gridshot\WINGridshot.h
+  OBJECT_DIR = CMakeFiles\Gridshot.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gridshot.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gridshot.dir\
+  TARGET_PDB = Gridshot.pdb
+
+build CMakeFiles\Gridshot.dir\src\Damage.cpp.obj: CXX_COMPILER__Gridshot_unscanned_Debug C$:\Users\DevDeck\Documents\GitHub\Flyweight\C++\Gridshot\src\Damage.cpp || cmake_object_order_depends_target_Gridshot
+  DEFINES = -DPLATFORM_HEADER=\"WINGridshot.h\"
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
+  INCLUDES = -IC:\Users\DevDeck\Documents\Libraries\PDCurses-master -IC:\Users\DevDeck\Documents\GitHub\Flyweight\C++\Gridshot -IC:\Users\DevDeck\Documents\GitHub\Flyweight\C++\Gridshot\WINGridshot.h
+  OBJECT_DIR = CMakeFiles\Gridshot.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gridshot.dir\src
+  TARGET_COMPILE_PDB = CMakeFiles\Gridshot.dir\
+  TARGET_PDB = Gridshot.pdb
+
 build CMakeFiles\Gridshot.dir\Gridshot.cpp.obj: CXX_COMPILER__Gridshot_unscanned_Debug C$:\Users\DevDeck\Documents\GitHub\Flyweight\C++\Gridshot\Gridshot.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"WINGridshot.h\"
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -std:c++20 -ZI
@@ -147,7 +165,7 @@ build CMakeFiles\Gridshot.dir\Gridshot.cpp.obj: CXX_COMPILER__Gridshot_unscanned
 #############################################
 # Link the executable Gridshot.exe
 
-build Gridshot.exe: CXX_EXECUTABLE_LINKER__Gridshot_Debug CMakeFiles\Gridshot.dir\src\Vector2Int.cpp.obj CMakeFiles\Gridshot.dir\src\CaveGenerator.cpp.obj CMakeFiles\Gridshot.dir\src\FieldObject.cpp.obj CMakeFiles\Gridshot.dir\src\GameField.cpp.obj CMakeFiles\Gridshot.dir\src\Projectile.cpp.obj CMakeFiles\Gridshot.dir\src\Soldier.cpp.obj CMakeFiles\Gridshot.dir\src\Enemy.cpp.obj CMakeFiles\Gridshot.dir\src\Node.cpp.obj CMakeFiles\Gridshot.dir\src\AStar.cpp.obj CMakeFiles\Gridshot.dir\Gridshot.cpp.obj
+build Gridshot.exe: CXX_EXECUTABLE_LINKER__Gridshot_Debug CMakeFiles\Gridshot.dir\src\Vector2Int.cpp.obj CMakeFiles\Gridshot.dir\src\CaveGenerator.cpp.obj CMakeFiles\Gridshot.dir\src\FieldObject.cpp.obj CMakeFiles\Gridshot.dir\src\GameField.cpp.obj CMakeFiles\Gridshot.dir\src\Projectile.cpp.obj CMakeFiles\Gridshot.dir\src\Soldier.cpp.obj CMakeFiles\Gridshot.dir\src\Enemy.cpp.obj CMakeFiles\Gridshot.dir\src\Node.cpp.obj CMakeFiles\Gridshot.dir\src\AStar.cpp.obj CMakeFiles\Gridshot.dir\src\Life.cpp.obj CMakeFiles\Gridshot.dir\src\Damage.cpp.obj CMakeFiles\Gridshot.dir\Gridshot.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Ob0 /Od /RTC1 -ZI
   LINK_FLAGS = /machine:X86 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = pdcurses.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib

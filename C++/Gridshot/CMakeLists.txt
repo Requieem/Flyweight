@@ -33,6 +33,9 @@ set(SOURCES
 	"src/Enemy.cpp"
 	"src/Node.cpp" 
 	"src/AStar.cpp"
+	"src/Life.cpp"
+	"src/Damage.cpp"
+	
 	
 	"Gridshot.cpp"
 	"Gridshot.h"

@@ -4,7 +4,11 @@ Vector2Int::Vector2Int() : x(0), y(0) {}
 Vector2Int::Vector2Int(int x, int y) : x(x), y(y) {}
 
 const Vector2Int Vector2Int::Up = { 0, 1 };
+const Vector2Int Vector2Int::Down = { 0, -1 };
+const Vector2Int Vector2Int::Left = { -1, 0 };
 const Vector2Int Vector2Int::Right = { 1, 0 };
+const Vector2Int Vector2Int::Zero = { 0, 0 };
+const std::vector<Vector2Int> Vector2Int::Directions = { Up, Down, Left, Right };
 
 Vector2Int Vector2Int::Sum(Vector2Int vec1, Vector2Int vec2)
 {
