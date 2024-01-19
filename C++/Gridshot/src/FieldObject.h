@@ -30,7 +30,6 @@ public:
 	virtual bool RemoveOnCollision() const;
 
 	virtual Vector2Int NextDirection() = 0;
-	virtual int BackgroundColor() const = 0;
 	virtual unsigned char DisplayChar() const = 0;
 
 	Vector2Int Position() const;
@@ -44,4 +43,5 @@ public:
 	void SetDirection(Vector2Int newDirection);
 	void SetCave(std::shared_ptr<std::vector<std::vector<bool>>> field);
 	bool WillCollideWithCave(Vector2Int dir) const;
+	bool WillGoOutOfBounds(Vector2Int dir) const;
 };

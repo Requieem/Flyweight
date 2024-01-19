@@ -22,6 +22,7 @@ elseif(WIN32)
 endif()
 
 add_definitions(-DPLATFORM_HEADER="${PLATFORM_HEADERS}")
+add_definitions(-DUNICODE -D_UNICODE)
 
 set(SOURCES
 	"src/Vector2Int.cpp"
@@ -30,13 +31,16 @@ set(SOURCES
 	"src/GameField.cpp"
 	"src/Projectile.cpp"
 	"src/Soldier.cpp"
+	"src/Player.cpp"
 	"src/Enemy.cpp"
 	"src/Node.cpp" 
 	"src/AStar.cpp"
 	"src/Life.cpp"
 	"src/Damage.cpp"
-	
-	
+	"src/Food.cpp"
+	"src/Treasure.cpp"
+	"src/Item.cpp"
+	"src/Score.cpp"
 	"Gridshot.cpp"
 	"Gridshot.h"
 )

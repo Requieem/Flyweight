@@ -6,8 +6,9 @@ CaveGenerator::CaveGenerator(Vector2Int size, float fillProbability) : size(size
 	GenerateInitialCave();
 }
 
-std::shared_ptr<std::vector<std::vector<bool>>> CaveGenerator::GetCave() const { return cave; }
 Vector2Int CaveGenerator::GetSize() const { return size; }
+int CaveGenerator::GetEmptySpaces() const { return emptySpaces.size(); }
+std::shared_ptr<std::vector<std::vector<bool>>> CaveGenerator::GetCave() const { return cave; }
 
 void CaveGenerator::GenerateInitialCave()
 {
@@ -81,17 +82,29 @@ Vector2Int CaveGenerator::GetRandomEmptySpace()
 }
 
 Vector2Int CaveGenerator::GetEnemySpace(const Vector2Int fromPosition, const int minDistance) {
-	int randomIndex;
+
+	Vector2Int randomPosition = GetRandomDistantEmptySpace(fromPosition, minDistance);
+	(*cave)[randomPosition.y][randomPosition.x] = true;
+	return randomPosition;
+}
+
+Vector2Int CaveGenerator::GetRandomDistantEmptySpace(const Vector2Int fromPosition, const int minDistance) {
+
+	if (emptySpaces.size() == 0) return Vector2Int::Zero;
+
 	int distance;
+	int randomIndex;
 	Vector2Int randomPosition;
 
 	do {
+
 		randomIndex = rand() % emptySpaces.size();
 		randomPosition = emptySpaces[randomIndex];
 		distance = Vector2Int::Distance(fromPosition, randomPosition);
-	} while (distance < minDistance);
+		if (distance >= minDistance) emptySpaces.erase(emptySpaces.begin() + randomIndex);
+
+	} while (distance < minDistance && !emptySpaces.empty());
 
 	emptySpaces.erase(emptySpaces.begin() + randomIndex);
-	(*cave)[randomPosition.y][randomPosition.x] = true;
 	return randomPosition;
 }

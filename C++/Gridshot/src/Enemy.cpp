@@ -6,7 +6,6 @@ Enemy::Enemy(int teamColor, int speed, float startingHealth, Vector2Int position
 Vector2Int Enemy::NextDirection()
 {
 	int distance = Vector2Int::Distance(position, targetObject->Position());
-
 	auto currentTime = std::chrono::steady_clock::now();
 	auto elapsedTime = std::chrono::duration_cast<std::chrono::milliseconds>(currentTime - lastDecisionTime).count();
 
@@ -37,6 +36,9 @@ Vector2Int Enemy::NextDirection()
 			}
 		}
 
+		if (direction == Vector2Int::Zero)
+			direction = RandomDirection();
+
 		lastDecisionTime = currentTime;
 	}
 
@@ -45,6 +47,9 @@ Vector2Int Enemy::NextDirection()
 
 Vector2Int Enemy::RandomDirection() const
 {
+	if (direction != Vector2Int::Zero && !WillCollideWithCave(direction))
+		return direction;
+
 	std::vector<Vector2Int> validDirections;
 	Vector2Int randomDirection = Vector2Int::Zero;
 

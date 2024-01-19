@@ -25,11 +25,21 @@ bool FieldObject::WillCollideWithCave(Vector2Int dir) const
 
 	int x = position.x + dir.x;
 	int y = position.y + dir.y;
+
+	return WillGoOutOfBounds(dir) || (*cave)[y][x];
+}
+
+bool FieldObject::WillGoOutOfBounds(Vector2Int dir) const
+{
+	if (dir == Vector2Int::Zero) return false;
+
+	int x = position.x + dir.x;
+	int y = position.y + dir.y;
 	int maxX = (*cave)[0].size();
 	int maxY = cave->size();
 
 	bool outOfBounds = x < 0 || y < 0 || x >= maxX || y >= maxY;
-	return outOfBounds || (*cave)[y][x];
+	return outOfBounds;
 }
 
 void FieldObject::Move(Vector2Int dir) {

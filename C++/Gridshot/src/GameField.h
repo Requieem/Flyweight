@@ -1,13 +1,19 @@
 #pragma once
 
+#include <random>
 #include <stdexcept>
 
-#include "Soldier.h"
+#include "Item.h"
+#include "Food.h"
+#include "Enemy.h"
+#include "Player.h"
+#include "Treasure.h"
 #include "FieldObject.h"
 #include "CaveGenerator.h"
 
 typedef std::shared_ptr<std::vector<std::shared_ptr<FieldObject>>> FieldObjectList;
-typedef std::shared_ptr < std::map<Vector2Int, std::shared_ptr<FieldObject>>> ObjectMap;
+typedef std::shared_ptr<std::map<Vector2Int, std::shared_ptr<FieldObject>>> ObjectMap;
+typedef std::shared_ptr<std::map<Vector2Int, std::shared_ptr<Item>>> ItemMap;
 
 class GameField
 {
@@ -16,8 +22,9 @@ private:
     Vector2Int padding;
     CaveGenerator* caveGenerator;
     FieldObjectList fieldObjects;
+    ItemMap itemMap;
     ObjectMap objectMap;
-    std::shared_ptr<Soldier> player;
+    std::shared_ptr<Player> player;
 
 public:
     bool Tick();
@@ -29,5 +36,5 @@ public:
     std::shared_ptr<FieldObject> Hit(std::shared_ptr<FieldObject> obj, Vector2Int pos) const;
     bool CheckHit(const std::shared_ptr<FieldObject> obj) const;
     bool ReachedPlayer(const std::shared_ptr<FieldObject> obj) const;
-    GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Soldier> player, FieldObjectList fieldObjects, float fillProbability, int iterations);
+    GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Player> player, float fillProbability, int iterations);
 };

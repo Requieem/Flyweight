@@ -9,7 +9,6 @@ class Projectile : public FieldObject
 		
 		Vector2Int NextDirection() override;
 		unsigned char DisplayChar() const override;
-		int BackgroundColor() const override;
 		bool RemoveOnCollision() const override;
 };
 

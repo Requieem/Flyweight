@@ -27,6 +27,8 @@ public:
 
 	std::shared_ptr<std::vector<std::vector<bool>>> GetCave() const;
 	Vector2Int GetSize() const;
+	int GetEmptySpaces() const;
 	Vector2Int GetRandomEmptySpace();
 	Vector2Int GetEnemySpace(const Vector2Int fromPosition, const int minDistance);
+	Vector2Int GetRandomDistantEmptySpace(const Vector2Int fromPosition, const int minDistance);
 };
