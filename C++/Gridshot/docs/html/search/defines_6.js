@@ -1,6 +1,0 @@
-var searchData=
-[
-  ['platform_5fid_0',['PLATFORM_ID',['../linux-debug_2_c_make_files_23_822_81_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID:&#160;CMakeCCompilerId.c'],['../linux-debug_2_c_make_files_23_822_81_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID:&#160;CMakeCXXCompilerId.cpp'],['../windows-base_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID:&#160;CMakeCCompilerId.c'],['../windows-base_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID:&#160;CMakeCXXCompilerId.cpp'],['../x86-debug_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_2_c_make_c_compiler_id_8c.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID:&#160;CMakeCCompilerId.c'],['../x86-debug_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp.html#adbc5372f40838899018fadbc89bd588b',1,'PLATFORM_ID:&#160;CMakeCXXCompilerId.cpp']]],
-  ['player_5fcolor_1',['PLAYER_COLOR',['../_colors_8h.html#a28d88d882f8dc097928beffc901cc133',1,'Colors.h']]],
-  ['projectile_5fcolor_2',['PROJECTILE_COLOR',['../_colors_8h.html#a2a603e2e07bda629ce0013579747d9b4',1,'Colors.h']]]
-];

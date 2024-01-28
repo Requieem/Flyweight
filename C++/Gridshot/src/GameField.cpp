@@ -150,6 +150,11 @@ void GameField::Draw() const {
 	refresh();
 }
 
+Vector2Int GameField::CurrentLevelPosition()
+{
+	return level->CurrentPosition();
+}
+
 std::shared_ptr<std::vector<std::vector<bool>>> GameField::RoomGrid()
 {
 	return level->roomGrid;

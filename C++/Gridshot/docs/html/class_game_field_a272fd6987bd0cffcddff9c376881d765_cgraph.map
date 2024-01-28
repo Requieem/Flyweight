@@ -1,7 +1,0 @@
-<map id="GameField::Draw" name="GameField::Draw">
-<area shape="rect" id="Node000001" title=" " alt="" coords="5,32,137,61"/>
-<area shape="rect" id="Node000002" href="$class_cave_generator.html#a23b75da31cea10356121e1d8bd74361d" title=" " alt="" coords="185,5,370,34"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,35,169,31,169,36,137,41"/>
-<area shape="rect" id="Node000003" href="$class_cave_generator.html#adbb1a2d432e9826ce817a2d5d44eb72d" title=" " alt="" coords="189,59,366,87"/>
-<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,52,173,57,173,62,136,57"/>
-</map>

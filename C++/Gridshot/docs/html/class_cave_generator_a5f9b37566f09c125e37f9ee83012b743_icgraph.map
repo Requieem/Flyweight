@@ -1,5 +1,0 @@
-<map id="CaveGenerator::GetEnemySpace" name="CaveGenerator::GetEnemySpace">
-<area shape="rect" id="Node000001" title=" " alt="" coords="219,5,455,34"/>
-<area shape="rect" id="Node000002" href="$class_game_field.html#ab7c0e031d305f8045ed799ebd076a8aa" title=" " alt="" coords="5,5,171,34"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,22,171,22,171,17,203,17"/>
-</map>

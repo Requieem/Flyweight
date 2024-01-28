@@ -63,3 +63,5 @@ std::shared_ptr<Room> Level::CurrentRoom()
 {
 	return AdjacentRoom({ 0,0 });
 }
+
+Vector2Int Level::CurrentPosition() { return currentPosition; }

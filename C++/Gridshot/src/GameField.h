@@ -23,6 +23,7 @@ private:
 public:
     bool Tick();
     void Draw() const;
+    Vector2Int CurrentLevelPosition();
     std::shared_ptr<std::vector<std::vector<bool>>> RoomGrid();
     bool IsOutOfBounds(const Vector2Int position) const;
     bool MakeFieldMove(const std::shared_ptr<FieldObject> object);
