@@ -1,0 +1,58 @@
+\doxysection{AStar Class Reference}
+\hypertarget{class_a_star}{}\label{class_a_star}\index{AStar@{AStar}}
+
+
+{\ttfamily \#include $<$AStar.\+h$>$}
+
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_a_star_a12a10e1a4ab9f4de05d26ba189223da1}{Is\+Position\+Valid}} (const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} position, const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ $>$ grid, const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} start, const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} goal)
+\item 
+static std\+::vector$<$ \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} $>$ \mbox{\hyperlink{class_a_star_a77dd0de7235076265b212b7d1dd4a084}{Direction\+Path}} (const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} start, const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} goal, const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ $>$ grid)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_a_star_a77dd0de7235076265b212b7d1dd4a084}\label{class_a_star_a77dd0de7235076265b212b7d1dd4a084} 
+\index{AStar@{AStar}!DirectionPath@{DirectionPath}}
+\index{DirectionPath@{DirectionPath}!AStar@{AStar}}
+\doxysubsubsection{\texorpdfstring{DirectionPath()}{DirectionPath()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} $>$ AStar\+::\+Direction\+Path (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{start,  }\item[{const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{goal,  }\item[{const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ $>$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_star_a77dd0de7235076265b212b7d1dd4a084_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_star_a77dd0de7235076265b212b7d1dd4a084_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_a_star_a12a10e1a4ab9f4de05d26ba189223da1}\label{class_a_star_a12a10e1a4ab9f4de05d26ba189223da1} 
+\index{AStar@{AStar}!IsPositionValid@{IsPositionValid}}
+\index{IsPositionValid@{IsPositionValid}!AStar@{AStar}}
+\doxysubsubsection{\texorpdfstring{IsPositionValid()}{IsPositionValid()}}
+{\footnotesize\ttfamily bool AStar\+::\+Is\+Position\+Valid (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{position,  }\item[{const std\+::shared\+\_\+ptr$<$ std\+::vector$<$ std\+::vector$<$ bool $>$ $>$ $>$}]{grid,  }\item[{const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{start,  }\item[{const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{goal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_a_star_a12a10e1a4ab9f4de05d26ba189223da1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_a_star_8h}{AStar.\+h}}\item 
+src/\mbox{\hyperlink{_a_star_8cpp}{AStar.\+cpp}}\end{DoxyCompactItemize}

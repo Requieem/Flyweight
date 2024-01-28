@@ -1,0 +1,5 @@
+<map id="Treasure::Effect" name="Treasure::Effect">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,134,34"/>
+<area shape="rect" id="Node000002" href="$class_score.html#a950296563c2432c31ce57d126f081f6f" title=" " alt="" coords="182,5,334,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,17,166,17,166,22,134,22"/>
+</map>

@@ -1,0 +1,42 @@
+\doxysection{Vector2\+Int.\+h}
+\hypertarget{_vector2_int_8h_source}{}\label{_vector2_int_8h_source}\index{src/Vector2Int.h@{src/Vector2Int.h}}
+\mbox{\hyperlink{_vector2_int_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{x}};}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vector2_int_a2ac5bfc7ded6a4c62ce3b1d5e4945839}{y}};}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int_a56b72e4031645f00febf334adce5a77d}{Vector2Int}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int_a56b72e4031645f00febf334adce5a77d}{Vector2Int}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{x}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vector2_int_a2ac5bfc7ded6a4c62ce3b1d5e4945839}{y}});}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{struct_vector2_int_af9b55a021fe82cdee19a5736d0e0478c}{Move}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ direction);}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_a1ff8f0a7dfc5671cde00c238ec1f8132}{Sum}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{vec1}},\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{vec2}});}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vector2_int_a1bd4a637f718f5324530a06eeb6648ae}{Distance}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{vec1}},\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{vec2}});}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int_a2ee6d471baa7a6ba0e70ae11098491cf}{Up}};}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int_a7cac0ab70292eaa33d1aaf634d7c9141}{Down}};}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int_a087472c234c9b548ed191ee0d60d22a1}{Left}};}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int_a9c96b9c5aab40bf6c06f7d82aa87b3c1}{Right}};}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int_a47e1fa2c4d20433493421c8e6b393d55}{Zero}};}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<Vector2Int>\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int_a4f216ccc717da30962930d18f5d7ff60}{Directions}};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_a03816fc993bf82130d2941990f9d7ef6}{operator-\/}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_a03816fc993bf82130d2941990f9d7ef6}{operator-\/}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{other}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_a805e463e26682c870374fe8c4348bd5b}{operator/}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{scalar}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ab08cdb91427892ffa2854e8d09114cdb}{operator+}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{other}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_a805e463e26682c870374fe8c4348bd5b}{operator/}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{other}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_vector2_int_af948d9748afc6d6288e19ffcef7ef8cf}{operator==}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{other}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_vector2_int_a30bceb27193e5742ebbd3bbef61528d0}{operator<}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{other}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_vector2_int_a17576daf4474e5e9c90581dccedfbab0}{ManhattanDistance}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{struct_vector2_int_ad870656d517f78dd1cb577e1ab29d657}{other}})\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ \};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_vector2_int_hash}{Vector2IntHash}}\ \{}
+\DoxyCodeLine{00035\ \ \ \ \ std::size\_t\ \mbox{\hyperlink{struct_vector2_int_hash_a76f74e97ef8299ca9c0d49dfed0b5ba4}{operator()}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\&\ v)\ \textcolor{keyword}{const}\ \textcolor{keyword}{noexcept};}
+\DoxyCodeLine{00036\ \};}
+
+\end{DoxyCode}

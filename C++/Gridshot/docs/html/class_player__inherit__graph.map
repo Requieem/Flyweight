@@ -1,0 +1,13 @@
+<map id="Player" name="Player">
+<area shape="rect" id="Node000001" title=" " alt="" coords="203,1264,435,1392"/>
+<area shape="rect" id="Node000002" href="$class_soldier.html" title=" " alt="" coords="89,1005,321,1216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="269,1228,288,1263,284,1266,265,1230"/>
+<area shape="rect" id="Node000003" href="$class_field_object.html" title=" " alt="" coords="91,296,318,957"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,972,207,1006,202,1006,202,972"/>
+<area shape="rect" id="Node000004" href="$class_life.html" title=" " alt="" coords="5,5,196,248"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,262,138,296,133,297,126,263"/>
+<area shape="rect" id="Node000005" href="$class_damage.html" title=" " alt="" coords="220,58,400,195"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="295,210,277,297,272,296,290,209"/>
+<area shape="rect" id="Node000006" href="$class_score.html" title=" " alt="" coords="345,1031,523,1191"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="388,1205,355,1265,350,1263,383,1202"/>
+</map>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__gridshot_8h" xml:lang="en-US">
+<title>Gridshot.h File Reference</title>
+<indexterm><primary>Gridshot.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;ctime&gt;<?linebreak?>#include &lt;mutex&gt;<?linebreak?>#include &lt;string&gt;<?linebreak?>#include &lt;random&gt;<?linebreak?>#include &lt;thread&gt;<?linebreak?>#include &lt;chrono&gt;<?linebreak?>#include &lt;cstdlib&gt;<?linebreak?>#include &quot;src/Colors.h&quot;<?linebreak?>#include &lt;src/Enemy.h&gt;<?linebreak?>#include &quot;src/Soldier.h&quot;<?linebreak?>#include &quot;src/GameField.h&quot;<?linebreak?>#include &quot;src/Projectile.h&quot;<?linebreak?>#include &quot;src/FieldObject.h&quot;<?linebreak?></programlisting>Include dependency graph for Gridshot.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_gridshot_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="__gridshot_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb">CAVE_COLOR</link>&#160;&#160;&#160;8</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__gridshot_8h_1a6dfbb3c93ff08be4c500fb4953129bc9">Thread</link> = std::thread</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="__gridshot_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb"/><section>
+    <title>CAVE_COLOR</title>
+<indexterm><primary>CAVE_COLOR</primary><secondary>Gridshot.h</secondary></indexterm>
+<indexterm><primary>Gridshot.h</primary><secondary>CAVE_COLOR</secondary></indexterm>
+<para><computeroutput>#define CAVE_COLOR&#160;&#160;&#160;8</computeroutput></para></section>
+</section>
+<section>
+<title>Typedef Documentation</title>
+<anchor xml:id="__gridshot_8h_1a6dfbb3c93ff08be4c500fb4953129bc9"/><section>
+    <title>Thread</title>
+<indexterm><primary>Thread</primary><secondary>Gridshot.h</secondary></indexterm>
+<indexterm><primary>Gridshot.h</primary><secondary>Thread</secondary></indexterm>
+<para><computeroutput>using <link linkend="__gridshot_8h_1a6dfbb3c93ff08be4c500fb4953129bc9">Thread</link> = std::thread</computeroutput></para></section>
+</section>
+</section>

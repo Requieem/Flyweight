@@ -1,0 +1,58 @@
+.TH "Node" 3 "Version 0.0.1" "Gridshot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Node
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Node\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBNode\fP (\fBVector2Int\fP pos, std::shared_ptr< \fBNode\fP > p=nullptr, int g=0, int h=0)"
+.br
+.ti -1c
+.RI "int \fBfCost\fP () const"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBgCost\fP"
+.br
+.ti -1c
+.RI "int \fBhCost\fP"
+.br
+.ti -1c
+.RI "std::shared_ptr< \fBNode\fP > \fBparent\fP"
+.br
+.ti -1c
+.RI "\fBVector2Int\fP \fBposition\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Node::Node (\fBVector2Int\fP pos, std::shared_ptr< \fBNode\fP > p = \fRnullptr\fP, int g = \fR0\fP, int h = \fR0\fP)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Node::fCost () const"
+
+.SH "Member Data Documentation"
+.PP 
+.SS "int Node::gCost"
+
+.SS "int Node::hCost"
+
+.SS "std::shared_ptr<\fBNode\fP> Node::parent"
+
+.SS "\fBVector2Int\fP Node::position"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gridshot from the source code\&.

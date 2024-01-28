@@ -41,9 +41,13 @@ set(SOURCES
 	"src/Treasure.cpp"
 	"src/Item.cpp"
 	"src/Score.cpp"
+	"src/DisplayStrings.cpp"
+	"src/Room.cpp" 
+	"src/Level.cpp"
 	"Gridshot.cpp"
 	"Gridshot.h"
 )
+
 
 # Add source to this project's executable.
 add_executable (Gridshot ${SOURCES} ${PLATFORM_HEADERS})

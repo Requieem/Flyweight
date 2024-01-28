@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_damage" xml:lang="en-US">
+<title>Damage Class Reference</title>
+<indexterm><primary>Damage</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Damage.h&gt;</computeroutput>
+</para>
+Inheritance diagram for Damage:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_damage__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>virtual float <link linkend="_class_damage_1a65491171a4728413062baa0cd9c75c9a">GetDamage</link> () const</para>
+</listitem>
+            <listitem><para><link linkend="_class_damage_1af71969c367b1b42febfb6ccf8c2d7785">Damage</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_damage_1ae3e192f0ccc0808c7bba3be3438ff9b6">Damage</link> (float <link linkend="_class_damage_1aec89e5ca3372eb57c76f44dab68330c4">damage</link>)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Protected Attributes    </title>
+        <itemizedlist>
+            <listitem><para>float <link linkend="_class_damage_1aec89e5ca3372eb57c76f44dab68330c4">damage</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_damage_1af71969c367b1b42febfb6ccf8c2d7785"/><section>
+    <title>Damage()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Damage</primary><secondary>Damage</secondary></indexterm>
+<indexterm><primary>Damage</primary><secondary>Damage</secondary></indexterm>
+<para><computeroutput>Damage::Damage ( )</computeroutput></para></section>
+<anchor xml:id="_class_damage_1ae3e192f0ccc0808c7bba3be3438ff9b6"/><section>
+    <title>Damage()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Damage</primary><secondary>Damage</secondary></indexterm>
+<indexterm><primary>Damage</primary><secondary>Damage</secondary></indexterm>
+<para><computeroutput>Damage::Damage (float damage)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_damage_1a65491171a4728413062baa0cd9c75c9a"/><section>
+    <title>GetDamage()</title>
+<indexterm><primary>GetDamage</primary><secondary>Damage</secondary></indexterm>
+<indexterm><primary>Damage</primary><secondary>GetDamage</secondary></indexterm>
+<para><computeroutput>float Damage::GetDamage ( ) const<computeroutput>[virtual]</computeroutput></computeroutput></para></section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_class_damage_1aec89e5ca3372eb57c76f44dab68330c4"/><section>
+    <title>damage</title>
+<indexterm><primary>damage</primary><secondary>Damage</secondary></indexterm>
+<indexterm><primary>Damage</primary><secondary>damage</secondary></indexterm>
+<para><computeroutput>float Damage::damage = 0<computeroutput>[protected]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="__damage_8h">Damage.h</link>src/<link linkend="__damage_8cpp">Damage.cpp</link></section>
+</section>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d42525e24a55fd596841f3ae6b97e4f6" xml:lang="en-US">
+<title>out/build/windows-base/CMakeFiles/3.27.2-msvc1 Directory Reference</title>
+<indexterm><primary>out/build/windows-base/CMakeFiles/3.27.2-msvc1 Directory Reference</primary></indexterm>
+Directory dependency graph for 3.27.2-msvc1:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_d42525e24a55fd596841f3ae6b97e4f6_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_040d918272b5f7526090499ffcde7b31">CompilerIdC</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_0856990f5d00576b6065a1a0655cd939">CompilerIdCXX</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

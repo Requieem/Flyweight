@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="x86-debug_2_c_make_files_2_show_includes_2main_8c" kind="file" language="C++">
+    <compoundname>main.c</compoundname>
+    <includes refid="x86-debug_2_c_make_files_2_show_includes_2foo_8h" local="yes">foo.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>foo.h</label>
+        <link refid="x86-debug_2_c_make_files_2_show_includes_2foo_8h"/>
+      </node>
+      <node id="1">
+        <label>out/build/x86-debug/CMakeFiles/ShowIncludes/main.c</label>
+        <link refid="x86-debug_2_c_make_files_2_show_includes_2main_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="x86-debug_2_c_make_files_2_show_includes_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="out/build/x86-debug/CMakeFiles/ShowIncludes/main.c" line="2" column="5" bodyfile="out/build/x86-debug/CMakeFiles/ShowIncludes/main.c" bodystart="2" bodyend="2"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="x86-debug_2_c_make_files_2_show_includes_2foo_8h" kindref="compound">foo.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="2" refid="x86-debug_2_c_make_files_2_show_includes_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="windows-base_2_c_make_files_2_show_includes_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>(){}</highlight></codeline>
+    </programlisting>
+    <location file="out/build/x86-debug/CMakeFiles/ShowIncludes/main.c"/>
+  </compounddef>
+</doxygen>

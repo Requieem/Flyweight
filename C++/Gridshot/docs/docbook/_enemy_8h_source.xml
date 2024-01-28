@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enemy_8h_source" xml:lang="en-US">
+<title>Enemy.h</title>
+<indexterm><primary>src/Enemy.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&lt;random&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&lt;chrono&gt;</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__a_star_8h">AStar.h</link>&quot;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__soldier_8h">Soldier.h</link>&quot;</emphasis>
+7 
+8 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_enemy">Enemy</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_soldier">Soldier</link>
+9 {
+10 <emphasis role="keyword">private</emphasis>:
+11 
+12 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;tickRate;
+13 &#32;&#32;&#32;&#32;std::vector&lt;Vector2Int&gt;&#32;directionPath;
+14 &#32;&#32;&#32;&#32;std::shared_ptr&lt;FieldObject&gt;&#32;targetObject;
+15 &#32;&#32;&#32;&#32;std::vector&lt;Vector2Int&gt;::iterator&#32;pathIterator;
+16 &#32;&#32;&#32;&#32;std::chrono::steady_clock::time_point&#32;lastDecisionTime;
+17 &#32;&#32;&#32;&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;RandomDirection()&#32;<emphasis role="keyword">const</emphasis>;
+18 
+19 <emphasis role="keyword">public</emphasis>:
+20 
+21 &#32;&#32;&#32;&#32;<link linkend="_class_enemy_1a68dc3ffaa4301eb59395d7449da3b956">Enemy</link>(<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_field_object_1ab3445464b7bc65c70b212959765d4504">teamColor</link>,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_field_object_1aa182c1f2dbde4353491d10b5b78218cc">speed</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_life_1a5d1154e1c58d1852527cab42294c576c">startingHealth</link>,&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;<link linkend="_class_field_object_1a171a6bf6a57457e18208ebcf8cb02a9c">position</link>,&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;<link linkend="_class_field_object_1a84b942ec7b6ccef85e0f1d8e9c453932">direction</link>,&#32;std::shared_ptr&lt;FieldObject&gt;&#32;targetObject);
+22 &#32;&#32;&#32;&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;<link linkend="_class_enemy_1ad87fa2fc1271434d29e72d313b3413b4">NextDirection</link>()&#32;<emphasis role="keyword">override</emphasis>;
+23 };
+24 
+</programlisting></section>

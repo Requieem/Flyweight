@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_food" kind="class" language="C++" prot="public">
+    <compoundname>Food</compoundname>
+    <basecompoundref refid="class_item" prot="public" virt="non-virtual">Item</basecompoundref>
+    <basecompoundref refid="class_damage" prot="public" virt="non-virtual">Damage</basecompoundref>
+    <includes refid="_food_8h" local="no">Food.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_food_1a406ae843ccc3b63682136cc179b139d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Food::Food</definition>
+        <argsstring>(int healAmount)</argsstring>
+        <name>Food</name>
+        <qualifiedname>Food::Food</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>healAmount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Food.h" line="9" column="1" bodyfile="src/Food.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_food_1ae76b16ccc2e33523c8cfa47bc6fde078" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Food::Color</definition>
+        <argsstring>() const override</argsstring>
+        <name>Color</name>
+        <qualifiedname>Food::Color</qualifiedname>
+        <reimplements refid="class_item_1abc036dad46b82b0d8a509bc357ab724d">Color</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Food.h" line="10" column="5" bodyfile="src/Food.cpp" bodystart="4" bodyend="4"/>
+        <references refid="_colors_8h_1a28d88d882f8dc097928beffc901cc133" compoundref="_colors_8h" startline="3">PLAYER_COLOR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_food_1a1e3ad625f7d73b54ddbeecc784a966f1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Food::DisplayChar</definition>
+        <argsstring>() const override</argsstring>
+        <name>DisplayChar</name>
+        <qualifiedname>Food::DisplayChar</qualifiedname>
+        <reimplements refid="class_item_1aa49a4e103a83601ddf151e15ea7a6cb4">DisplayChar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Food.h" line="11" column="15" bodyfile="src/Food.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_food_1a28ca5cf5e16c556c5d3c4b2dbf835e16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Food::Effect</definition>
+        <argsstring>(std::shared_ptr&lt; Player &gt; player) const override</argsstring>
+        <name>Effect</name>
+        <qualifiedname>Food::Effect</qualifiedname>
+        <reimplements refid="class_item_1a523dddcfeb9e2e779c771e3112fecf75">Effect</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_player" kindref="compound">Player</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Food.h" line="12" column="6" bodyfile="src/Food.cpp" bodystart="7" bodyend="10"/>
+        <references refid="class_damage_1aec89e5ca3372eb57c76f44dab68330c4" compoundref="_damage_8h" startline="6">Damage::damage</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="3">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+      </node>
+      <node id="1">
+        <label>Food</label>
+        <link refid="class_food"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Item</label>
+        <link refid="class_item"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="3">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+      </node>
+      <node id="1">
+        <label>Food</label>
+        <link refid="class_food"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Item</label>
+        <link refid="class_item"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Food.h" line="6" column="1" bodyfile="src/Food.h" bodystart="7" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_food_1ae76b16ccc2e33523c8cfa47bc6fde078" prot="public" virt="virtual"><scope>Food</scope><name>Color</name></member>
+      <member refid="class_damage_1aec89e5ca3372eb57c76f44dab68330c4" prot="protected" virt="non-virtual"><scope>Food</scope><name>damage</name></member>
+      <member refid="class_damage_1af71969c367b1b42febfb6ccf8c2d7785" prot="public" virt="non-virtual"><scope>Food</scope><name>Damage</name></member>
+      <member refid="class_damage_1ae3e192f0ccc0808c7bba3be3438ff9b6" prot="public" virt="non-virtual"><scope>Food</scope><name>Damage</name></member>
+      <member refid="class_food_1a1e3ad625f7d73b54ddbeecc784a966f1" prot="public" virt="virtual"><scope>Food</scope><name>DisplayChar</name></member>
+      <member refid="class_food_1a28ca5cf5e16c556c5d3c4b2dbf835e16" prot="public" virt="virtual"><scope>Food</scope><name>Effect</name></member>
+      <member refid="class_food_1a406ae843ccc3b63682136cc179b139d2" prot="public" virt="non-virtual"><scope>Food</scope><name>Food</name></member>
+      <member refid="class_damage_1a65491171a4728413062baa0cd9c75c9a" prot="public" virt="virtual"><scope>Food</scope><name>GetDamage</name></member>
+      <member refid="class_item_1a297720c02984eab37332ae795d22189d" prot="public" virt="non-virtual"><scope>Food</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

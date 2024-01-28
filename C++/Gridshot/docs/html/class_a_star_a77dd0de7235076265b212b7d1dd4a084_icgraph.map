@@ -1,0 +1,5 @@
+<map id="AStar::DirectionPath" name="AStar::DirectionPath">
+<area shape="rect" id="Node000001" title=" " alt="" coords="216,5,366,34"/>
+<area shape="rect" id="Node000002" href="$class_enemy.html#ad87fa2fc1271434d29e72d313b3413b4" title=" " alt="" coords="5,5,168,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,22,168,22,168,17,201,17"/>
+</map>

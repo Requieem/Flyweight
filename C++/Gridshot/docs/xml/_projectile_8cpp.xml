@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_projectile_8cpp" kind="file" language="C++">
+    <compoundname>Projectile.cpp</compoundname>
+    <includes refid="_projectile_8h" local="yes">Projectile.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>Colors.h</label>
+        <link refid="_colors_8h"/>
+      </node>
+      <node id="10">
+        <label>Damage.h</label>
+        <link refid="_damage_8h"/>
+      </node>
+      <node id="3">
+        <label>FieldObject.h</label>
+        <link refid="_field_object_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Life.h</label>
+        <link refid="_life_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Projectile.cpp</label>
+        <link refid="_projectile_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Projectile.h</label>
+        <link refid="_projectile_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Vector2Int.h</label>
+        <link refid="_vector2_int_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="12">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_projectile_8h" kindref="compound">Projectile.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_projectile_1a91143f881da65935de6fbde4fda5b73c" refkind="member"><highlight class="normal"><ref refid="class_projectile_1a91143f881da65935de6fbde4fda5b73c" kindref="member">Projectile::Projectile</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>teamColor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>damage,<sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref><sp/>position,<sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref><sp/>direction)<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_field_object" kindref="compound">FieldObject</ref>(teamColor,<sp/>speed,<sp/>position,<sp/>direction),<sp/><ref refid="class_damage" kindref="compound">Damage</ref>(damage)<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_projectile_1ad0979cbc097426f338b2edead4c7a04c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1ad0979cbc097426f338b2edead4c7a04c" kindref="member">Projectile::RemoveOnCollision</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="7" refid="class_projectile_1a6006a5d309f6266e1101be1143d5bcb5" refkind="member"><highlight class="normal"><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref><sp/><ref refid="class_projectile_1a6006a5d309f6266e1101be1143d5bcb5" kindref="member">Projectile::NextDirection</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_field_object_1a84b942ec7b6ccef85e0f1d8e9c453932" kindref="member">direction</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="8" refid="class_projectile_1a1e286e572f904e07720a44d7b3ec800a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_projectile_1a1e286e572f904e07720a44d7b3ec800a" kindref="member">Projectile::DisplayChar</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>254;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="src/Projectile.cpp"/>
+  </compounddef>
+</doxygen>

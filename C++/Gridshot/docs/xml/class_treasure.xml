@@ -1,0 +1,134 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_treasure" kind="class" language="C++" prot="public">
+    <compoundname>Treasure</compoundname>
+    <basecompoundref refid="class_item" prot="public" virt="virtual">Item</basecompoundref>
+    <basecompoundref refid="class_score" prot="public" virt="non-virtual">Score</basecompoundref>
+    <includes refid="_treasure_8h" local="no">Treasure.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_treasure_1aa73ffb3096bd6c0ec6df0d2c2836f052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Treasure::Treasure</definition>
+        <argsstring>(int score)</argsstring>
+        <name>Treasure</name>
+        <qualifiedname>Treasure::Treasure</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Treasure.h" line="10" column="1" bodyfile="src/Treasure.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_treasure_1a245f847ad0b38a11e6c29a75daed17a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int Treasure::Color</definition>
+        <argsstring>() const override</argsstring>
+        <name>Color</name>
+        <qualifiedname>Treasure::Color</qualifiedname>
+        <reimplements refid="class_item_1abc036dad46b82b0d8a509bc357ab724d">Color</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Treasure.h" line="11" column="5" bodyfile="src/Treasure.cpp" bodystart="4" bodyend="4"/>
+        <references refid="_colors_8h_1af4d5557c5381bf2ae2afe5b41ec74e95" compoundref="_colors_8h" startline="4">TREASURE_COLOR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_treasure_1aa0b0e5ffdb16ac5027bec2a3bb723def" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char Treasure::DisplayChar</definition>
+        <argsstring>() const override</argsstring>
+        <name>DisplayChar</name>
+        <qualifiedname>Treasure::DisplayChar</qualifiedname>
+        <reimplements refid="class_item_1aa49a4e103a83601ddf151e15ea7a6cb4">DisplayChar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Treasure.h" line="12" column="15" bodyfile="src/Treasure.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_treasure_1a13399f9c3a4abcd4fac7a33da993095a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Treasure::Effect</definition>
+        <argsstring>(std::shared_ptr&lt; Player &gt; player) const override</argsstring>
+        <name>Effect</name>
+        <qualifiedname>Treasure::Effect</qualifiedname>
+        <reimplements refid="class_item_1a523dddcfeb9e2e779c771e3112fecf75">Effect</reimplements>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_player" kindref="compound">Player</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Treasure.h" line="13" column="6" bodyfile="src/Treasure.cpp" bodystart="7" bodyend="10"/>
+        <references refid="class_score_1a950296563c2432c31ce57d126f081f6f" compoundref="_score_8cpp" startline="7" endline="7">Score::ChangeScore</references>
+        <references refid="class_score_1a331b0927105c83ba760954eff6cf9fe9" compoundref="_score_8h" startline="6">Score::score</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Item</label>
+        <link refid="class_item"/>
+      </node>
+      <node id="3">
+        <label>Score</label>
+        <link refid="class_score"/>
+      </node>
+      <node id="1">
+        <label>Treasure</label>
+        <link refid="class_treasure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Item</label>
+        <link refid="class_item"/>
+      </node>
+      <node id="3">
+        <label>Score</label>
+        <link refid="class_score"/>
+      </node>
+      <node id="1">
+        <label>Treasure</label>
+        <link refid="class_treasure"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Treasure.h" line="7" column="1" bodyfile="src/Treasure.h" bodystart="8" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_score_1a950296563c2432c31ce57d126f081f6f" prot="public" virt="non-virtual"><scope>Treasure</scope><name>ChangeScore</name></member>
+      <member refid="class_treasure_1a245f847ad0b38a11e6c29a75daed17a7" prot="public" virt="virtual"><scope>Treasure</scope><name>Color</name></member>
+      <member refid="class_treasure_1aa0b0e5ffdb16ac5027bec2a3bb723def" prot="public" virt="virtual"><scope>Treasure</scope><name>DisplayChar</name></member>
+      <member refid="class_treasure_1a13399f9c3a4abcd4fac7a33da993095a" prot="public" virt="virtual"><scope>Treasure</scope><name>Effect</name></member>
+      <member refid="class_score_1a80ad4d0c9d4e7b889e5a4db7eff55667" prot="public" virt="non-virtual"><scope>Treasure</scope><name>GetScore</name></member>
+      <member refid="class_item_1a297720c02984eab37332ae795d22189d" prot="public" virt="non-virtual"><scope>Treasure</scope><name>Item</name></member>
+      <member refid="class_score_1a331b0927105c83ba760954eff6cf9fe9" prot="protected" virt="non-virtual"><scope>Treasure</scope><name>score</name></member>
+      <member refid="class_score_1a039c99843551e5e4b512ecee99e46617" prot="public" virt="non-virtual"><scope>Treasure</scope><name>Score</name></member>
+      <member refid="class_score_1aeaee14b779108174fe06077d20c48ff0" prot="public" virt="non-virtual"><scope>Treasure</scope><name>Score</name></member>
+      <member refid="class_treasure_1aa73ffb3096bd6c0ec6df0d2c2836f052" prot="public" virt="non-virtual"><scope>Treasure</scope><name>Treasure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -3,7 +3,7 @@
 #include <ctime>
 #include <vector>
 #include <memory>
-#include <cstdlib>
+#include <random>
 
 #include "Vector2Int.h"
 
@@ -31,4 +31,8 @@ public:
 	Vector2Int GetRandomEmptySpace();
 	Vector2Int GetEnemySpace(const Vector2Int fromPosition, const int minDistance);
 	Vector2Int GetRandomDistantEmptySpace(const Vector2Int fromPosition, const int minDistance);
+};
+
+struct CaveHash {
+	std::size_t operator()(const std::shared_ptr<std::vector<std::vector<bool>>>& grid) const noexcept;
 };

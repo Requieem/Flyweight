@@ -1,0 +1,46 @@
+\doxysection{Game\+Field.\+h}
+\hypertarget{_game_field_8h_source}{}\label{_game_field_8h_source}\index{src/GameField.h@{src/GameField.h}}
+\mbox{\hyperlink{_game_field_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_item_8h}{Item.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_food_8h}{Food.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_enemy_8h}{Enemy.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_player_8h}{Player.h}}"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_treasure_8h}{Treasure.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_field_object_8h}{FieldObject.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_cave_generator_8h}{CaveGenerator.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{typedef}\ std::shared\_ptr<std::vector<std::shared\_ptr<FieldObject>>>\ \mbox{\hyperlink{_game_field_8h_a059f0ea8cc55c170a0f017affea465f3}{FieldObjectList}};}
+\DoxyCodeLine{00015\ \textcolor{keyword}{typedef}\ std::shared\_ptr<std::map<Vector2Int,\ std::shared\_ptr<FieldObject>>>\ \mbox{\hyperlink{_game_field_8h_af7714f97d3660e33223e3a8203f09c1e}{ObjectMap}};}
+\DoxyCodeLine{00016\ \textcolor{keyword}{typedef}\ std::shared\_ptr<std::map<Vector2Int,\ std::shared\_ptr<Item>>>\ \mbox{\hyperlink{_game_field_8h_a3b420ca1a26421741fe1635d1f5fb43b}{ItemMap}};}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_field}{GameField}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ size;}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ padding;}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{class_cave_generator}{CaveGenerator}}*\ caveGenerator;}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{_game_field_8h_a059f0ea8cc55c170a0f017affea465f3}{FieldObjectList}}\ fieldObjects;}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{_game_field_8h_a3b420ca1a26421741fe1635d1f5fb43b}{ItemMap}}\ itemMap;}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{_game_field_8h_af7714f97d3660e33223e3a8203f09c1e}{ObjectMap}}\ objectMap;}
+\DoxyCodeLine{00027\ \ \ \ \ std::shared\_ptr<Player>\ player;}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_a7417ea928ae030016e57caa6376a5d90}{Tick}}();}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_field_ad963bd86308288dc9f11c906b294d2ed}{Init}}();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_field_a272fd6987bd0cffcddff9c376881d765}{Draw}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_a44c875aff7df91b6bcf7ac07d7e7bdb7}{IsOutOfBounds}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ position)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_afc308ff0a7d36ee15ade467f885fe449}{MakeFieldMove}}(\textcolor{keyword}{const}\ std::shared\_ptr<FieldObject>\ \textcolor{keywordtype}{object});}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3}{AddFieldObject}}(\textcolor{keyword}{const}\ std::shared\_ptr<FieldObject>\ \textcolor{keywordtype}{object});}
+\DoxyCodeLine{00036\ \ \ \ \ std::shared\_ptr<FieldObject>\ \mbox{\hyperlink{class_game_field_a3571e42c9b4d3babcc7800c9db0f3ca5}{Hit}}(std::shared\_ptr<FieldObject>\ obj,\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ pos)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_ac97fd6f8665f13b94526b9006c5786c7}{CheckHit}}(\textcolor{keyword}{const}\ std::shared\_ptr<FieldObject>\ obj)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_adf6d1d8553d11b33720f0fd7dd79456f}{ReachedPlayer}}(\textcolor{keyword}{const}\ std::shared\_ptr<FieldObject>\ obj)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{class_game_field_ab7c0e031d305f8045ed799ebd076a8aa}{GameField}}(\mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ size,\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ padding,\ std::shared\_ptr<Player>\ player,\ \textcolor{keywordtype}{float}\ fillProbability,\ \textcolor{keywordtype}{int}\ iterations);}
+\DoxyCodeLine{00040\ \};}
+
+\end{DoxyCode}

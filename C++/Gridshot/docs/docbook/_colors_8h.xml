@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__colors_8h" xml:lang="en-US">
+<title>src/Colors.h File Reference</title>
+<indexterm><primary>src/Colors.h</primary></indexterm>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_colors_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="__colors_8h_1a28d88d882f8dc097928beffc901cc133">PLAYER_COLOR</link>&#160;&#160;&#160;COLOR_GREEN</para>
+</listitem>
+            <listitem><para>#define <link linkend="__colors_8h_1af4d5557c5381bf2ae2afe5b41ec74e95">TREASURE_COLOR</link>&#160;&#160;&#160;COLOR_YELLOW</para>
+</listitem>
+            <listitem><para>#define <link linkend="__colors_8h_1a2a603e2e07bda629ce0013579747d9b4">PROJECTILE_COLOR</link>&#160;&#160;&#160;COLOR_CYAN</para>
+</listitem>
+            <listitem><para>#define <link linkend="__colors_8h_1a321e9c7396e25a03df3b6a3cd18f2b6b">ENEMY_COLOR</link>&#160;&#160;&#160;COLOR_RED</para>
+</listitem>
+            <listitem><para>#define <link linkend="__colors_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb">CAVE_COLOR</link>&#160;&#160;&#160;8</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="__colors_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb"/><section>
+    <title>CAVE_COLOR</title>
+<indexterm><primary>CAVE_COLOR</primary><secondary>Colors.h</secondary></indexterm>
+<indexterm><primary>Colors.h</primary><secondary>CAVE_COLOR</secondary></indexterm>
+<para><computeroutput>#define CAVE_COLOR&#160;&#160;&#160;8</computeroutput></para></section>
+<anchor xml:id="__colors_8h_1a321e9c7396e25a03df3b6a3cd18f2b6b"/><section>
+    <title>ENEMY_COLOR</title>
+<indexterm><primary>ENEMY_COLOR</primary><secondary>Colors.h</secondary></indexterm>
+<indexterm><primary>Colors.h</primary><secondary>ENEMY_COLOR</secondary></indexterm>
+<para><computeroutput>#define ENEMY_COLOR&#160;&#160;&#160;COLOR_RED</computeroutput></para></section>
+<anchor xml:id="__colors_8h_1a28d88d882f8dc097928beffc901cc133"/><section>
+    <title>PLAYER_COLOR</title>
+<indexterm><primary>PLAYER_COLOR</primary><secondary>Colors.h</secondary></indexterm>
+<indexterm><primary>Colors.h</primary><secondary>PLAYER_COLOR</secondary></indexterm>
+<para><computeroutput>#define PLAYER_COLOR&#160;&#160;&#160;COLOR_GREEN</computeroutput></para></section>
+<anchor xml:id="__colors_8h_1a2a603e2e07bda629ce0013579747d9b4"/><section>
+    <title>PROJECTILE_COLOR</title>
+<indexterm><primary>PROJECTILE_COLOR</primary><secondary>Colors.h</secondary></indexterm>
+<indexterm><primary>Colors.h</primary><secondary>PROJECTILE_COLOR</secondary></indexterm>
+<para><computeroutput>#define PROJECTILE_COLOR&#160;&#160;&#160;COLOR_CYAN</computeroutput></para></section>
+<anchor xml:id="__colors_8h_1af4d5557c5381bf2ae2afe5b41ec74e95"/><section>
+    <title>TREASURE_COLOR</title>
+<indexterm><primary>TREASURE_COLOR</primary><secondary>Colors.h</secondary></indexterm>
+<indexterm><primary>Colors.h</primary><secondary>TREASURE_COLOR</secondary></indexterm>
+<para><computeroutput>#define TREASURE_COLOR&#160;&#160;&#160;COLOR_YELLOW</computeroutput></para></section>
+</section>
+</section>

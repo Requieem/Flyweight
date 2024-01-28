@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__projectile_8h_source" xml:lang="en-US">
+<title>Projectile.h</title>
+<indexterm><primary>src/Projectile.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__field_object_8h">FieldObject.h</link>&quot;</emphasis>
+3 
+4 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_projectile">Projectile</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_field_object">FieldObject</link>
+5 {
+6 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+7 
+8 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_projectile_1a91143f881da65935de6fbde4fda5b73c">Projectile</link>(<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_field_object_1ab3445464b7bc65c70b212959765d4504">teamColor</link>,&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_field_object_1aa182c1f2dbde4353491d10b5b78218cc">speed</link>,&#32;<emphasis role="keywordtype">float</emphasis>&#32;<link linkend="_class_damage_1aec89e5ca3372eb57c76f44dab68330c4">damage</link>,&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;<link linkend="_class_field_object_1a171a6bf6a57457e18208ebcf8cb02a9c">position</link>,&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;<link linkend="_class_field_object_1a84b942ec7b6ccef85e0f1d8e9c453932">direction</link>);
+9 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+10 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;<link linkend="_class_projectile_1a6006a5d309f6266e1101be1143d5bcb5">NextDirection</link>()&#32;<emphasis role="keyword">override</emphasis>;
+11 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_projectile_1a1e286e572f904e07720a44d7b3ec800a">DisplayChar</link>()&#32;<emphasis role="keyword">const&#32;override</emphasis>;
+12 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_projectile_1ad0979cbc097426f338b2edead4c7a04c">RemoveOnCollision</link>()&#32;<emphasis role="keyword">const&#32;override</emphasis>;
+13 };
+14 
+</programlisting></section>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_97bc1f9b2918e6d969ea20546d5e09ea" xml:lang="en-US">
+<title>out/build/x86-debug/CMakeFiles/3.27.2-msvc1/CompilerIdCXX Directory Reference</title>
+<indexterm><primary>out/build/x86-debug/CMakeFiles/3.27.2-msvc1/CompilerIdCXX Directory Reference</primary></indexterm>
+Directory dependency graph for CompilerIdCXX:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_97bc1f9b2918e6d969ea20546d5e09ea_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Files    </title>
+        <itemizedlist>
+            <listitem><para>file <link linkend="_x86-debug_2_c_make_files_23_827_82-msvc1_2_compiler_id_c_x_x_2_c_make_c_x_x_compiler_id_8cpp">CMakeCXXCompilerId.cpp</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

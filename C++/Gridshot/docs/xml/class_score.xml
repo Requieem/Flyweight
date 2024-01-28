@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_score" kind="class" language="C++" prot="public">
+    <compoundname>Score</compoundname>
+    <derivedcompoundref refid="class_player" prot="public" virt="non-virtual">Player</derivedcompoundref>
+    <derivedcompoundref refid="class_treasure" prot="public" virt="non-virtual">Treasure</derivedcompoundref>
+    <includes refid="_score_8h" local="no">Score.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_score_1a331b0927105c83ba760954eff6cf9fe9" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Score::score</definition>
+        <argsstring></argsstring>
+        <name>score</name>
+        <qualifiedname>Score::score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Score.h" line="6" column="5" bodyfile="src/Score.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_score_1a950296563c2432c31ce57d126f081f6f" compoundref="_score_8cpp" startline="7" endline="7">ChangeScore</referencedby>
+        <referencedby refid="class_treasure_1a13399f9c3a4abcd4fac7a33da993095a" compoundref="_treasure_8cpp" startline="7" endline="10">Treasure::Effect</referencedby>
+        <referencedby refid="class_score_1a80ad4d0c9d4e7b889e5a4db7eff55667" compoundref="_score_8cpp" startline="6" endline="6">GetScore</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_score_1a039c99843551e5e4b512ecee99e46617" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Score::Score</definition>
+        <argsstring>()</argsstring>
+        <name>Score</name>
+        <qualifiedname>Score::Score</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Score.h" line="9" column="1" bodyfile="src/Score.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_score_1aeaee14b779108174fe06077d20c48ff0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Score::Score</definition>
+        <argsstring>(int startingScore)</argsstring>
+        <name>Score</name>
+        <qualifiedname>Score::Score</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>startingScore</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Score.h" line="10" column="1" bodyfile="src/Score.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_score_1a80ad4d0c9d4e7b889e5a4db7eff55667" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Score::GetScore</definition>
+        <argsstring>() const</argsstring>
+        <name>GetScore</name>
+        <qualifiedname>Score::GetScore</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Score.h" line="11" column="5" bodyfile="src/Score.cpp" bodystart="6" bodyend="6"/>
+        <references refid="class_score_1a331b0927105c83ba760954eff6cf9fe9" compoundref="_score_8h" startline="6">score</references>
+      </memberdef>
+      <memberdef kind="function" id="class_score_1a950296563c2432c31ce57d126f081f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Score::ChangeScore</definition>
+        <argsstring>(int amount)</argsstring>
+        <name>ChangeScore</name>
+        <qualifiedname>Score::ChangeScore</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>amount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Score.h" line="12" column="6" bodyfile="src/Score.cpp" bodystart="7" bodyend="7"/>
+        <references refid="class_score_1a331b0927105c83ba760954eff6cf9fe9" compoundref="_score_8h" startline="6">score</references>
+        <referencedby refid="class_treasure_1a13399f9c3a4abcd4fac7a33da993095a" compoundref="_treasure_8cpp" startline="7" endline="10">Treasure::Effect</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Score</label>
+        <link refid="class_score"/>
+      </node>
+      <node id="3">
+        <label>Treasure</label>
+        <link refid="class_treasure"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Score</label>
+        <link refid="class_score"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Score.h" line="3" column="1" bodyfile="src/Score.h" bodystart="4" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_score_1a950296563c2432c31ce57d126f081f6f" prot="public" virt="non-virtual"><scope>Score</scope><name>ChangeScore</name></member>
+      <member refid="class_score_1a80ad4d0c9d4e7b889e5a4db7eff55667" prot="public" virt="non-virtual"><scope>Score</scope><name>GetScore</name></member>
+      <member refid="class_score_1a331b0927105c83ba760954eff6cf9fe9" prot="protected" virt="non-virtual"><scope>Score</scope><name>score</name></member>
+      <member refid="class_score_1a039c99843551e5e4b512ecee99e46617" prot="public" virt="non-virtual"><scope>Score</scope><name>Score</name></member>
+      <member refid="class_score_1aeaee14b779108174fe06077d20c48ff0" prot="public" virt="non-virtual"><scope>Score</scope><name>Score</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_damage" kind="class" language="C++" prot="public">
+    <compoundname>Damage</compoundname>
+    <derivedcompoundref refid="class_field_object" prot="public" virt="virtual">FieldObject</derivedcompoundref>
+    <derivedcompoundref refid="class_food" prot="public" virt="non-virtual">Food</derivedcompoundref>
+    <includes refid="_damage_8h" local="no">Damage.h</includes>
+    <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_damage_1aec89e5ca3372eb57c76f44dab68330c4" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Damage::damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <qualifiedname>Damage::damage</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Damage.h" line="6" column="7" bodyfile="src/Damage.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="class_food_1a28ca5cf5e16c556c5d3c4b2dbf835e16" compoundref="_food_8cpp" startline="7" endline="10">Food::Effect</referencedby>
+        <referencedby refid="class_damage_1a65491171a4728413062baa0cd9c75c9a" compoundref="_damage_8cpp" startline="3" endline="3">GetDamage</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_damage_1a65491171a4728413062baa0cd9c75c9a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>float Damage::GetDamage</definition>
+        <argsstring>() const</argsstring>
+        <name>GetDamage</name>
+        <qualifiedname>Damage::GetDamage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Damage.h" line="8" column="15" bodyfile="src/Damage.cpp" bodystart="3" bodyend="3"/>
+        <references refid="class_damage_1aec89e5ca3372eb57c76f44dab68330c4" compoundref="_damage_8h" startline="6">damage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_damage_1af71969c367b1b42febfb6ccf8c2d7785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Damage::Damage</definition>
+        <argsstring>()</argsstring>
+        <name>Damage</name>
+        <qualifiedname>Damage::Damage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Damage.h" line="10" column="1" bodyfile="src/Damage.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_damage_1ae3e192f0ccc0808c7bba3be3438ff9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Damage::Damage</definition>
+        <argsstring>(float damage)</argsstring>
+        <name>Damage</name>
+        <qualifiedname>Damage::Damage</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Damage.h" line="11" column="1" bodyfile="src/Damage.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+      </node>
+      <node id="5">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>FieldObject</label>
+        <link refid="class_field_object"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Food</label>
+        <link refid="class_food"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Player</label>
+        <link refid="class_player"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Projectile</label>
+        <link refid="class_projectile"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Soldier</label>
+        <link refid="class_soldier"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Damage.h" line="3" column="1" bodyfile="src/Damage.h" bodystart="4" bodyend="12"/>
+    <listofallmembers>
+      <member refid="class_damage_1aec89e5ca3372eb57c76f44dab68330c4" prot="protected" virt="non-virtual"><scope>Damage</scope><name>damage</name></member>
+      <member refid="class_damage_1af71969c367b1b42febfb6ccf8c2d7785" prot="public" virt="non-virtual"><scope>Damage</scope><name>Damage</name></member>
+      <member refid="class_damage_1ae3e192f0ccc0808c7bba3be3438ff9b6" prot="public" virt="non-virtual"><scope>Damage</scope><name>Damage</name></member>
+      <member refid="class_damage_1a65491171a4728413062baa0cd9c75c9a" prot="public" virt="virtual"><scope>Damage</scope><name>GetDamage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

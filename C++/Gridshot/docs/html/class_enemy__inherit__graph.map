@@ -1,0 +1,11 @@
+<map id="Enemy" name="Enemy">
+<area shape="rect" id="Node000001" title=" " alt="" coords="64,1264,345,1451"/>
+<area shape="rect" id="Node000002" href="$class_soldier.html" title=" " alt="" coords="89,1005,321,1216"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="207,1231,207,1264,202,1264,202,1231"/>
+<area shape="rect" id="Node000003" href="$class_field_object.html" title=" " alt="" coords="91,296,318,957"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="207,972,207,1006,202,1006,202,972"/>
+<area shape="rect" id="Node000004" href="$class_life.html" title=" " alt="" coords="5,5,196,248"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="131,262,138,296,133,297,126,263"/>
+<area shape="rect" id="Node000005" href="$class_damage.html" title=" " alt="" coords="220,58,400,195"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="295,210,277,297,272,296,290,209"/>
+</map>

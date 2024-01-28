@@ -1,0 +1,12 @@
+<map id="Vector2Int::Distance" name="Vector2Int::Distance">
+<area shape="rect" id="Node000001" title=" " alt="" coords="757,45,913,74"/>
+<area shape="rect" id="Node000002" href="$class_cave_generator.html#a4692bbcd7cdef1c41c06f00a65f2bdb6" title=" " alt="" coords="503,5,709,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="742,50,709,45,710,40,743,44"/>
+<area shape="rect" id="Node000005" href="$class_enemy.html#ad87fa2fc1271434d29e72d313b3413b4" title=" " alt="" coords="525,76,687,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="743,74,688,82,687,76,742,69"/>
+<area shape="rect" id="Node000003" href="$class_game_field.html#ab7c0e031d305f8045ed799ebd076a8aa" title=" " alt="" coords="5,16,171,44"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="487,31,219,31,171,32,171,26,219,26,487,26"/>
+<area shape="rect" id="Node000004" href="$class_cave_generator.html#a5f9b37566f09c125e37f9ee83012b743" title=" " alt="" coords="219,41,455,70"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="488,43,456,46,455,41,487,38"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="203,44,171,41,172,36,203,39"/>
+</map>

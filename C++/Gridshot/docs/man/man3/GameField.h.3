@@ -1,0 +1,58 @@
+.TH "src/GameField.h" 3 "Version 0.0.1" "Gridshot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+src/GameField.h
+.SH SYNOPSIS
+.br
+.PP
+\fR#include <random>\fP
+.br
+\fR#include <stdexcept>\fP
+.br
+\fR#include 'Item\&.h'\fP
+.br
+\fR#include 'Food\&.h'\fP
+.br
+\fR#include 'Enemy\&.h'\fP
+.br
+\fR#include 'Player\&.h'\fP
+.br
+\fR#include 'Treasure\&.h'\fP
+.br
+\fR#include 'FieldObject\&.h'\fP
+.br
+\fR#include 'CaveGenerator\&.h'\fP
+.br
+
+.SS "Classes"
+
+.in +1c
+.ti -1c
+.RI "class \fBGameField\fP"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef std::shared_ptr< std::vector< std::shared_ptr< \fBFieldObject\fP > > > \fBFieldObjectList\fP"
+.br
+.ti -1c
+.RI "typedef std::shared_ptr< std::map< \fBVector2Int\fP, std::shared_ptr< \fBFieldObject\fP > > > \fBObjectMap\fP"
+.br
+.ti -1c
+.RI "typedef std::shared_ptr< std::map< \fBVector2Int\fP, std::shared_ptr< \fBItem\fP > > > \fBItemMap\fP"
+.br
+.in -1c
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef std::shared_ptr<std::vector<std::shared_ptr<\fBFieldObject\fP> > > \fBFieldObjectList\fP"
+
+.SS "typedef std::shared_ptr<std::map<\fBVector2Int\fP, std::shared_ptr<\fBItem\fP> > > \fBItemMap\fP"
+
+.SS "typedef std::shared_ptr<std::map<\fBVector2Int\fP, std::shared_ptr<\fBFieldObject\fP> > > \fBObjectMap\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gridshot from the source code\&.

@@ -1,0 +1,62 @@
+.TH "CaveGenerator" 3 "Version 0.0.1" "Gridshot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CaveGenerator
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <CaveGenerator\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBCaveGenerator\fP (\fBVector2Int\fP size, float fillProbability)"
+.br
+.ti -1c
+.RI "void \fBGenerateCave\fP (const int iterations, const \fBVector2Int\fP *size, const float *fillProbability)"
+.br
+.ti -1c
+.RI "std::shared_ptr< std::vector< std::vector< bool > > > \fBGetCave\fP () const"
+.br
+.ti -1c
+.RI "\fBVector2Int\fP \fBGetSize\fP () const"
+.br
+.ti -1c
+.RI "int \fBGetEmptySpaces\fP () const"
+.br
+.ti -1c
+.RI "\fBVector2Int\fP \fBGetRandomEmptySpace\fP ()"
+.br
+.ti -1c
+.RI "\fBVector2Int\fP \fBGetEnemySpace\fP (const \fBVector2Int\fP fromPosition, const int minDistance)"
+.br
+.ti -1c
+.RI "\fBVector2Int\fP \fBGetRandomDistantEmptySpace\fP (const \fBVector2Int\fP fromPosition, const int minDistance)"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "CaveGenerator::CaveGenerator (\fBVector2Int\fP size, float fillProbability)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void CaveGenerator::GenerateCave (const int iterations, const \fBVector2Int\fP * size, const float * fillProbability)"
+
+.SS "std::shared_ptr< std::vector< std::vector< bool > > > CaveGenerator::GetCave () const"
+
+.SS "int CaveGenerator::GetEmptySpaces () const"
+
+.SS "\fBVector2Int\fP CaveGenerator::GetEnemySpace (const \fBVector2Int\fP fromPosition, const int minDistance)"
+
+.SS "\fBVector2Int\fP CaveGenerator::GetRandomDistantEmptySpace (const \fBVector2Int\fP fromPosition, const int minDistance)"
+
+.SS "\fBVector2Int\fP CaveGenerator::GetRandomEmptySpace ()"
+
+.SS "\fBVector2Int\fP CaveGenerator::GetSize () const"
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gridshot from the source code\&.

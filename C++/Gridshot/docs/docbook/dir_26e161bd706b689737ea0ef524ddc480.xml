@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_26e161bd706b689737ea0ef524ddc480" xml:lang="en-US">
+<title>out/build Directory Reference</title>
+<indexterm><primary>out/build Directory Reference</primary></indexterm>
+Directory dependency graph for build:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_26e161bd706b689737ea0ef524ddc480_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_9f3bc0dc4109dd9063f9e4f80315b620">linux-debug</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_9b04a2571c9eff7929453c0c492464b3">windows-base</link></para>
+</listitem>
+            <listitem><para>directory <link linkend="_dir_7e3f5df11b93e131a5f86af26baa9ae2">x86-debug</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_a_star" xml:lang="en-US">
+<title>AStar Class Reference</title>
+<indexterm><primary>AStar</primary></indexterm>
+<para>
+<computeroutput>#include &lt;AStar.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>static bool <link linkend="_class_a_star_1a12a10e1a4ab9f4de05d26ba189223da1">IsPositionValid</link> (const <link linkend="_struct_vector2_int">Vector2Int</link> position, const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; grid, const <link linkend="_struct_vector2_int">Vector2Int</link> start, const <link linkend="_struct_vector2_int">Vector2Int</link> goal)</para>
+</listitem>
+            <listitem><para>static std::vector&lt; <link linkend="_struct_vector2_int">Vector2Int</link> &gt; <link linkend="_class_a_star_1a77dd0de7235076265b212b7d1dd4a084">DirectionPath</link> (const <link linkend="_struct_vector2_int">Vector2Int</link> start, const <link linkend="_struct_vector2_int">Vector2Int</link> goal, const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; grid)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_a_star_1a77dd0de7235076265b212b7d1dd4a084"/><section>
+    <title>DirectionPath()</title>
+<indexterm><primary>DirectionPath</primary><secondary>AStar</secondary></indexterm>
+<indexterm><primary>AStar</primary><secondary>DirectionPath</secondary></indexterm>
+<para><computeroutput>std::vector&lt; <link linkend="_struct_vector2_int">Vector2Int</link> &gt; AStar::DirectionPath (const <link linkend="_struct_vector2_int">Vector2Int</link> start, const <link linkend="_struct_vector2_int">Vector2Int</link> goal, const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; grid)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_a_star_a77dd0de7235076265b212b7d1dd4a084_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_a_star_a77dd0de7235076265b212b7d1dd4a084_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_a_star_1a12a10e1a4ab9f4de05d26ba189223da1"/><section>
+    <title>IsPositionValid()</title>
+<indexterm><primary>IsPositionValid</primary><secondary>AStar</secondary></indexterm>
+<indexterm><primary>AStar</primary><secondary>IsPositionValid</secondary></indexterm>
+<para><computeroutput>bool AStar::IsPositionValid (const <link linkend="_struct_vector2_int">Vector2Int</link> position, const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; grid, const <link linkend="_struct_vector2_int">Vector2Int</link> start, const <link linkend="_struct_vector2_int">Vector2Int</link> goal)<computeroutput>[static]</computeroutput></computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_a_star_a12a10e1a4ab9f4de05d26ba189223da1_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="__a_star_8h">AStar.h</link>src/<link linkend="__a_star_8cpp">AStar.cpp</link></section>
+</section>

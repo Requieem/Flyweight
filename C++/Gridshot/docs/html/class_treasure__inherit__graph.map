@@ -1,0 +1,7 @@
+<map id="Treasure" name="Treasure">
+<area shape="rect" id="Node000001" title=" " alt="" coords="103,268,299,464"/>
+<area shape="rect" id="Node000002" href="$class_item.html" title=" " alt="" coords="5,5,192,220"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="150,233,164,267,159,269,145,235"/>
+<area shape="rect" id="Node000003" href="$class_score.html" title=" " alt="" coords="216,33,395,193"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="269,207,244,269,239,267,265,205"/>
+</map>

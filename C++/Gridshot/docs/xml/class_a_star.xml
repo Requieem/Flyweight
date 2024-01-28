@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_a_star" kind="class" language="C++" prot="public">
+    <compoundname>AStar</compoundname>
+    <includes refid="_a_star_8h" local="no">AStar.h</includes>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_a_star_1a12a10e1a4ab9f4de05d26ba189223da1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AStar::IsPositionValid</definition>
+        <argsstring>(const Vector2Int position, const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; grid, const Vector2Int start, const Vector2Int goal)</argsstring>
+        <name>IsPositionValid</name>
+        <qualifiedname>AStar::IsPositionValid</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt;</type>
+          <declname>grid</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>goal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/AStar.h" line="17" column="13" bodyfile="src/AStar.cpp" bodystart="3" bodyend="7"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">Vector2Int::x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">Vector2Int::y</references>
+        <referencedby refid="class_a_star_1a77dd0de7235076265b212b7d1dd4a084" compoundref="_a_star_8cpp" startline="9" endline="77">DirectionPath</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_a_star_1a77dd0de7235076265b212b7d1dd4a084" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> &gt;</type>
+        <definition>std::vector&lt; Vector2Int &gt; AStar::DirectionPath</definition>
+        <argsstring>(const Vector2Int start, const Vector2Int goal, const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; grid)</argsstring>
+        <name>DirectionPath</name>
+        <qualifiedname>AStar::DirectionPath</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>goal</declname>
+        </param>
+        <param>
+          <type>const std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt;</type>
+          <declname>grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/AStar.h" line="18" column="20" bodyfile="src/AStar.cpp" bodystart="9" bodyend="77"/>
+        <references refid="class_a_star_1a12a10e1a4ab9f4de05d26ba189223da1" compoundref="_a_star_8cpp" startline="3" endline="7">IsPositionValid</references>
+        <references refid="struct_vector2_int_1a17576daf4474e5e9c90581dccedfbab0" compoundref="_vector2_int_8cpp" startline="32" endline="35">Vector2Int::ManhattanDistance</references>
+        <references refid="struct_vector2_int_1a9c96b9c5aab40bf6c06f7d82aa87b3c1" compoundref="_vector2_int_8h" startline="9" endline="9">Vector2Int::Right</references>
+        <references refid="struct_vector2_int_1a2ee6d471baa7a6ba0e70ae11098491cf" compoundref="_vector2_int_8h" startline="6" endline="6">Vector2Int::Up</references>
+        <referencedby refid="class_enemy_1ad87fa2fc1271434d29e72d313b3413b4" compoundref="_enemy_8cpp" startline="6" endline="46">Enemy::NextDirection</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>AStar</label>
+        <link refid="class_a_star"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/AStar.h" line="14" column="1" bodyfile="src/AStar.h" bodystart="15" bodyend="19"/>
+    <listofallmembers>
+      <member refid="class_a_star_1a77dd0de7235076265b212b7d1dd4a084" prot="public" virt="non-virtual"><scope>AStar</scope><name>DirectionPath</name></member>
+      <member refid="class_a_star_1a12a10e1a4ab9f4de05d26ba189223da1" prot="public" virt="non-virtual"><scope>AStar</scope><name>IsPositionValid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

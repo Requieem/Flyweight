@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__node_8h" xml:lang="en-US">
+<title>src/Node.h File Reference</title>
+<indexterm><primary>src/Node.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;memory&gt;<?linebreak?>#include &quot;Vector2Int.h&quot;<?linebreak?></programlisting>Include dependency graph for Node.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_node_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_node_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_struct_node">Node</link></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_compare_node">CompareNode</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

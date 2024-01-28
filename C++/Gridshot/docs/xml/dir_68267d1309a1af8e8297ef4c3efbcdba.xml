@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>src</compoundname>
+    <innerfile refid="_a_star_8cpp">AStar.cpp</innerfile>
+    <innerfile refid="_a_star_8h">AStar.h</innerfile>
+    <innerfile refid="_cave_generator_8cpp">CaveGenerator.cpp</innerfile>
+    <innerfile refid="_cave_generator_8h">CaveGenerator.h</innerfile>
+    <innerfile refid="_colors_8h">Colors.h</innerfile>
+    <innerfile refid="_damage_8cpp">Damage.cpp</innerfile>
+    <innerfile refid="_damage_8h">Damage.h</innerfile>
+    <innerfile refid="_enemy_8cpp">Enemy.cpp</innerfile>
+    <innerfile refid="_enemy_8h">Enemy.h</innerfile>
+    <innerfile refid="_field_object_8cpp">FieldObject.cpp</innerfile>
+    <innerfile refid="_field_object_8h">FieldObject.h</innerfile>
+    <innerfile refid="_food_8cpp">Food.cpp</innerfile>
+    <innerfile refid="_food_8h">Food.h</innerfile>
+    <innerfile refid="_game_field_8cpp">GameField.cpp</innerfile>
+    <innerfile refid="_game_field_8h">GameField.h</innerfile>
+    <innerfile refid="_item_8cpp">Item.cpp</innerfile>
+    <innerfile refid="_item_8h">Item.h</innerfile>
+    <innerfile refid="_life_8cpp">Life.cpp</innerfile>
+    <innerfile refid="_life_8h">Life.h</innerfile>
+    <innerfile refid="_node_8cpp">Node.cpp</innerfile>
+    <innerfile refid="_node_8h">Node.h</innerfile>
+    <innerfile refid="_player_8cpp">Player.cpp</innerfile>
+    <innerfile refid="_player_8h">Player.h</innerfile>
+    <innerfile refid="_projectile_8cpp">Projectile.cpp</innerfile>
+    <innerfile refid="_projectile_8h">Projectile.h</innerfile>
+    <innerfile refid="_score_8cpp">Score.cpp</innerfile>
+    <innerfile refid="_score_8h">Score.h</innerfile>
+    <innerfile refid="_soldier_8cpp">Soldier.cpp</innerfile>
+    <innerfile refid="_soldier_8h">Soldier.h</innerfile>
+    <innerfile refid="_treasure_8cpp">Treasure.cpp</innerfile>
+    <innerfile refid="_treasure_8h">Treasure.h</innerfile>
+    <innerfile refid="_vector2_int_8cpp">Vector2Int.cpp</innerfile>
+    <innerfile refid="_vector2_int_8h">Vector2Int.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_item" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>Item</compoundname>
+    <derivedcompoundref refid="class_food" prot="public" virt="non-virtual">Food</derivedcompoundref>
+    <derivedcompoundref refid="class_treasure" prot="public" virt="virtual">Treasure</derivedcompoundref>
+    <includes refid="_item_8h" local="no">Item.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_item_1a297720c02984eab37332ae795d22189d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Item::Item</definition>
+        <argsstring>()</argsstring>
+        <name>Item</name>
+        <qualifiedname>Item::Item</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Item.h" line="9" column="1" bodyfile="src/Item.cpp" bodystart="3" bodyend="3"/>
+      </memberdef>
+      <memberdef kind="function" id="class_item_1abc036dad46b82b0d8a509bc357ab724d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int Item::Color</definition>
+        <argsstring>() const =0</argsstring>
+        <name>Color</name>
+        <qualifiedname>Item::Color</qualifiedname>
+        <reimplementedby refid="class_food_1ae76b16ccc2e33523c8cfa47bc6fde078">Color</reimplementedby>
+        <reimplementedby refid="class_treasure_1a245f847ad0b38a11e6c29a75daed17a7">Color</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Item.h" line="10" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_item_1aa49a4e103a83601ddf151e15ea7a6cb4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>unsigned char</type>
+        <definition>virtual unsigned char Item::DisplayChar</definition>
+        <argsstring>() const =0</argsstring>
+        <name>DisplayChar</name>
+        <qualifiedname>Item::DisplayChar</qualifiedname>
+        <reimplementedby refid="class_food_1a1e3ad625f7d73b54ddbeecc784a966f1">DisplayChar</reimplementedby>
+        <reimplementedby refid="class_treasure_1aa0b0e5ffdb16ac5027bec2a3bb723def">DisplayChar</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Item.h" line="11" column="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_item_1a523dddcfeb9e2e779c771e3112fecf75" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Item::Effect</definition>
+        <argsstring>(std::shared_ptr&lt; Player &gt; player) const =0</argsstring>
+        <name>Effect</name>
+        <qualifiedname>Item::Effect</qualifiedname>
+        <reimplementedby refid="class_food_1a28ca5cf5e16c556c5d3c4b2dbf835e16">Effect</reimplementedby>
+        <reimplementedby refid="class_treasure_1a13399f9c3a4abcd4fac7a33da993095a">Effect</reimplementedby>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_player" kindref="compound">Player</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Item.h" line="12" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Food</label>
+        <link refid="class_food"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Item</label>
+        <link refid="class_item"/>
+      </node>
+      <node id="3">
+        <label>Treasure</label>
+        <link refid="class_treasure"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Item</label>
+        <link refid="class_item"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Item.h" line="6" column="1" bodyfile="src/Item.h" bodystart="7" bodyend="13"/>
+    <listofallmembers>
+      <member refid="class_item_1abc036dad46b82b0d8a509bc357ab724d" prot="public" virt="pure-virtual"><scope>Item</scope><name>Color</name></member>
+      <member refid="class_item_1aa49a4e103a83601ddf151e15ea7a6cb4" prot="public" virt="pure-virtual"><scope>Item</scope><name>DisplayChar</name></member>
+      <member refid="class_item_1a523dddcfeb9e2e779c771e3112fecf75" prot="public" virt="pure-virtual"><scope>Item</scope><name>Effect</name></member>
+      <member refid="class_item_1a297720c02984eab37332ae795d22189d" prot="public" virt="non-virtual"><scope>Item</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

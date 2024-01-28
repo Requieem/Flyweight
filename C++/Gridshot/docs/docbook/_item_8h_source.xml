@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__item_8h_source" xml:lang="en-US">
+<title>Item.h</title>
+<indexterm><primary>src/Item.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+4 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__player_8h">Player.h</link>&quot;</emphasis>
+5 
+6 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_item">Item</link>
+7 {
+8 <emphasis role="keyword">public</emphasis>:
+9 &#32;&#32;&#32;&#32;<link linkend="_class_item_1a297720c02984eab37332ae795d22189d">Item</link>();
+10 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_item_1abc036dad46b82b0d8a509bc357ab724d">Color</link>()&#32;<emphasis role="keyword">const</emphasis>&#32;=&#32;0;
+11 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">unsigned</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>&#32;<link linkend="_class_item_1aa49a4e103a83601ddf151e15ea7a6cb4">DisplayChar</link>()&#32;<emphasis role="keyword">const</emphasis>&#32;=&#32;0;
+12 &#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_item_1a523dddcfeb9e2e779c771e3112fecf75">Effect</link>(std::shared_ptr&lt;Player&gt;&#32;player)&#32;<emphasis role="keyword">const</emphasis>&#32;=&#32;0;
+13 };
+</programlisting></section>

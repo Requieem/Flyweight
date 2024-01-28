@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_soldier_8cpp" kind="file" language="C++">
+    <compoundname>Soldier.cpp</compoundname>
+    <includes refid="_soldier_8h" local="yes">Soldier.h</includes>
+    <incdepgraph>
+      <node id="9">
+        <label>Colors.h</label>
+        <link refid="_colors_8h"/>
+      </node>
+      <node id="10">
+        <label>Damage.h</label>
+        <link refid="_damage_8h"/>
+      </node>
+      <node id="3">
+        <label>FieldObject.h</label>
+        <link refid="_field_object_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>Life.h</label>
+        <link refid="_life_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>src/Soldier.cpp</label>
+        <link refid="_soldier_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Soldier.h</label>
+        <link refid="_soldier_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Vector2Int.h</label>
+        <link refid="_vector2_int_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>algorithm</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="12">
+        <label>stdexcept</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_soldier_8h" kindref="compound">Soldier.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="class_soldier_1aec59e78774cd3414eb37a5a52581db85" refkind="member"><highlight class="normal"><ref refid="class_soldier_1aec59e78774cd3414eb37a5a52581db85" kindref="member">Soldier::Soldier</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>teamColor,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>speed,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>startingHealth,<sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref><sp/>position,<sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref><sp/>direction)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>:<sp/><ref refid="class_field_object" kindref="compound">FieldObject</ref>(teamColor,<sp/>speed,<sp/>position,<sp/>direction),<sp/><ref refid="class_life" kindref="compound">Life</ref>(startingHealth)<sp/>{}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_soldier_1a201902d239f204af743f5e803725d7eb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_soldier_1a201902d239f204af743f5e803725d7eb" kindref="member">Soldier::DisplayChar</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>219;<sp/>}</highlight></codeline>
+<codeline lineno="7" refid="class_soldier_1af8972bd7ba91e2e6ef78b10984371b38" refkind="member"><highlight class="normal"><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref><sp/><ref refid="class_soldier_1af8972bd7ba91e2e6ef78b10984371b38" kindref="member">Soldier::NextDirection</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_field_object_1a84b942ec7b6ccef85e0f1d8e9c453932" kindref="member">direction</ref>;<sp/>}</highlight></codeline>
+    </programlisting>
+    <location file="src/Soldier.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_food" xml:lang="en-US">
+<title>Food Class Reference</title>
+<indexterm><primary>Food</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Food.h&gt;</computeroutput>
+</para>
+Inheritance diagram for Food:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_food__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_food_1a406ae843ccc3b63682136cc179b139d2">Food</link> (int healAmount)</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_food_1ae76b16ccc2e33523c8cfa47bc6fde078">Color</link> () const override</para>
+</listitem>
+            <listitem><para>unsigned char <link linkend="_class_food_1a1e3ad625f7d73b54ddbeecc784a966f1">DisplayChar</link> () const override</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_food_1a28ca5cf5e16c556c5d3c4b2dbf835e16">Effect</link> (std::shared_ptr&lt; <link linkend="_class_player">Player</link> &gt; player) const override</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+Public Member Functions inherited from <link linkend="_class_item">Item</link>        <itemizedlist>
+            <listitem><para><link linkend="_class_item_1a297720c02984eab37332ae795d22189d">Item</link> ()</para>
+</listitem>
+        </itemizedlist>
+Public Member Functions inherited from <link linkend="_class_damage">Damage</link>        <itemizedlist>
+            <listitem><para>virtual float <link linkend="_class_damage_1a65491171a4728413062baa0cd9c75c9a">GetDamage</link> () const</para>
+</listitem>
+            <listitem><para><link linkend="_class_damage_1af71969c367b1b42febfb6ccf8c2d7785">Damage</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_class_damage_1ae3e192f0ccc0808c7bba3be3438ff9b6">Damage</link> (float <link linkend="_class_damage_1aec89e5ca3372eb57c76f44dab68330c4">damage</link>)</para>
+</listitem>
+        </itemizedlist>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+Protected Attributes inherited from <link linkend="_class_damage">Damage</link>        <itemizedlist>
+            <listitem><para>float <link linkend="_class_damage_1aec89e5ca3372eb57c76f44dab68330c4">damage</link> = 0</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_food_1a406ae843ccc3b63682136cc179b139d2"/><section>
+    <title>Food()</title>
+<indexterm><primary>Food</primary><secondary>Food</secondary></indexterm>
+<indexterm><primary>Food</primary><secondary>Food</secondary></indexterm>
+<para><computeroutput>Food::Food (int healAmount)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_food_1ae76b16ccc2e33523c8cfa47bc6fde078"/><section>
+    <title>Color()</title>
+<indexterm><primary>Color</primary><secondary>Food</secondary></indexterm>
+<indexterm><primary>Food</primary><secondary>Color</secondary></indexterm>
+<para><computeroutput>int Food::Color ( ) const<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_item_1abc036dad46b82b0d8a509bc357ab724d">Item</link>.</para>
+</section>
+<anchor xml:id="_class_food_1a1e3ad625f7d73b54ddbeecc784a966f1"/><section>
+    <title>DisplayChar()</title>
+<indexterm><primary>DisplayChar</primary><secondary>Food</secondary></indexterm>
+<indexterm><primary>Food</primary><secondary>DisplayChar</secondary></indexterm>
+<para><computeroutput>unsigned char Food::DisplayChar ( ) const<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_item_1aa49a4e103a83601ddf151e15ea7a6cb4">Item</link>.</para>
+</section>
+<anchor xml:id="_class_food_1a28ca5cf5e16c556c5d3c4b2dbf835e16"/><section>
+    <title>Effect()</title>
+<indexterm><primary>Effect</primary><secondary>Food</secondary></indexterm>
+<indexterm><primary>Food</primary><secondary>Effect</secondary></indexterm>
+<para><computeroutput>void Food::Effect (std::shared_ptr&lt; <link linkend="_class_player">Player</link> &gt; player) const<computeroutput>[override]</computeroutput>, <computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+Implements <link linkend="_class_item_1a523dddcfeb9e2e779c771e3112fecf75">Item</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="__food_8h">Food.h</link>src/<link linkend="__food_8cpp">Food.cpp</link></section>
+</section>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_9f3bc0dc4109dd9063f9e4f80315b620" xml:lang="en-US">
+<title>out/build/linux-debug Directory Reference</title>
+<indexterm><primary>out/build/linux-debug Directory Reference</primary></indexterm>
+Directory dependency graph for linux-debug:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="dir_9f3bc0dc4109dd9063f9e4f80315b620_dep.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Directories    </title>
+        <itemizedlist>
+            <listitem><para>directory <link linkend="_dir_324886645bed04198cc287548c116ae1">CMakeFiles</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

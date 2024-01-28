@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__score_8cpp" xml:lang="en-US">
+<title>src/Score.cpp File Reference</title>
+<indexterm><primary>src/Score.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;Score.h&quot;<?linebreak?></programlisting>Include dependency graph for Score.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_score_8cpp__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>

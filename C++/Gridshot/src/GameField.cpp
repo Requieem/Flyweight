@@ -1,81 +1,18 @@
 ﻿#include "GameField.h"
 
-GameField::GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Player> player, float fillProbability, int iterations) : size(size), padding(padding), player(player)
+GameField::GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Player> player) : size(size), padding(padding), player(player)
 {
-	this->caveGenerator = new CaveGenerator(size, fillProbability);
-	this->itemMap = std::make_shared<std::map<Vector2Int, std::shared_ptr<Item>>>();
-	this->fieldObjects = std::make_shared<std::vector<std::shared_ptr<FieldObject>>>();
-	this->objectMap = std::make_shared <std::map<Vector2Int, std::shared_ptr<FieldObject>>>();
-
-	caveGenerator->GenerateCave(iterations, nullptr, nullptr);
-
-	Vector2Int playerStartingPos = caveGenerator->GetRandomEmptySpace();
-	player->SetPosition(playerStartingPos);
-	(*objectMap)[playerStartingPos] = player;
-	fieldObjects->push_back(player);
-
-	const int minEnemies = 10;
-	const int maxEnemies = 25;
-	const int minTreasures = 5;
-	const int maxTreasures = 15;
-	const int minHearts = 2;
-	const int maxHearts = 5;
-
-	std::random_device rd;
-	std::mt19937 heartGen(rd());
-	std::mt19937 enemyGen(rd());
-	std::mt19937 treasureGen(rd());
-
-	std::uniform_int_distribution<int> enemyDistribution(minEnemies, maxEnemies);
-	int numEnemies = enemyDistribution(enemyGen);
-
-	std::uniform_int_distribution<int> treasureDistribution(minTreasures, maxTreasures);
-	int numTreasures = treasureDistribution(treasureGen);
-
-	std::uniform_int_distribution<int> heartDistribution(minHearts, maxHearts);
-	int numHearts = heartDistribution(heartGen);
-
-	for (int i = 0; i < numTreasures; ++i) {
-		if (caveGenerator->GetEmptySpaces() == 0) break;
-		Vector2Int randomEmptySpace = caveGenerator->GetRandomDistantEmptySpace(playerStartingPos, 3);
-		if (randomEmptySpace == Vector2Int::Zero) break;
-
-		std::shared_ptr<Treasure> treasure = std::make_shared<Treasure>(1);
-		(*itemMap)[randomEmptySpace] = treasure;
-	}
-
-	for (int i = 0; i < numHearts; ++i) {
-		if (caveGenerator->GetEmptySpaces() == 0) break;
-		Vector2Int randomEmptySpace = caveGenerator->GetRandomDistantEmptySpace(playerStartingPos, 3);
-		if (randomEmptySpace == Vector2Int::Zero) break;
-
-		std::shared_ptr<Food> treasure = std::make_shared<Food>(1);
-		(*itemMap)[randomEmptySpace] = treasure;
-	}
-
-	for (int i = 0; i < numEnemies; ++i) {
-		if (caveGenerator->GetEmptySpaces() == 0) break;
-		Vector2Int randomEmptySpace = caveGenerator->GetEnemySpace(playerStartingPos, 10);
-		if (randomEmptySpace == Vector2Int::Zero) break;
-
-		std::shared_ptr<Enemy> enemy = std::make_shared<Enemy>(ENEMY_COLOR, 1, 10, Vector2Int(0, 0), Vector2Int(0, 0), player);
-		fieldObjects->push_back(enemy);
-		enemy->SetPosition(randomEmptySpace);
-		(*objectMap)[enemy->Position()] = enemy;
-	}
-
-}
-
-void GameField::Init()
-{
-	for (const std::shared_ptr<FieldObject> current : *fieldObjects)
-	{
-		current->SetCave(caveGenerator->GetCave());
-	}
+	level = std::make_unique<Level>(Vector2Int(5,5), size);
+	room = level->CurrentRoom();
+	room->Activate(player, nullptr);
 }
 
 bool GameField::Tick()
 {
+	auto fieldObjects = room->fieldObjects;
+	auto objectMap = room->objectMap;
+	auto caveGenerator = room->caveGenerator;
+
 	for (auto it = fieldObjects->begin(); it != fieldObjects->end();) {
 		const std::shared_ptr<FieldObject>& obj = *it;
 
@@ -86,6 +23,7 @@ bool GameField::Tick()
 
 		if (reachedPlayer)
 		{
+			flash();
 			player->ChangeHealth(-obj->GetDamage());
 		}
 
@@ -107,6 +45,11 @@ void GameField::Draw() const {
 	clear();
 	curs_set(0);
 	attron(COLOR_PAIR(1));
+
+	auto itemMap = room->itemMap;
+	auto objectMap = room->objectMap;
+	auto fieldObjects = room->fieldObjects;
+	auto caveGenerator = room->caveGenerator;
 
 	std::shared_ptr<std::vector<std::vector<bool>>> cave = caveGenerator->GetCave();
 	std::shared_ptr<std::vector<std::vector<bool>>> field = caveGenerator->GetCave();
@@ -146,7 +89,33 @@ void GameField::Draw() const {
 	attroff(COLOR_PAIR(1));
 
 	std::map<std::pair<int, int>, int> colorMap;
-	int nextPair = 5;
+	int nextPair = 6;
+
+	for (const auto& [pos, item] : *itemMap) {
+		int color = item->Color();
+		unsigned char objectChar = item->DisplayChar();
+
+		std::pair<int, int> colorCombination = { color, CAVE_COLOR };
+
+		if (colorMap.find(colorCombination) == colorMap.end()) {
+			init_pair(nextPair, color, CAVE_COLOR);
+			colorMap[colorCombination] = nextPair;
+			nextPair++;
+		}
+
+		int n = colorMap[colorCombination];
+		attron(COLOR_PAIR(n));
+
+		// Calculate grid position
+		int gridX = pos.x;
+		int gridY = pos.y;
+
+		// Print the character
+		mvprintw(gridY, gridX, "%c", objectChar);
+
+		// Turn off color
+		attroff(COLOR_PAIR(n));
+	}
 
 	// Drawing logic...
 	for (const auto& obj : *fieldObjects) {
@@ -177,36 +146,13 @@ void GameField::Draw() const {
 		attroff(COLOR_PAIR(n));
 	}
 
-	for (const auto& [pos, item] : *itemMap) {
-		int color = item->Color();
-		unsigned char objectChar = item->DisplayChar();
-
-		std::pair<int, int> colorCombination = { color, CAVE_COLOR };
-
-		if (colorMap.find(colorCombination) == colorMap.end()) {
-			init_pair(nextPair, color, CAVE_COLOR);
-			colorMap[colorCombination] = nextPair;
-			nextPair++;
-		}
-
-		int n = colorMap[colorCombination];
-		attron(COLOR_PAIR(n));
-
-		// Calculate grid position
-		int gridX = pos.x;
-		int gridY = pos.y;
-
-		// Print the character
-		mvprintw(gridY, gridX, "%c", objectChar);
-
-		// Turn off color
-		attroff(COLOR_PAIR(n));
-	}
-
-	attron(COLOR_PAIR(0));
-
 	// Refresh to update the screen
 	refresh();
+}
+
+std::shared_ptr<std::vector<std::vector<bool>>> GameField::RoomGrid()
+{
+	return level->roomGrid;
 }
 
 bool GameField::IsOutOfBounds(Vector2Int position) const
@@ -229,11 +175,15 @@ bool GameField::MakeFieldMove(const std::shared_ptr<FieldObject> obj)
 
 	if (collidesWithCave) return true;
 
+	auto itemMap = room->itemMap;
+	auto objectMap = room->objectMap;
+
 	objectMap->erase(obj->Position());
 	obj->Move(direction);
 	Vector2Int position = obj->Position();
 	if (obj == player && itemMap->find(position) != itemMap->end())
 	{
+		beep();
 		(*itemMap)[position]->Effect(player);
 		itemMap->erase(position);
 	}
@@ -274,13 +224,13 @@ bool GameField::ReachedPlayer(const std::shared_ptr<FieldObject> obj) const
 
 void GameField::AddFieldObject(const std::shared_ptr<FieldObject> object)
 {
-	object->SetCave(caveGenerator->GetCave());
-	(*objectMap)[object->Position()] = object;
-	fieldObjects->push_back(object);
+	room->AddFieldObject(object);
 }
 
 std::shared_ptr<FieldObject> GameField::Hit(std::shared_ptr<FieldObject> obj, Vector2Int pos) const
 {
+	auto objectMap = room->objectMap;
+
 	if (objectMap->find(pos) != objectMap->end() && (*objectMap)[pos] != obj)
 	{
 		return (*objectMap)[pos];

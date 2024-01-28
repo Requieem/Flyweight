@@ -1,0 +1,221 @@
+\doxysection{Game\+Field Class Reference}
+\hypertarget{class_game_field}{}\label{class_game_field}\index{GameField@{GameField}}
+
+
+{\ttfamily \#include $<$Game\+Field.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_field_a7417ea928ae030016e57caa6376a5d90}{Tick}} ()
+\item 
+void \mbox{\hyperlink{class_game_field_ad963bd86308288dc9f11c906b294d2ed}{Init}} ()
+\item 
+void \mbox{\hyperlink{class_game_field_a272fd6987bd0cffcddff9c376881d765}{Draw}} () const
+\item 
+bool \mbox{\hyperlink{class_game_field_a44c875aff7df91b6bcf7ac07d7e7bdb7}{Is\+Out\+Of\+Bounds}} (const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} position) const
+\item 
+bool \mbox{\hyperlink{class_game_field_afc308ff0a7d36ee15ade467f885fe449}{Make\+Field\+Move}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$ object)
+\item 
+void \mbox{\hyperlink{class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3}{Add\+Field\+Object}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$ object)
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$ \mbox{\hyperlink{class_game_field_a3571e42c9b4d3babcc7800c9db0f3ca5}{Hit}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$ obj, \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} pos) const
+\item 
+bool \mbox{\hyperlink{class_game_field_ac97fd6f8665f13b94526b9006c5786c7}{Check\+Hit}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$ obj) const
+\item 
+bool \mbox{\hyperlink{class_game_field_adf6d1d8553d11b33720f0fd7dd79456f}{Reached\+Player}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$ obj) const
+\item 
+\mbox{\hyperlink{class_game_field_ab7c0e031d305f8045ed799ebd076a8aa}{Game\+Field}} (\mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} size, \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}} padding, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$ player, float fill\+Probability, int iterations)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_game_field_ab7c0e031d305f8045ed799ebd076a8aa}\label{class_game_field_ab7c0e031d305f8045ed799ebd076a8aa} 
+\index{GameField@{GameField}!GameField@{GameField}}
+\index{GameField@{GameField}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{GameField()}{GameField()}}
+{\footnotesize\ttfamily Game\+Field\+::\+Game\+Field (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{size,  }\item[{\mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{padding,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_player}{Player}} $>$}]{player,  }\item[{float}]{fill\+Probability,  }\item[{int}]{iterations }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_ab7c0e031d305f8045ed799ebd076a8aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3}\label{class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3} 
+\index{GameField@{GameField}!AddFieldObject@{AddFieldObject}}
+\index{AddFieldObject@{AddFieldObject}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{AddFieldObject()}{AddFieldObject()}}
+{\footnotesize\ttfamily void Game\+Field\+::\+Add\+Field\+Object (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$}]{object }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_ac97fd6f8665f13b94526b9006c5786c7}\label{class_game_field_ac97fd6f8665f13b94526b9006c5786c7} 
+\index{GameField@{GameField}!CheckHit@{CheckHit}}
+\index{CheckHit@{CheckHit}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{CheckHit()}{CheckHit()}}
+{\footnotesize\ttfamily bool Game\+Field\+::\+Check\+Hit (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$}]{obj }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_game_field_ac97fd6f8665f13b94526b9006c5786c7_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_ac97fd6f8665f13b94526b9006c5786c7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_a272fd6987bd0cffcddff9c376881d765}\label{class_game_field_a272fd6987bd0cffcddff9c376881d765} 
+\index{GameField@{GameField}!Draw@{Draw}}
+\index{Draw@{Draw}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void Game\+Field\+::\+Draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_a272fd6987bd0cffcddff9c376881d765_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_a272fd6987bd0cffcddff9c376881d765_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_a3571e42c9b4d3babcc7800c9db0f3ca5}\label{class_game_field_a3571e42c9b4d3babcc7800c9db0f3ca5} 
+\index{GameField@{GameField}!Hit@{Hit}}
+\index{Hit@{Hit}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{Hit()}{Hit()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$ Game\+Field\+::\+Hit (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$}]{obj,  }\item[{\mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{pos }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_a3571e42c9b4d3babcc7800c9db0f3ca5_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_ad963bd86308288dc9f11c906b294d2ed}\label{class_game_field_ad963bd86308288dc9f11c906b294d2ed} 
+\index{GameField@{GameField}!Init@{Init}}
+\index{Init@{Init}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Game\+Field\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_game_field_ad963bd86308288dc9f11c906b294d2ed_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{class_game_field_ad963bd86308288dc9f11c906b294d2ed_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_a44c875aff7df91b6bcf7ac07d7e7bdb7}\label{class_game_field_a44c875aff7df91b6bcf7ac07d7e7bdb7} 
+\index{GameField@{GameField}!IsOutOfBounds@{IsOutOfBounds}}
+\index{IsOutOfBounds@{IsOutOfBounds}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{IsOutOfBounds()}{IsOutOfBounds()}}
+{\footnotesize\ttfamily bool Game\+Field\+::\+Is\+Out\+Of\+Bounds (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_vector2_int}{Vector2\+Int}}}]{position }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_a44c875aff7df91b6bcf7ac07d7e7bdb7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_afc308ff0a7d36ee15ade467f885fe449}\label{class_game_field_afc308ff0a7d36ee15ade467f885fe449} 
+\index{GameField@{GameField}!MakeFieldMove@{MakeFieldMove}}
+\index{MakeFieldMove@{MakeFieldMove}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{MakeFieldMove()}{MakeFieldMove()}}
+{\footnotesize\ttfamily bool Game\+Field\+::\+Make\+Field\+Move (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$}]{object }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_afc308ff0a7d36ee15ade467f885fe449_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_adf6d1d8553d11b33720f0fd7dd79456f}\label{class_game_field_adf6d1d8553d11b33720f0fd7dd79456f} 
+\index{GameField@{GameField}!ReachedPlayer@{ReachedPlayer}}
+\index{ReachedPlayer@{ReachedPlayer}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{ReachedPlayer()}{ReachedPlayer()}}
+{\footnotesize\ttfamily bool Game\+Field\+::\+Reached\+Player (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_field_object}{Field\+Object}} $>$}]{obj }\end{DoxyParamCaption}) const}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_adf6d1d8553d11b33720f0fd7dd79456f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{class_game_field_a7417ea928ae030016e57caa6376a5d90}\label{class_game_field_a7417ea928ae030016e57caa6376a5d90} 
+\index{GameField@{GameField}!Tick@{Tick}}
+\index{Tick@{Tick}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily bool Game\+Field\+::\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_a7417ea928ae030016e57caa6376a5d90_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_game_field_a7417ea928ae030016e57caa6376a5d90_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_game_field_8h}{Game\+Field.\+h}}\item 
+src/\mbox{\hyperlink{_game_field_8cpp}{Game\+Field.\+cpp}}\end{DoxyCompactItemize}

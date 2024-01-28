@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="struct_vector2_int_hash" kind="struct" language="C++" prot="public">
+    <compoundname>Vector2IntHash</compoundname>
+    <includes refid="_vector2_int_8h" local="no">Vector2Int.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_vector2_int_hash_1a76f74e97ef8299ca9c0d49dfed0b5ba4" prot="public" static="no" const="yes" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t Vector2IntHash::operator()</definition>
+        <argsstring>(const Vector2Int &amp;v) const noexcept</argsstring>
+        <name>operator()</name>
+        <qualifiedname>Vector2IntHash::operator()</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="35" column="13" bodyfile="src/Vector2Int.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Vector2IntHash</label>
+        <link refid="struct_vector2_int_hash"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/Vector2Int.h" line="34" column="1" bodyfile="src/Vector2Int.h" bodystart="34" bodyend="36"/>
+    <listofallmembers>
+      <member refid="struct_vector2_int_hash_1a76f74e97ef8299ca9c0d49dfed0b5ba4" prot="public" virt="non-virtual"><scope>Vector2IntHash</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,79 @@
+.TH "Food" 3 "Version 0.0.1" "Gridshot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Food
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Food\&.h>\fP
+.PP
+Inherits \fBItem\fP, and \fBDamage\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBFood\fP (int healAmount)"
+.br
+.ti -1c
+.RI "int \fBColor\fP () const override"
+.br
+.ti -1c
+.RI "unsigned char \fBDisplayChar\fP () const override"
+.br
+.ti -1c
+.RI "void \fBEffect\fP (std::shared_ptr< \fBPlayer\fP > player) const override"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBItem\fP
+.in +1c
+.ti -1c
+.RI "\fBItem\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBDamage\fP
+.in +1c
+.ti -1c
+.RI "virtual float \fBGetDamage\fP () const"
+.br
+.ti -1c
+.RI "\fBDamage\fP ()"
+.br
+.ti -1c
+.RI "\fBDamage\fP (float \fBdamage\fP)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBDamage\fP
+.in +1c
+.ti -1c
+.RI "float \fBdamage\fP = 0"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Food::Food (int healAmount)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Food::Color () const\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Implements \fBItem\fP\&.
+.SS "unsigned char Food::DisplayChar () const\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Implements \fBItem\fP\&.
+.SS "void Food::Effect (std::shared_ptr< \fBPlayer\fP > player) const\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Implements \fBItem\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gridshot from the source code\&.

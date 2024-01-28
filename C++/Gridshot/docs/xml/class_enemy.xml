@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_enemy" kind="class" language="C++" prot="public">
+    <compoundname>Enemy</compoundname>
+    <basecompoundref refid="class_soldier" prot="public" virt="non-virtual">Soldier</basecompoundref>
+    <includes refid="_enemy_8h" local="no">Enemy.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_enemy_1a75c1aa964404e7aeae8de4a25a915e04" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enemy::tickRate</definition>
+        <argsstring></argsstring>
+        <name>tickRate</name>
+        <qualifiedname>Enemy::tickRate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="12" column="7" bodyfile="src/Enemy.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a22dedc403df848391643d5e360a4e7c6" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> &gt;</type>
+        <definition>std::vector&lt;Vector2Int&gt; Enemy::directionPath</definition>
+        <argsstring></argsstring>
+        <name>directionPath</name>
+        <qualifiedname>Enemy::directionPath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="13" column="13" bodyfile="src/Enemy.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1ad87498e813ce2fe83b489b209085ca16" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;FieldObject&gt; Enemy::targetObject</definition>
+        <argsstring></argsstring>
+        <name>targetObject</name>
+        <qualifiedname>Enemy::targetObject</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="14" column="17" bodyfile="src/Enemy.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a6adb612ce243d2ae2d6c8986253db6f1" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> &gt;::iterator</type>
+        <definition>std::vector&lt;Vector2Int&gt;::iterator Enemy::pathIterator</definition>
+        <argsstring></argsstring>
+        <name>pathIterator</name>
+        <qualifiedname>Enemy::pathIterator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="15" column="24" bodyfile="src/Enemy.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enemy_1a60646242b4bf6872f5980cc3189fadc0" prot="private" static="no" mutable="no">
+        <type>std::chrono::steady_clock::time_point</type>
+        <definition>std::chrono::steady_clock::time_point Enemy::lastDecisionTime</definition>
+        <argsstring></argsstring>
+        <name>lastDecisionTime</name>
+        <qualifiedname>Enemy::lastDecisionTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="16" column="39" bodyfile="src/Enemy.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_enemy_1aadb38405f1a98c50cdf9bdd19907766c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Enemy::RandomDirection</definition>
+        <argsstring>() const</argsstring>
+        <name>RandomDirection</name>
+        <qualifiedname>Enemy::RandomDirection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="17" column="12" bodyfile="src/Enemy.cpp" bodystart="48" bodyend="72"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_enemy_1a68dc3ffaa4301eb59395d7449da3b956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Enemy::Enemy</definition>
+        <argsstring>(int teamColor, int speed, float startingHealth, Vector2Int position, Vector2Int direction, std::shared_ptr&lt; FieldObject &gt; targetObject)</argsstring>
+        <name>Enemy</name>
+        <qualifiedname>Enemy::Enemy</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>teamColor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>speed</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>startingHealth</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>direction</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+          <declname>targetObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="21" column="1" bodyfile="src/Enemy.cpp" bodystart="3" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enemy_1ad87fa2fc1271434d29e72d313b3413b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Enemy::NextDirection</definition>
+        <argsstring>() override</argsstring>
+        <name>NextDirection</name>
+        <qualifiedname>Enemy::NextDirection</qualifiedname>
+        <reimplements refid="class_field_object_1a8df15b70caf6bdd4289b576380979cc0">NextDirection</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Enemy.h" line="22" column="12" bodyfile="src/Enemy.cpp" bodystart="6" bodyend="46"/>
+        <references refid="class_field_object_1abae00928de496ec59b6df92dad27d995" compoundref="_field_object_8h" startline="22">FieldObject::cave</references>
+        <references refid="class_field_object_1a84b942ec7b6ccef85e0f1d8e9c453932" compoundref="_field_object_8h" startline="20">FieldObject::direction</references>
+        <references refid="class_a_star_1a77dd0de7235076265b212b7d1dd4a084" compoundref="_a_star_8cpp" startline="9" endline="77">AStar::DirectionPath</references>
+        <references refid="struct_vector2_int_1a1bd4a637f718f5324530a06eeb6648ae" compoundref="_vector2_int_8cpp" startline="18" endline="25">Vector2Int::Distance</references>
+        <references refid="class_field_object_1a171a6bf6a57457e18208ebcf8cb02a9c" compoundref="_field_object_8h" startline="19">FieldObject::position</references>
+        <references refid="class_field_object_1a9590a56551a007ab5a008055ad4ee30b" compoundref="_field_object_8cpp" startline="22" endline="30">FieldObject::WillCollideWithCave</references>
+        <references refid="struct_vector2_int_1a47e1fa2c4d20433493421c8e6b393d55" compoundref="_vector2_int_8h" startline="10" endline="10">Vector2Int::Zero</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+      </node>
+      <node id="1">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FieldObject</label>
+        <link refid="class_field_object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Life</label>
+        <link refid="class_life"/>
+      </node>
+      <node id="2">
+        <label>Soldier</label>
+        <link refid="class_soldier"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="5">
+        <label>Damage</label>
+        <link refid="class_damage"/>
+      </node>
+      <node id="1">
+        <label>Enemy</label>
+        <link refid="class_enemy"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>FieldObject</label>
+        <link refid="class_field_object"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>#direction</edgelabel>
+          <edgelabel>#position</edgelabel>
+          <edgelabel>#previousPosition</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Life</label>
+        <link refid="class_life"/>
+      </node>
+      <node id="2">
+        <label>Soldier</label>
+        <link refid="class_soldier"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Vector2Int</label>
+        <link refid="struct_vector2_int"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>+Down</edgelabel>
+          <edgelabel>+Left</edgelabel>
+          <edgelabel>+Right</edgelabel>
+          <edgelabel>+Up</edgelabel>
+          <edgelabel>+Zero</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Enemy.h" line="8" column="1" bodyfile="src/Enemy.h" bodystart="9" bodyend="23"/>
+    <listofallmembers>
+      <member refid="class_field_object_1abae00928de496ec59b6df92dad27d995" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>cave</name></member>
+      <member refid="class_life_1ac5ca0136764225872a718c1f5c59192f" prot="public" virt="virtual"><scope>Enemy</scope><name>ChangeHealth</name></member>
+      <member refid="class_life_1a85039625ee9c15d4f32019ca1a13b3b7" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>currentHealth</name></member>
+      <member refid="class_damage_1af71969c367b1b42febfb6ccf8c2d7785" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Damage</name></member>
+      <member refid="class_damage_1ae3e192f0ccc0808c7bba3be3438ff9b6" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Damage</name></member>
+      <member refid="class_damage_1aec89e5ca3372eb57c76f44dab68330c4" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>damage</name></member>
+      <member refid="class_field_object_1aed3d111c199bc4001433f6b84dbb6121" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Direction</name></member>
+      <member refid="class_field_object_1a84b942ec7b6ccef85e0f1d8e9c453932" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>direction</name></member>
+      <member refid="class_enemy_1a22dedc403df848391643d5e360a4e7c6" prot="private" virt="non-virtual"><scope>Enemy</scope><name>directionPath</name></member>
+      <member refid="class_soldier_1a201902d239f204af743f5e803725d7eb" prot="public" virt="virtual"><scope>Enemy</scope><name>DisplayChar</name></member>
+      <member refid="class_enemy_1a68dc3ffaa4301eb59395d7449da3b956" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Enemy</name></member>
+      <member refid="class_field_object_1a70e6e091edc8926e7ef53eeaf909c3ad" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>FieldObject</name></member>
+      <member refid="class_damage_1a65491171a4728413062baa0cd9c75c9a" prot="public" virt="virtual"><scope>Enemy</scope><name>GetDamage</name></member>
+      <member refid="class_life_1a545ace2d81aac26707d049daab9e4d69" prot="public" virt="virtual"><scope>Enemy</scope><name>Health</name></member>
+      <member refid="class_life_1a38defcd0462b4eceeed9dba20a8cfa20" prot="public" virt="virtual"><scope>Enemy</scope><name>IsDead</name></member>
+      <member refid="class_field_object_1ae19f014e8b65c48e6c415bc329d72d35" prot="public" virt="non-virtual"><scope>Enemy</scope><name>IsMoving</name></member>
+      <member refid="class_field_object_1a319ed000306676f7edfe32f562f6f08f" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>isMoving</name></member>
+      <member refid="class_enemy_1a60646242b4bf6872f5980cc3189fadc0" prot="private" virt="non-virtual"><scope>Enemy</scope><name>lastDecisionTime</name></member>
+      <member refid="class_life_1a6de2a371f6f778f8b4938d219390b746" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Life</name></member>
+      <member refid="class_life_1a3a07ec90f732071602e6a8931383ee66" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Life</name></member>
+      <member refid="class_field_object_1adcbf508ca827673eee1b27f1d8284ea8" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Move</name></member>
+      <member refid="class_enemy_1ad87fa2fc1271434d29e72d313b3413b4" prot="public" virt="virtual"><scope>Enemy</scope><name>NextDirection</name></member>
+      <member refid="class_field_object_1a38ad1607f64d21ef7f047a420a9ddd8b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>NextPosition</name></member>
+      <member refid="class_enemy_1a6adb612ce243d2ae2d6c8986253db6f1" prot="private" virt="non-virtual"><scope>Enemy</scope><name>pathIterator</name></member>
+      <member refid="class_field_object_1a283da8b74a99d56e2cc969d572572b82" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Position</name></member>
+      <member refid="class_field_object_1a171a6bf6a57457e18208ebcf8cb02a9c" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>position</name></member>
+      <member refid="class_field_object_1a73bf8caa493de4f2bc8b9a501759f11b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>PreviousPosition</name></member>
+      <member refid="class_field_object_1a98387f5c5b27ad8be25e4c8eedf07ca2" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>previousPosition</name></member>
+      <member refid="class_enemy_1aadb38405f1a98c50cdf9bdd19907766c" prot="private" virt="non-virtual"><scope>Enemy</scope><name>RandomDirection</name></member>
+      <member refid="class_field_object_1aaa586f785bac3911fef34ad1a8e8bc8e" prot="public" virt="virtual"><scope>Enemy</scope><name>RemoveOnCollision</name></member>
+      <member refid="class_field_object_1ad9cd890b6147eca773863d4f7e27e8cf" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetCave</name></member>
+      <member refid="class_field_object_1a48ab678688aad7bdabda842ad02f2629" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetDirection</name></member>
+      <member refid="class_field_object_1a7e008b907c86b1291671c18af4262f30" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetMoving</name></member>
+      <member refid="class_field_object_1ab7fb48ed59749c9bd778fe200e76c7da" prot="public" virt="non-virtual"><scope>Enemy</scope><name>SetPosition</name></member>
+      <member refid="class_soldier_1aec59e78774cd3414eb37a5a52581db85" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Soldier</name></member>
+      <member refid="class_field_object_1ad3394ff79b118dc7f0528691e3011d7b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>Speed</name></member>
+      <member refid="class_field_object_1aa182c1f2dbde4353491d10b5b78218cc" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>speed</name></member>
+      <member refid="class_life_1a5d1154e1c58d1852527cab42294c576c" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>startingHealth</name></member>
+      <member refid="class_enemy_1ad87498e813ce2fe83b489b209085ca16" prot="private" virt="non-virtual"><scope>Enemy</scope><name>targetObject</name></member>
+      <member refid="class_field_object_1abc1dd25e64efeee0d38cfa576e631afe" prot="public" virt="non-virtual"><scope>Enemy</scope><name>TeamColor</name></member>
+      <member refid="class_field_object_1ab3445464b7bc65c70b212959765d4504" prot="protected" virt="non-virtual"><scope>Enemy</scope><name>teamColor</name></member>
+      <member refid="class_enemy_1a75c1aa964404e7aeae8de4a25a915e04" prot="private" virt="non-virtual"><scope>Enemy</scope><name>tickRate</name></member>
+      <member refid="class_field_object_1a9590a56551a007ab5a008055ad4ee30b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>WillCollideWithCave</name></member>
+      <member refid="class_field_object_1a74311d749156405632bd895ff11d6b7b" prot="public" virt="non-virtual"><scope>Enemy</scope><name>WillGoOutOfBounds</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

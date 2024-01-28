@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="x86-debug_2_c_make_files_2_show_includes_2foo_8h" kind="file" language="C++">
+    <compoundname>foo.h</compoundname>
+    <includedby refid="x86-debug_2_c_make_files_2_show_includes_2main_8c" local="yes">out/build/x86-debug/CMakeFiles/ShowIncludes/main.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>out/build/x86-debug/CMakeFiles/ShowIncludes/foo.h</label>
+        <link refid="x86-debug_2_c_make_files_2_show_includes_2foo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>out/build/x86-debug/CMakeFiles/ShowIncludes/main.c</label>
+        <link refid="x86-debug_2_c_make_files_2_show_includes_2main_8c"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="out/build/x86-debug/CMakeFiles/ShowIncludes/foo.h"/>
+  </compounddef>
+</doxygen>

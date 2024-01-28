@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__score_8h_source" xml:lang="en-US">
+<title>Score.h</title>
+<indexterm><primary>src/Score.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+2 
+3 <emphasis role="keyword">class&#32;</emphasis><link linkend="_class_score">Score</link>
+4 {
+5 <emphasis role="keyword">protected</emphasis>:
+6 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_score_1a331b0927105c83ba760954eff6cf9fe9">score</link>;
+7 
+8 <emphasis role="keyword">public</emphasis>:
+9 &#32;&#32;&#32;&#32;<link linkend="_class_score_1a039c99843551e5e4b512ecee99e46617">Score</link>();
+10 &#32;&#32;&#32;&#32;<link linkend="_class_score_1a039c99843551e5e4b512ecee99e46617">Score</link>(<emphasis role="keywordtype">int</emphasis>&#32;startingScore);
+11 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_class_score_1a80ad4d0c9d4e7b889e5a4db7eff55667">GetScore</link>()&#32;<emphasis role="keyword">const</emphasis>;
+12 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_score_1a950296563c2432c31ce57d126f081f6f">ChangeScore</link>(<emphasis role="keywordtype">int</emphasis>&#32;amount);
+13 };
+</programlisting></section>

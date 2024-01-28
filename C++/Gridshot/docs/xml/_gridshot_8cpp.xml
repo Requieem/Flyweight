@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="_gridshot_8cpp" kind="file" language="C++">
+    <compoundname>Gridshot.cpp</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" prot="public" static="no" mutable="no">
+        <type>﻿ int</type>
+        <definition>﻿ int height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="7" column="5" bodyfile="Gridshot.cpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="_gridshot_8cpp_1a5cddddc676993e6f14a8123d8ff29d90" compoundref="_gridshot_8cpp" startline="56" endline="72">CursesInit</referencedby>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_gridshot_8cpp_1a90227551032dea8af66dcd4edf5cb9eb" prot="public" static="no" mutable="no">
+        <type>﻿ int</type>
+        <definition>﻿ int width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="7" column="12" bodyfile="Gridshot.cpp" bodystart="7" bodyend="-1"/>
+        <referencedby refid="_gridshot_8cpp_1a5cddddc676993e6f14a8123d8ff29d90" compoundref="_gridshot_8cpp" startline="56" endline="72">CursesInit</referencedby>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" prot="public" static="no" mutable="no">
+        <type><ref refid="class_game_field" kindref="compound">GameField</ref> *</type>
+        <definition>GameField* gameField</definition>
+        <argsstring></argsstring>
+        <name>gameField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="8" column="11" bodyfile="Gridshot.cpp" bodystart="8" bodyend="-1"/>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_gridshot_8cpp_1a440b3cb4f762104eda485c05c86fa0ba" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string gameover</definition>
+        <argsstring></argsstring>
+        <name>gameover</name>
+        <initializer>= R&quot;(
+     ____                         ___                   
+    / ___| __ _ _ __ ___   ___   / _ \__   _____ _ __   
+   | |  _ / _` | &apos;_ ` _ \ / _ \ | | | \ \ / / _ | &apos;__|  
+   | |_| | (_| | | | | | |  __/ | |_| |\ V |  __| |     
+    \____|\__,_|_| |_| |_|\___|  \___/  \_/ \___|_|   _ 
+  _ __  _ __ ___ ___ ___   ___ _ __   __ _  ___ ___  | |
+ | &apos;_ \| &apos;__/ _ / __/ __| / __| &apos;_ \ / _` |/ __/ _ \ | |
+ | |_) | | |  __\__ \__ \ \__ | |_) | (_| | (_|  __/ |_|
+ | .__/|_|  \___|___|___/ |___| .__/ \__,_|\___\___| (_)
+ |_|                          |_|                       
+                                                  
+)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="10" column="19" bodyfile="Gridshot.cpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_gridshot_8cpp" startline="169" endline="192">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_gridshot_8cpp_1a1b49ed2e59c1e5f98abcd1c7537cf9e6" prot="public" static="no" mutable="no">
+        <type>const std::string</type>
+        <definition>const std::string title</definition>
+        <argsstring></argsstring>
+        <name>title</name>
+        <initializer>= R&quot;(
+           ____      _     _ ____  _           _                  
+          / ___|_ __(_) __| / ___|| |__   ___ | |_   _            
+         | |  _| &apos;__| |/ _` \___ \| &apos;_ \ / _ \| __| (_)           
+         | |_| | |  | | (_| |___) | | | | (_) | |_   _            
+          \____|_|  |_|\__,_|____/|_| |_|\___/ \__| (_)           
+        _____ _             ____                                  
+       |_   _| |__   ___   / ___| __ _ _ __ ___   ___             
+         | | | &apos;_ \ / _ \ | |  _ / _` | &apos;_ ` _ \ / _ \            
+         | | | | | |  __/ | |_| | (_| | | | | | |  __/            
+         |_| |_| |_|\___|  \____|\__,_|_| |_| |_|\___|            
+  ____                         _          ____  _             _   
+ / ___| _ __   __ _  ___ ___  | |_ ___   / ___|| |_ __ _ _ __| |_ 
+ \___ \| &apos;_ \ / _` |/ __/ _ \ | __/ _ \  \___ \| __/ _` | &apos;__| __|
+  ___) | |_) | (_| | (_|  __/ | || (_) |  ___) | || (_| | |  | |_ 
+ |____/| .__/ \__,_|\___\___|  \__\___/  |____/ \__\__,_|_|   \__|
+       |_|                                                        
+)&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="24" column="19" bodyfile="Gridshot.cpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_gridshot_8cpp" startline="169" endline="192">main</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_gridshot_8cpp_1a2bbd69b15514ee6ba2203d5ec143fd64" prot="public" static="no" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char emptyBar</definition>
+        <argsstring></argsstring>
+        <name>emptyBar</name>
+        <initializer>= 176</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="43" column="21" bodyfile="Gridshot.cpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_gridshot_8cpp_1a058500b3241b1566c63737f27d72f431" prot="public" static="no" mutable="no">
+        <type>const unsigned char</type>
+        <definition>const unsigned char fullBar</definition>
+        <argsstring></argsstring>
+        <name>fullBar</name>
+        <initializer>= 219</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="44" column="21" bodyfile="Gridshot.cpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="_gridshot_8cpp_1a48b30f89e60580c6062bf354c336f895" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const std::string</type>
+        <definition>static const std::string HealthBar</definition>
+        <argsstring>(float min, float max, float current)</argsstring>
+        <name>HealthBar</name>
+        <param>
+          <type>float</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>current</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="46" column="26" bodyfile="Gridshot.cpp" bodystart="46" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="_gridshot_8cpp_1a5cddddc676993e6f14a8123d8ff29d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CursesInit</definition>
+        <argsstring>()</argsstring>
+        <name>CursesInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="56" column="6" bodyfile="Gridshot.cpp" bodystart="56" bodyend="72"/>
+        <references refid="_gridshot_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb">CAVE_COLOR</references>
+        <references refid="_colors_8h_1a321e9c7396e25a03df3b6a3cd18f2b6b" compoundref="_colors_8h" startline="6">ENEMY_COLOR</references>
+        <references refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" compoundref="_gridshot_8cpp" startline="7">height</references>
+        <references refid="_colors_8h_1a28d88d882f8dc097928beffc901cc133" compoundref="_colors_8h" startline="3">PLAYER_COLOR</references>
+        <references refid="_colors_8h_1af4d5557c5381bf2ae2afe5b41ec74e95" compoundref="_colors_8h" startline="4">TREASURE_COLOR</references>
+        <references refid="_gridshot_8cpp_1a90227551032dea8af66dcd4edf5cb9eb" compoundref="_gridshot_8cpp" startline="7">width</references>
+        <referencedby refid="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_gridshot_8cpp" startline="169" endline="192">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_gridshot_8cpp_1ab6ed01262ac22916acceb61425d1f695" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CursesClose</definition>
+        <argsstring>()</argsstring>
+        <name>CursesClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="73" column="6" bodyfile="Gridshot.cpp" bodystart="73" bodyend="76"/>
+        <referencedby refid="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_gridshot_8cpp" startline="169" endline="192">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameLoop</definition>
+        <argsstring>()</argsstring>
+        <name>GameLoop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="77" column="6" bodyfile="Gridshot.cpp" bodystart="77" bodyend="167"/>
+        <references refid="class_game_field_1ab1ae41b1c419a854da2cc174bd3a08c3" compoundref="_game_field_8cpp" startline="275" endline="280">GameField::AddFieldObject</references>
+        <references refid="struct_vector2_int_1a7cac0ab70292eaa33d1aaf634d7c9141" compoundref="_vector2_int_8h" startline="7" endline="7">Vector2Int::Down</references>
+        <references refid="class_game_field_1a272fd6987bd0cffcddff9c376881d765" compoundref="_game_field_8cpp" startline="106" endline="210">GameField::Draw</references>
+        <references refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" compoundref="_gridshot_8cpp" startline="8">gameField</references>
+        <references refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" compoundref="_gridshot_8cpp" startline="7">height</references>
+        <references refid="class_game_field_1ad963bd86308288dc9f11c906b294d2ed" compoundref="_game_field_8cpp" startline="69" endline="75">GameField::Init</references>
+        <references refid="struct_vector2_int_1a087472c234c9b548ed191ee0d60d22a1" compoundref="_vector2_int_8h" startline="8" endline="8">Vector2Int::Left</references>
+        <references refid="_colors_8h_1a28d88d882f8dc097928beffc901cc133" compoundref="_colors_8h" startline="3">PLAYER_COLOR</references>
+        <references refid="_colors_8h_1a2a603e2e07bda629ce0013579747d9b4" compoundref="_colors_8h" startline="5">PROJECTILE_COLOR</references>
+        <references refid="struct_vector2_int_1a9c96b9c5aab40bf6c06f7d82aa87b3c1" compoundref="_vector2_int_8h" startline="9" endline="9">Vector2Int::Right</references>
+        <references refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" compoundref="_game_field_8cpp" startline="77" endline="104">GameField::Tick</references>
+        <references refid="struct_vector2_int_1a2ee6d471baa7a6ba0e70ae11098491cf" compoundref="_vector2_int_8h" startline="6" endline="6">Vector2Int::Up</references>
+        <references refid="_gridshot_8cpp_1a90227551032dea8af66dcd4edf5cb9eb" compoundref="_gridshot_8cpp" startline="7">width</references>
+        <referencedby refid="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_gridshot_8cpp" startline="169" endline="192">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Gridshot.cpp" line="169" column="5" bodyfile="Gridshot.cpp" bodystart="169" bodyend="192"/>
+        <references refid="_gridshot_8cpp_1ab6ed01262ac22916acceb61425d1f695" compoundref="_gridshot_8cpp" startline="73" endline="76">CursesClose</references>
+        <references refid="_gridshot_8cpp_1a5cddddc676993e6f14a8123d8ff29d90" compoundref="_gridshot_8cpp" startline="56" endline="72">CursesInit</references>
+        <references refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</references>
+        <references refid="_gridshot_8cpp_1a440b3cb4f762104eda485c05c86fa0ba" compoundref="_gridshot_8cpp" startline="10">gameover</references>
+        <references refid="_gridshot_8cpp_1a1b49ed2e59c1e5f98abcd1c7537cf9e6" compoundref="_gridshot_8cpp" startline="24">title</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal">﻿#include<sp/></highlight><highlight class="stringliteral">&quot;Gridshot.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>Global<sp/>Variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/>--------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" kindref="member">height</ref>,<sp/><ref refid="_gridshot_8cpp_1a90227551032dea8af66dcd4edf5cb9eb" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="8" refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" refkind="member"><highlight class="normal"><ref refid="class_game_field" kindref="compound">GameField</ref>*<sp/><ref refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" kindref="member">gameField</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_gridshot_8cpp_1a440b3cb4f762104eda485c05c86fa0ba" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="_gridshot_8cpp_1a440b3cb4f762104eda485c05c86fa0ba" kindref="member">gameover</ref><sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(</highlight></codeline>
+<codeline lineno="11"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/>____<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>___<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>/<sp/>___|<sp/>__<sp/>_<sp/>_<sp/>__<sp/>___<sp/><sp/><sp/>___<sp/><sp/><sp/>/<sp/>_<sp/>\__<sp/><sp/><sp/>_____<sp/>_<sp/>__<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="stringliteral"><sp/><sp/><sp/>|<sp/>|<sp/><sp/>_<sp/>/<sp/>_`<sp/>|<sp/>&apos;_<sp/>`<sp/>_<sp/>\<sp/>/<sp/>_<sp/>\<sp/>|<sp/>|<sp/>|<sp/>\<sp/>\<sp/>/<sp/>/<sp/>_<sp/>|<sp/>&apos;__|<sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="stringliteral"><sp/><sp/><sp/>|<sp/>|_|<sp/>|<sp/>(_|<sp/>|<sp/>|<sp/>|<sp/>|<sp/>|<sp/>|<sp/><sp/>__/<sp/>|<sp/>|_|<sp/>|\<sp/>V<sp/>|<sp/><sp/>__|<sp/>|<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="stringliteral"><sp/><sp/><sp/><sp/>\____|\__,_|_|<sp/>|_|<sp/>|_|\___|<sp/><sp/>\___/<sp/><sp/>\_/<sp/>\___|_|<sp/><sp/><sp/>_<sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="stringliteral"><sp/><sp/>_<sp/>__<sp/><sp/>_<sp/>__<sp/>___<sp/>___<sp/>___<sp/><sp/><sp/>___<sp/>_<sp/>__<sp/><sp/><sp/>__<sp/>_<sp/><sp/>___<sp/>___<sp/><sp/>|<sp/>|</highlight></codeline>
+<codeline lineno="17"><highlight class="stringliteral"><sp/>|<sp/>&apos;_<sp/>\|<sp/>&apos;__/<sp/>_<sp/>/<sp/>__/<sp/>__|<sp/>/<sp/>__|<sp/>&apos;_<sp/>\<sp/>/<sp/>_`<sp/>|/<sp/>__/<sp/>_<sp/>\<sp/>|<sp/>|</highlight></codeline>
+<codeline lineno="18"><highlight class="stringliteral"><sp/>|<sp/>|_)<sp/>|<sp/>|<sp/>|<sp/><sp/>__\__<sp/>\__<sp/>\<sp/>\__<sp/>|<sp/>|_)<sp/>|<sp/>(_|<sp/>|<sp/>(_|<sp/><sp/>__/<sp/>|_|</highlight></codeline>
+<codeline lineno="19"><highlight class="stringliteral"><sp/>|<sp/>.__/|_|<sp/><sp/>\___|___|___/<sp/>|___|<sp/>.__/<sp/>\__,_|\___\___|<sp/>(_)</highlight></codeline>
+<codeline lineno="20"><highlight class="stringliteral"><sp/>|_|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|_|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="stringliteral">)&quot;;</highlight></codeline>
+<codeline lineno="23"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="24" refid="_gridshot_8cpp_1a1b49ed2e59c1e5f98abcd1c7537cf9e6" refkind="member"><highlight class="stringliteral"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="_gridshot_8cpp_1a1b49ed2e59c1e5f98abcd1c7537cf9e6" kindref="member">title</ref><sp/>=<sp/>R</highlight><highlight class="stringliteral">&quot;(</highlight></codeline>
+<codeline lineno="25"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>____<sp/><sp/><sp/><sp/><sp/><sp/>_<sp/><sp/><sp/><sp/><sp/>_<sp/>____<sp/><sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>___|_<sp/>__(_)<sp/>__|<sp/>/<sp/>___||<sp/>|__<sp/><sp/><sp/>___<sp/>|<sp/>|_<sp/><sp/><sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/><sp/>_|<sp/>&apos;__|<sp/>|/<sp/>_`<sp/>\___<sp/>\|<sp/>&apos;_<sp/>\<sp/>/<sp/>_<sp/>\|<sp/>__|<sp/>(_)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|_|<sp/>|<sp/>|<sp/><sp/>|<sp/>|<sp/>(_|<sp/>|___)<sp/>|<sp/>|<sp/>|<sp/>|<sp/>(_)<sp/>|<sp/>|_<sp/><sp/><sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\____|_|<sp/><sp/>|_|\__,_|____/|_|<sp/>|_|\___/<sp/>\__|<sp/>(_)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_____<sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>____<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|_<sp/><sp/><sp/>_|<sp/>|__<sp/><sp/><sp/>___<sp/><sp/><sp/>/<sp/>___|<sp/>__<sp/>_<sp/>_<sp/>__<sp/>___<sp/><sp/><sp/>___<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/>|<sp/>&apos;_<sp/>\<sp/>/<sp/>_<sp/>\<sp/>|<sp/>|<sp/><sp/>_<sp/>/<sp/>_`<sp/>|<sp/>&apos;_<sp/>`<sp/>_<sp/>\<sp/>/<sp/>_<sp/>\<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>|<sp/>|<sp/>|<sp/>|<sp/>|<sp/><sp/>__/<sp/>|<sp/>|_|<sp/>|<sp/>(_|<sp/>|<sp/>|<sp/>|<sp/>|<sp/>|<sp/>|<sp/><sp/>__/<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|_|<sp/>|_|<sp/>|_|\___|<sp/><sp/>\____|\__,_|_|<sp/>|_|<sp/>|_|\___|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="stringliteral"><sp/><sp/>____<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>____<sp/><sp/>_<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="stringliteral"><sp/>/<sp/>___|<sp/>_<sp/>__<sp/><sp/><sp/>__<sp/>_<sp/><sp/>___<sp/>___<sp/><sp/>|<sp/>|_<sp/>___<sp/><sp/><sp/>/<sp/>___||<sp/>|_<sp/>__<sp/>_<sp/>_<sp/>__|<sp/>|_<sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="stringliteral"><sp/>\___<sp/>\|<sp/>&apos;_<sp/>\<sp/>/<sp/>_`<sp/>|/<sp/>__/<sp/>_<sp/>\<sp/>|<sp/>__/<sp/>_<sp/>\<sp/><sp/>\___<sp/>\|<sp/>__/<sp/>_`<sp/>|<sp/>&apos;__|<sp/>__|</highlight></codeline>
+<codeline lineno="38"><highlight class="stringliteral"><sp/><sp/>___)<sp/>|<sp/>|_)<sp/>|<sp/>(_|<sp/>|<sp/>(_|<sp/><sp/>__/<sp/>|<sp/>||<sp/>(_)<sp/>|<sp/><sp/>___)<sp/>|<sp/>||<sp/>(_|<sp/>|<sp/>|<sp/><sp/>|<sp/>|_<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="stringliteral"><sp/>|____/|<sp/>.__/<sp/>\__,_|\___\___|<sp/><sp/>\__\___/<sp/><sp/>|____/<sp/>\__\__,_|_|<sp/><sp/><sp/>\__|</highlight></codeline>
+<codeline lineno="40"><highlight class="stringliteral"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|_|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="stringliteral">)&quot;;</highlight></codeline>
+<codeline lineno="42"><highlight class="stringliteral"></highlight></codeline>
+<codeline lineno="43" refid="_gridshot_8cpp_1a2bbd69b15514ee6ba2203d5ec143fd64" refkind="member"><highlight class="stringliteral"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_gridshot_8cpp_1a2bbd69b15514ee6ba2203d5ec143fd64" kindref="member">emptyBar</ref><sp/>=<sp/>176;</highlight></codeline>
+<codeline lineno="44" refid="_gridshot_8cpp_1a058500b3241b1566c63737f27d72f431" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_gridshot_8cpp_1a058500b3241b1566c63737f27d72f431" kindref="member">fullBar</ref><sp/>=<sp/>219;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>HealthBar(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>current)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>range<sp/>=<sp/>max<sp/>-<sp/>min;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>percentage<sp/>=<sp/>current<sp/>/<sp/>range;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fullBars<sp/>=<sp/>percentage<sp/>*<sp/>100<sp/>/<sp/>range;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::string(fullBars,<sp/><ref refid="_gridshot_8cpp_1a058500b3241b1566c63737f27d72f431" kindref="member">fullBar</ref>)<sp/>+<sp/>std::string(max<sp/>-<sp/>fullBars,<sp/><ref refid="_gridshot_8cpp_1a2bbd69b15514ee6ba2203d5ec143fd64" kindref="member">emptyBar</ref>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_gridshot_8cpp_1a5cddddc676993e6f14a8123d8ff29d90" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_gridshot_8cpp_1a5cddddc676993e6f14a8123d8ff29d90" kindref="member">CursesInit</ref>()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>initscr();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>cbreak();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>noecho();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>nodelay(stdscr,<sp/>TRUE);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>start_color();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>init_color(<ref refid="_gridshot_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb" kindref="member">CAVE_COLOR</ref>,<sp/>200,<sp/>50,<sp/>25);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>init_pair(1,<sp/><ref refid="_gridshot_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb" kindref="member">CAVE_COLOR</ref>,<sp/>COLOR_BLACK);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>init_pair(2,<sp/><ref refid="_colors_8h_1a28d88d882f8dc097928beffc901cc133" kindref="member">PLAYER_COLOR</ref>,<sp/>COLOR_WHITE);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>init_pair(3,<sp/>COLOR_WHITE,<sp/><ref refid="_colors_8h_1af4d5557c5381bf2ae2afe5b41ec74e95" kindref="member">TREASURE_COLOR</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>init_pair(4,<sp/>COLOR_WHITE,<sp/><ref refid="_colors_8h_1a321e9c7396e25a03df3b6a3cd18f2b6b" kindref="member">ENEMY_COLOR</ref>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>getmaxyx(stdscr,<sp/><ref refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" kindref="member">height</ref>,<sp/><ref refid="_gridshot_8cpp_1a90227551032dea8af66dcd4edf5cb9eb" kindref="member">width</ref>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73" refid="_gridshot_8cpp_1ab6ed01262ac22916acceb61425d1f695" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_gridshot_8cpp_1ab6ed01262ac22916acceb61425d1f695" kindref="member">CursesClose</ref>()</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>endwin();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77" refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" kindref="member">GameLoop</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Player&gt;<sp/>player<sp/>=<sp/>std::make_shared&lt;Player&gt;(<ref refid="_colors_8h_1a28d88d882f8dc097928beffc901cc133" kindref="member">PLAYER_COLOR</ref>,<sp/>1,<sp/>10.0f<sp/>,<sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref>(0,<sp/>0),<sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref>(1,<sp/>0));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" kindref="member">gameField</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_game_field" kindref="compound">GameField</ref>({<sp/><ref refid="_gridshot_8cpp_1a90227551032dea8af66dcd4edf5cb9eb" kindref="member">width</ref>,<sp/><ref refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" kindref="member">height</ref><sp/>-<sp/>3<sp/>},<sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref>(2,<sp/>0),<sp/>player,<sp/>0.45f,<sp/>50);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" kindref="member">gameField</ref>-&gt;<ref refid="class_game_field_1ad963bd86308288dc9f11c906b294d2ed" kindref="member">Init</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>gameRunning<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>spawnProjectile<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>key<sp/>=<sp/>ERR;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref><sp/>playerDirection<sp/>=<sp/>player-&gt;NextDirection();<sp/></highlight><highlight class="comment">//<sp/>Initial<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;Projectile&gt;<sp/>newProjectile<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Time::milliseconds<sp/>tickDuration(20);<sp/></highlight><highlight class="comment">//<sp/>100<sp/>ms<sp/>for<sp/>each<sp/>tick</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(gameRunning)<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>Time::high_resolution_clock::now();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" kindref="member">gameField</ref>-&gt;<ref refid="class_game_field_1a272fd6987bd0cffcddff9c376881d765" kindref="member">Draw</ref>();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attron(COLOR_PAIR(2));</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mvaddstr(<ref refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" kindref="member">height</ref><sp/>-<sp/>2,<sp/>5,<sp/>(</highlight><highlight class="stringliteral">&quot;<sp/>Health:<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>HealthBar(0,<sp/>10,<sp/>player-&gt;Health())).c_str());</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attroff(COLOR_PAIR(2));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>scoreString<sp/>=<sp/>std::to_string(player-&gt;GetScore());</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pad<sp/>with<sp/>leading<sp/>zeros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(scoreString.length()<sp/>&lt;<sp/>4)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreString<sp/>=<sp/>std::string(4<sp/>-<sp/>scoreString.length(),<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">)<sp/>+<sp/>scoreString;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scoreString<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal"><sp/>+<sp/>scoreString<sp/>+<sp/></highlight><highlight class="stringliteral">&quot;\u0024<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attron(COLOR_PAIR(3));</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mvaddstr(<ref refid="_gridshot_8cpp_1adef591630dcc9124c47d09ba51bd4496" kindref="member">height</ref><sp/>-<sp/>2,<sp/><ref refid="_gridshot_8cpp_1a90227551032dea8af66dcd4edf5cb9eb" kindref="member">width</ref><sp/>-<sp/>6<sp/>-<sp/>scoreString.length(),<sp/>scoreString.c_str());</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>attroff(COLOR_PAIR(3));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>key<sp/>=<sp/>getch();<sp/></highlight><highlight class="comment">//<sp/>Get<sp/>a<sp/>single<sp/>character<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>flushinp();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(key)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>ERR:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;SetMoving(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>119:<sp/></highlight><highlight class="comment">//<sp/>&apos;W&apos;<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerDirection<sp/>=<sp/><ref refid="struct_vector2_int_1a7cac0ab70292eaa33d1aaf634d7c9141" kindref="member">Vector2Int::Down</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>97:<sp/></highlight><highlight class="comment">//<sp/>&apos;A&apos;<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerDirection<sp/>=<sp/><ref refid="struct_vector2_int_1a087472c234c9b548ed191ee0d60d22a1" kindref="member">Vector2Int::Left</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>115:<sp/></highlight><highlight class="comment">//<sp/>&apos;S&apos;<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerDirection<sp/>=<sp/><ref refid="struct_vector2_int_1a2ee6d471baa7a6ba0e70ae11098491cf" kindref="member">Vector2Int::Up</ref>;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>100:<sp/></highlight><highlight class="comment">//<sp/>&apos;D&apos;<sp/>key</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>playerDirection<sp/>=<sp/><ref refid="struct_vector2_int_1a9c96b9c5aab40bf6c06f7d82aa87b3c1" kindref="member">Vector2Int::Right</ref>;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>32:<sp/></highlight><highlight class="comment">//<sp/>Spacebar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>the<sp/>flag<sp/>to<sp/>spawn<sp/>a<sp/>projectile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spawnProjectile<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Update<sp/>the<sp/>player&apos;s<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;SetDirection(playerDirection);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>we<sp/>should<sp/>spawn<sp/>a<sp/>projectile</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(spawnProjectile<sp/>&amp;&amp;<sp/>!player-&gt;WillGoOutOfBounds(playerDirection))<sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;SetMoving(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>new<sp/>projectile<sp/>and<sp/>add<sp/>it<sp/>to<sp/>fieldObjects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newProjectile<sp/>=<sp/>std::make_shared&lt;Projectile&gt;(<ref refid="_colors_8h_1a2a603e2e07bda629ce0013579747d9b4" kindref="member">PROJECTILE_COLOR</ref>,<sp/>2,<sp/>1,<sp/>player-&gt;NextPosition(playerDirection),<sp/>playerDirection);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" kindref="member">gameField</ref>-&gt;<ref refid="class_game_field_1ab1ae41b1c419a854da2cc174bd3a08c3" kindref="member">AddFieldObject</ref>(newProjectile);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>the<sp/>flag</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spawnProjectile<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gameRunning<sp/>=<sp/>!<ref refid="_gridshot_8cpp_1a0dd3f52cbf7bc51c3e7362771c128d26" kindref="member">gameField</ref>-&gt;<ref refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" kindref="member">Tick</ref>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>player-&gt;SetMoving(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Calculate<sp/>the<sp/>time<sp/>to<sp/>sleep<sp/>to<sp/>maintain<sp/>a<sp/>consistent<sp/>tick<sp/>rate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>Time::high_resolution_clock::now();</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>elapsed<sp/>=<sp/>end<sp/>-<sp/>start;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>timeToWait<sp/>=<sp/>tickDuration<sp/>-<sp/>elapsed;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(timeToWait.count()<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ThisThread::sleep_for(timeToWait);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_gridshot_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gridshot_8cpp_1a5cddddc676993e6f14a8123d8ff29d90" kindref="member">CursesInit</ref>();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>attron(COLOR_PAIR(2));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>addstr(<ref refid="_gridshot_8cpp_1a1b49ed2e59c1e5f98abcd1c7537cf9e6" kindref="member">title</ref>.c_str());</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>attroff(COLOR_PAIR(2));</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>flushinp();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(getch()<sp/>==<sp/>ERR)<sp/>{}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" kindref="member">GameLoop</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>clear();</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>attron(COLOR_PAIR(4));</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>addstr(<ref refid="_gridshot_8cpp_1a440b3cb4f762104eda485c05c86fa0ba" kindref="member">gameover</ref>.c_str());</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>attroff(COLOR_PAIR(4));</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>flushinp();</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(getch()<sp/>==<sp/>ERR)<sp/>{}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_gridshot_8cpp_1ab6ed01262ac22916acceb61425d1f695" kindref="member">CursesClose</ref>();</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Gridshot.cpp"/>
+  </compounddef>
+</doxygen>

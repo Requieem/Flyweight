@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_26e161bd706b689737ea0ef524ddc480" kind="dir">
+    <compoundname>out/build</compoundname>
+    <innerdir refid="dir_9f3bc0dc4109dd9063f9e4f80315b620">out/build/linux-debug</innerdir>
+    <innerdir refid="dir_9b04a2571c9eff7929453c0c492464b3">out/build/windows-base</innerdir>
+    <innerdir refid="dir_7e3f5df11b93e131a5f86af26baa9ae2">out/build/x86-debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="out/build/"/>
+  </compounddef>
+</doxygen>

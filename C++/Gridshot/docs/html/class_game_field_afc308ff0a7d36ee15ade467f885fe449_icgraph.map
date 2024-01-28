@@ -1,0 +1,9 @@
+<map id="GameField::MakeFieldMove" name="GameField::MakeFieldMove">
+<area shape="rect" id="Node000001" title=" " alt="" coords="417,5,615,34"/>
+<area shape="rect" id="Node000002" href="$class_game_field.html#a7417ea928ae030016e57caa6376a5d90" title=" " alt="" coords="245,5,369,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="402,22,370,22,370,17,402,17"/>
+<area shape="rect" id="Node000003" href="$_gridshot_8cpp.html#a1ccba604c34743e18775c4c72ff36948" title=" " alt="" coords="106,5,197,34"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,22,198,22,198,17,229,17"/>
+<area shape="rect" id="Node000004" href="$_gridshot_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,58,34"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="90,22,58,22,58,17,90,17"/>
+</map>

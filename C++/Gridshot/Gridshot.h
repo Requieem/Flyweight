@@ -16,6 +16,7 @@
 #include "src/GameField.h"
 #include "src/Projectile.h"
 #include "src/FieldObject.h"
+#include "src/DisplayStrings.h"
 
 namespace Time = std::chrono;
 namespace ThisThread = std::this_thread;

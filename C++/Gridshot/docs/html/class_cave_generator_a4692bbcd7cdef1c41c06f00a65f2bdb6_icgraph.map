@@ -1,0 +1,8 @@
+<map id="CaveGenerator::GetRandomDistantEmptySpace" name="CaveGenerator::GetRandomDistantEmptySpace">
+<area shape="rect" id="Node000001" title=" " alt="" coords="503,5,709,52"/>
+<area shape="rect" id="Node000002" href="$class_game_field.html#ab7c0e031d305f8045ed799ebd076a8aa" title=" " alt="" coords="5,14,171,43"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="487,30,455,30,219,30,171,30,171,25,219,25,455,25,487,25"/>
+<area shape="rect" id="Node000003" href="$class_cave_generator.html#a5f9b37566f09c125e37f9ee83012b743" title=" " alt="" coords="219,40,455,68"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="488,42,456,46,455,40,487,37"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="203,43,171,40,172,34,203,38"/>
+</map>

@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_game_field" xml:lang="en-US">
+<title>GameField Class Reference</title>
+<indexterm><primary>GameField</primary></indexterm>
+<para>
+<computeroutput>#include &lt;GameField.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_class_game_field_1a7417ea928ae030016e57caa6376a5d90">Tick</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_field_1ad963bd86308288dc9f11c906b294d2ed">Init</link> ()</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_field_1a272fd6987bd0cffcddff9c376881d765">Draw</link> () const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_game_field_1a44c875aff7df91b6bcf7ac07d7e7bdb7">IsOutOfBounds</link> (const <link linkend="_struct_vector2_int">Vector2Int</link> position) const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_game_field_1afc308ff0a7d36ee15ade467f885fe449">MakeFieldMove</link> (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; object)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_game_field_1ab1ae41b1c419a854da2cc174bd3a08c3">AddFieldObject</link> (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; object)</para>
+</listitem>
+            <listitem><para>std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; <link linkend="_class_game_field_1a3571e42c9b4d3babcc7800c9db0f3ca5">Hit</link> (std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; obj, <link linkend="_struct_vector2_int">Vector2Int</link> pos) const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_game_field_1ac97fd6f8665f13b94526b9006c5786c7">CheckHit</link> (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; obj) const</para>
+</listitem>
+            <listitem><para>bool <link linkend="_class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f">ReachedPlayer</link> (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; obj) const</para>
+</listitem>
+            <listitem><para><link linkend="_class_game_field_1ab7c0e031d305f8045ed799ebd076a8aa">GameField</link> (<link linkend="_struct_vector2_int">Vector2Int</link> size, <link linkend="_struct_vector2_int">Vector2Int</link> padding, std::shared_ptr&lt; <link linkend="_class_player">Player</link> &gt; player, float fillProbability, int iterations)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_game_field_1ab7c0e031d305f8045ed799ebd076a8aa"/><section>
+    <title>GameField()</title>
+<indexterm><primary>GameField</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>GameField</secondary></indexterm>
+<para><computeroutput>GameField::GameField (<link linkend="_struct_vector2_int">Vector2Int</link> size, <link linkend="_struct_vector2_int">Vector2Int</link> padding, std::shared_ptr&lt; <link linkend="_class_player">Player</link> &gt; player, float fillProbability, int iterations)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_ab7c0e031d305f8045ed799ebd076a8aa_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_game_field_1ab1ae41b1c419a854da2cc174bd3a08c3"/><section>
+    <title>AddFieldObject()</title>
+<indexterm><primary>AddFieldObject</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>AddFieldObject</secondary></indexterm>
+<para><computeroutput>void GameField::AddFieldObject (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; object)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_ab1ae41b1c419a854da2cc174bd3a08c3_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1ac97fd6f8665f13b94526b9006c5786c7"/><section>
+    <title>CheckHit()</title>
+<indexterm><primary>CheckHit</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>CheckHit</secondary></indexterm>
+<para><computeroutput>bool GameField::CheckHit (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; obj) const</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_ac97fd6f8665f13b94526b9006c5786c7_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_ac97fd6f8665f13b94526b9006c5786c7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1a272fd6987bd0cffcddff9c376881d765"/><section>
+    <title>Draw()</title>
+<indexterm><primary>Draw</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>Draw</secondary></indexterm>
+<para><computeroutput>void GameField::Draw ( ) const</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_a272fd6987bd0cffcddff9c376881d765_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_a272fd6987bd0cffcddff9c376881d765_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1a3571e42c9b4d3babcc7800c9db0f3ca5"/><section>
+    <title>Hit()</title>
+<indexterm><primary>Hit</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>Hit</secondary></indexterm>
+<para><computeroutput>std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; GameField::Hit (std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; obj, <link linkend="_struct_vector2_int">Vector2Int</link> pos) const</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_a3571e42c9b4d3babcc7800c9db0f3ca5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1ad963bd86308288dc9f11c906b294d2ed"/><section>
+    <title>Init()</title>
+<indexterm><primary>Init</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>Init</secondary></indexterm>
+<para><computeroutput>void GameField::Init ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_ad963bd86308288dc9f11c906b294d2ed_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_ad963bd86308288dc9f11c906b294d2ed_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1a44c875aff7df91b6bcf7ac07d7e7bdb7"/><section>
+    <title>IsOutOfBounds()</title>
+<indexterm><primary>IsOutOfBounds</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>IsOutOfBounds</secondary></indexterm>
+<para><computeroutput>bool GameField::IsOutOfBounds (const <link linkend="_struct_vector2_int">Vector2Int</link> position) const</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_a44c875aff7df91b6bcf7ac07d7e7bdb7_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1afc308ff0a7d36ee15ade467f885fe449"/><section>
+    <title>MakeFieldMove()</title>
+<indexterm><primary>MakeFieldMove</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>MakeFieldMove</secondary></indexterm>
+<para><computeroutput>bool GameField::MakeFieldMove (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; object)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_afc308ff0a7d36ee15ade467f885fe449_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f"/><section>
+    <title>ReachedPlayer()</title>
+<indexterm><primary>ReachedPlayer</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>ReachedPlayer</secondary></indexterm>
+<para><computeroutput>bool GameField::ReachedPlayer (const std::shared_ptr&lt; <link linkend="_class_field_object">FieldObject</link> &gt; obj) const</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_adf6d1d8553d11b33720f0fd7dd79456f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_game_field_1a7417ea928ae030016e57caa6376a5d90"/><section>
+    <title>Tick()</title>
+<indexterm><primary>Tick</primary><secondary>GameField</secondary></indexterm>
+<indexterm><primary>GameField</primary><secondary>Tick</secondary></indexterm>
+<para><computeroutput>bool GameField::Tick ( )</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_a7417ea928ae030016e57caa6376a5d90_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_game_field_a7417ea928ae030016e57caa6376a5d90_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="__game_field_8h">GameField.h</link>src/<link linkend="__game_field_8cpp">GameField.cpp</link></section>
+</section>

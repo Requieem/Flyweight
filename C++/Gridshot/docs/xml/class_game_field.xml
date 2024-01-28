@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="class_game_field" kind="class" language="C++" prot="public">
+    <compoundname>GameField</compoundname>
+    <includes refid="_game_field_8h" local="no">GameField.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_field_1a038d8a6bddf337e48aea30310c018ba3" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int GameField::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>GameField::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="21" column="16" bodyfile="src/GameField.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_field_1abce10fbf3cfcda8a1dd3ac7e0fd8add3" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int GameField::padding</definition>
+        <argsstring></argsstring>
+        <name>padding</name>
+        <qualifiedname>GameField::padding</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="22" column="16" bodyfile="src/GameField.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_field_1aa2e7770e76354bbb43c0bbdd1a04f1b4" prot="private" static="no" mutable="no">
+        <type><ref refid="class_cave_generator" kindref="compound">CaveGenerator</ref> *</type>
+        <definition>CaveGenerator* GameField::caveGenerator</definition>
+        <argsstring></argsstring>
+        <name>caveGenerator</name>
+        <qualifiedname>GameField::caveGenerator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="23" column="19" bodyfile="src/GameField.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_field_1a657313c0f6155c6514790b9401f3832c" prot="private" static="no" mutable="no">
+        <type><ref refid="_game_field_8h_1a059f0ea8cc55c170a0f017affea465f3" kindref="member">FieldObjectList</ref></type>
+        <definition>FieldObjectList GameField::fieldObjects</definition>
+        <argsstring></argsstring>
+        <name>fieldObjects</name>
+        <qualifiedname>GameField::fieldObjects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="24" column="21" bodyfile="src/GameField.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_field_1a9df6900ca63f818a5c54d92cccd6de83" prot="private" static="no" mutable="no">
+        <type><ref refid="_game_field_8h_1a3b420ca1a26421741fe1635d1f5fb43b" kindref="member">ItemMap</ref></type>
+        <definition>ItemMap GameField::itemMap</definition>
+        <argsstring></argsstring>
+        <name>itemMap</name>
+        <qualifiedname>GameField::itemMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="25" column="13" bodyfile="src/GameField.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_field_1a5a78453c600823dafee84e60c010f89e" prot="private" static="no" mutable="no">
+        <type><ref refid="_game_field_8h_1af7714f97d3660e33223e3a8203f09c1e" kindref="member">ObjectMap</ref></type>
+        <definition>ObjectMap GameField::objectMap</definition>
+        <argsstring></argsstring>
+        <name>objectMap</name>
+        <qualifiedname>GameField::objectMap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="26" column="15" bodyfile="src/GameField.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_field_1a7b747f79686898b73d4b273b85fbded4" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="class_player" kindref="compound">Player</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;Player&gt; GameField::player</definition>
+        <argsstring></argsstring>
+        <name>player</name>
+        <qualifiedname>GameField::player</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="27" column="21" bodyfile="src/GameField.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_field_1a7417ea928ae030016e57caa6376a5d90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GameField::Tick</definition>
+        <argsstring>()</argsstring>
+        <name>Tick</name>
+        <qualifiedname>GameField::Tick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="30" column="10" bodyfile="src/GameField.cpp" bodystart="77" bodyend="104"/>
+        <references refid="class_game_field_1ac97fd6f8665f13b94526b9006c5786c7" compoundref="_game_field_8cpp" startline="244" endline="261">CheckHit</references>
+        <references refid="_colors_8h_1a321e9c7396e25a03df3b6a3cd18f2b6b" compoundref="_colors_8h" startline="6">ENEMY_COLOR</references>
+        <references refid="class_cave_generator_1a23b75da31cea10356121e1d8bd74361d" compoundref="_cave_generator_8cpp" startline="11" endline="11">CaveGenerator::GetCave</references>
+        <references refid="class_game_field_1a44c875aff7df91b6bcf7ac07d7e7bdb7" compoundref="_game_field_8cpp" startline="212" endline="220">IsOutOfBounds</references>
+        <references refid="class_game_field_1afc308ff0a7d36ee15ade467f885fe449" compoundref="_game_field_8cpp" startline="222" endline="242">MakeFieldMove</references>
+        <references refid="class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f" compoundref="_game_field_8cpp" startline="263" endline="273">ReachedPlayer</references>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">Vector2Int::x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">Vector2Int::y</references>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1ad963bd86308288dc9f11c906b294d2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameField::Init</definition>
+        <argsstring>()</argsstring>
+        <name>Init</name>
+        <qualifiedname>GameField::Init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="31" column="10" bodyfile="src/GameField.cpp" bodystart="69" bodyend="75"/>
+        <references refid="class_cave_generator_1a23b75da31cea10356121e1d8bd74361d" compoundref="_cave_generator_8cpp" startline="11" endline="11">CaveGenerator::GetCave</references>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1a272fd6987bd0cffcddff9c376881d765" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameField::Draw</definition>
+        <argsstring>() const</argsstring>
+        <name>Draw</name>
+        <qualifiedname>GameField::Draw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="32" column="10" bodyfile="src/GameField.cpp" bodystart="106" bodyend="210"/>
+        <references refid="_gridshot_8h_1af59d58f6e4d6d0688ef6d7f2f8a7d6bb">CAVE_COLOR</references>
+        <references refid="class_cave_generator_1a23b75da31cea10356121e1d8bd74361d" compoundref="_cave_generator_8cpp" startline="11" endline="11">CaveGenerator::GetCave</references>
+        <references refid="class_cave_generator_1adbb1a2d432e9826ce817a2d5d44eb72d" compoundref="_cave_generator_8cpp" startline="9" endline="9">CaveGenerator::GetSize</references>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">Vector2Int::x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">Vector2Int::y</references>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1a44c875aff7df91b6bcf7ac07d7e7bdb7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GameField::IsOutOfBounds</definition>
+        <argsstring>(const Vector2Int position) const</argsstring>
+        <name>IsOutOfBounds</name>
+        <qualifiedname>GameField::IsOutOfBounds</qualifiedname>
+        <param>
+          <type>const <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="33" column="10" bodyfile="src/GameField.cpp" bodystart="212" bodyend="220"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">Vector2Int::x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">Vector2Int::y</references>
+        <referencedby refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" compoundref="_game_field_8cpp" startline="77" endline="104">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1afc308ff0a7d36ee15ade467f885fe449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GameField::MakeFieldMove</definition>
+        <argsstring>(const std::shared_ptr&lt; FieldObject &gt; object)</argsstring>
+        <name>MakeFieldMove</name>
+        <qualifiedname>GameField::MakeFieldMove</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="34" column="10" bodyfile="src/GameField.cpp" bodystart="222" bodyend="242"/>
+        <referencedby refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" compoundref="_game_field_8cpp" startline="77" endline="104">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1ab1ae41b1c419a854da2cc174bd3a08c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameField::AddFieldObject</definition>
+        <argsstring>(const std::shared_ptr&lt; FieldObject &gt; object)</argsstring>
+        <name>AddFieldObject</name>
+        <qualifiedname>GameField::AddFieldObject</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="35" column="10" bodyfile="src/GameField.cpp" bodystart="275" bodyend="280"/>
+        <references refid="class_cave_generator_1a23b75da31cea10356121e1d8bd74361d" compoundref="_cave_generator_8cpp" startline="11" endline="11">CaveGenerator::GetCave</references>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1a3571e42c9b4d3babcc7800c9db0f3ca5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; FieldObject &gt; GameField::Hit</definition>
+        <argsstring>(std::shared_ptr&lt; FieldObject &gt; obj, Vector2Int pos) const</argsstring>
+        <name>Hit</name>
+        <qualifiedname>GameField::Hit</qualifiedname>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="36" column="21" bodyfile="src/GameField.cpp" bodystart="282" bodyend="290"/>
+        <referencedby refid="class_game_field_1ac97fd6f8665f13b94526b9006c5786c7" compoundref="_game_field_8cpp" startline="244" endline="261">CheckHit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1ac97fd6f8665f13b94526b9006c5786c7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GameField::CheckHit</definition>
+        <argsstring>(const std::shared_ptr&lt; FieldObject &gt; obj) const</argsstring>
+        <name>CheckHit</name>
+        <qualifiedname>GameField::CheckHit</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="37" column="10" bodyfile="src/GameField.cpp" bodystart="244" bodyend="261"/>
+        <references refid="class_game_field_1a3571e42c9b4d3babcc7800c9db0f3ca5" compoundref="_game_field_8cpp" startline="282" endline="290">Hit</references>
+        <referencedby refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" compoundref="_game_field_8cpp" startline="77" endline="104">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool GameField::ReachedPlayer</definition>
+        <argsstring>(const std::shared_ptr&lt; FieldObject &gt; obj) const</argsstring>
+        <name>ReachedPlayer</name>
+        <qualifiedname>GameField::ReachedPlayer</qualifiedname>
+        <param>
+          <type>const std::shared_ptr&lt; <ref refid="class_field_object" kindref="compound">FieldObject</ref> &gt;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="38" column="10" bodyfile="src/GameField.cpp" bodystart="263" bodyend="273"/>
+        <references refid="struct_vector2_int_1a7cac0ab70292eaa33d1aaf634d7c9141" compoundref="_vector2_int_8h" startline="7" endline="7">Vector2Int::Down</references>
+        <references refid="struct_vector2_int_1a087472c234c9b548ed191ee0d60d22a1" compoundref="_vector2_int_8h" startline="8" endline="8">Vector2Int::Left</references>
+        <references refid="struct_vector2_int_1a9c96b9c5aab40bf6c06f7d82aa87b3c1" compoundref="_vector2_int_8h" startline="9" endline="9">Vector2Int::Right</references>
+        <references refid="struct_vector2_int_1a2ee6d471baa7a6ba0e70ae11098491cf" compoundref="_vector2_int_8h" startline="6" endline="6">Vector2Int::Up</references>
+        <referencedby refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" compoundref="_game_field_8cpp" startline="77" endline="104">Tick</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_game_field_1ab7c0e031d305f8045ed799ebd076a8aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GameField::GameField</definition>
+        <argsstring>(Vector2Int size, Vector2Int padding, std::shared_ptr&lt; Player &gt; player, float fillProbability, int iterations)</argsstring>
+        <name>GameField</name>
+        <qualifiedname>GameField::GameField</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>padding</declname>
+        </param>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="class_player" kindref="compound">Player</ref> &gt;</type>
+          <declname>player</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fillProbability</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>iterations</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/GameField.h" line="39" column="5" bodyfile="src/GameField.cpp" bodystart="3" bodyend="67"/>
+        <references refid="_colors_8h_1a321e9c7396e25a03df3b6a3cd18f2b6b" compoundref="_colors_8h" startline="6">ENEMY_COLOR</references>
+        <references refid="class_cave_generator_1a9c0e8ee97f7cd1aea6045d765e20f7a8" compoundref="_cave_generator_8cpp" startline="63" endline="73">CaveGenerator::GenerateCave</references>
+        <references refid="class_cave_generator_1a0473c07481e181db71a9f98946130bb1" compoundref="_cave_generator_8cpp" startline="10" endline="10">CaveGenerator::GetEmptySpaces</references>
+        <references refid="class_cave_generator_1a5f9b37566f09c125e37f9ee83012b743" compoundref="_cave_generator_8cpp" startline="84" endline="89">CaveGenerator::GetEnemySpace</references>
+        <references refid="class_cave_generator_1a4692bbcd7cdef1c41c06f00a65f2bdb6" compoundref="_cave_generator_8cpp" startline="91" endline="110">CaveGenerator::GetRandomDistantEmptySpace</references>
+        <references refid="class_cave_generator_1a5f8ada5348f66c031890f058657ce439" compoundref="_cave_generator_8cpp" startline="75" endline="82">CaveGenerator::GetRandomEmptySpace</references>
+        <references refid="struct_vector2_int_1a47e1fa2c4d20433493421c8e6b393d55" compoundref="_vector2_int_8h" startline="10" endline="10">Vector2Int::Zero</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GameField</label>
+        <link refid="class_game_field"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/GameField.h" line="18" column="1" bodyfile="src/GameField.h" bodystart="19" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_game_field_1ab1ae41b1c419a854da2cc174bd3a08c3" prot="public" virt="non-virtual"><scope>GameField</scope><name>AddFieldObject</name></member>
+      <member refid="class_game_field_1aa2e7770e76354bbb43c0bbdd1a04f1b4" prot="private" virt="non-virtual"><scope>GameField</scope><name>caveGenerator</name></member>
+      <member refid="class_game_field_1ac97fd6f8665f13b94526b9006c5786c7" prot="public" virt="non-virtual"><scope>GameField</scope><name>CheckHit</name></member>
+      <member refid="class_game_field_1a272fd6987bd0cffcddff9c376881d765" prot="public" virt="non-virtual"><scope>GameField</scope><name>Draw</name></member>
+      <member refid="class_game_field_1a657313c0f6155c6514790b9401f3832c" prot="private" virt="non-virtual"><scope>GameField</scope><name>fieldObjects</name></member>
+      <member refid="class_game_field_1ab7c0e031d305f8045ed799ebd076a8aa" prot="public" virt="non-virtual"><scope>GameField</scope><name>GameField</name></member>
+      <member refid="class_game_field_1a3571e42c9b4d3babcc7800c9db0f3ca5" prot="public" virt="non-virtual"><scope>GameField</scope><name>Hit</name></member>
+      <member refid="class_game_field_1ad963bd86308288dc9f11c906b294d2ed" prot="public" virt="non-virtual"><scope>GameField</scope><name>Init</name></member>
+      <member refid="class_game_field_1a44c875aff7df91b6bcf7ac07d7e7bdb7" prot="public" virt="non-virtual"><scope>GameField</scope><name>IsOutOfBounds</name></member>
+      <member refid="class_game_field_1a9df6900ca63f818a5c54d92cccd6de83" prot="private" virt="non-virtual"><scope>GameField</scope><name>itemMap</name></member>
+      <member refid="class_game_field_1afc308ff0a7d36ee15ade467f885fe449" prot="public" virt="non-virtual"><scope>GameField</scope><name>MakeFieldMove</name></member>
+      <member refid="class_game_field_1a5a78453c600823dafee84e60c010f89e" prot="private" virt="non-virtual"><scope>GameField</scope><name>objectMap</name></member>
+      <member refid="class_game_field_1abce10fbf3cfcda8a1dd3ac7e0fd8add3" prot="private" virt="non-virtual"><scope>GameField</scope><name>padding</name></member>
+      <member refid="class_game_field_1a7b747f79686898b73d4b273b85fbded4" prot="private" virt="non-virtual"><scope>GameField</scope><name>player</name></member>
+      <member refid="class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f" prot="public" virt="non-virtual"><scope>GameField</scope><name>ReachedPlayer</name></member>
+      <member refid="class_game_field_1a038d8a6bddf337e48aea30310c018ba3" prot="private" virt="non-virtual"><scope>GameField</scope><name>size</name></member>
+      <member refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" prot="public" virt="non-virtual"><scope>GameField</scope><name>Tick</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="GameField::CheckHit" name="GameField::CheckHit">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,160,34"/>
+<area shape="rect" id="Node000002" href="$class_game_field.html#a3571e42c9b4d3babcc7800c9db0f3ca5" title=" " alt="" coords="208,5,323,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="160,17,192,17,192,22,160,22"/>
+</map>

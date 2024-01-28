@@ -1,0 +1,30 @@
+\doxysection{Enemy.\+h}
+\hypertarget{_enemy_8h_source}{}\label{_enemy_8h_source}\index{src/Enemy.h@{src/Enemy.h}}
+\mbox{\hyperlink{_enemy_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_a_star_8h}{AStar.h}}"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_soldier_8h}{Soldier.h}}"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_enemy}{Enemy}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_soldier}{Soldier}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{float}\ tickRate;}
+\DoxyCodeLine{00013\ \ \ \ \ std::vector<Vector2Int>\ directionPath;}
+\DoxyCodeLine{00014\ \ \ \ \ std::shared\_ptr<FieldObject>\ targetObject;}
+\DoxyCodeLine{00015\ \ \ \ \ std::vector<Vector2Int>::iterator\ pathIterator;}
+\DoxyCodeLine{00016\ \ \ \ \ std::chrono::steady\_clock::time\_point\ lastDecisionTime;}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ RandomDirection()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_enemy_a68dc3ffaa4301eb59395d7449da3b956}{Enemy}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_field_object_ab3445464b7bc65c70b212959765d4504}{teamColor}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_field_object_aa182c1f2dbde4353491d10b5b78218cc}{speed}},\ \textcolor{keywordtype}{float}\ \mbox{\hyperlink{class_life_a5d1154e1c58d1852527cab42294c576c}{startingHealth}},\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{class_field_object_a171a6bf6a57457e18208ebcf8cb02a9c}{position}},\ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{class_field_object_a84b942ec7b6ccef85e0f1d8e9c453932}{direction}},\ std::shared\_ptr<FieldObject>\ targetObject);}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{struct_vector2_int}{Vector2Int}}\ \mbox{\hyperlink{class_enemy_ad87fa2fc1271434d29e72d313b3413b4}{NextDirection}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \};}
+\DoxyCodeLine{00024\ }
+
+\end{DoxyCode}

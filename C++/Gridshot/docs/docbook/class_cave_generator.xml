@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_cave_generator" xml:lang="en-US">
+<title>CaveGenerator Class Reference</title>
+<indexterm><primary>CaveGenerator</primary></indexterm>
+<para>
+<computeroutput>#include &lt;CaveGenerator.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_cave_generator_1a60055189325dc20fb431602ad00dcca2">CaveGenerator</link> (<link linkend="_struct_vector2_int">Vector2Int</link> size, float fillProbability)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_cave_generator_1a9c0e8ee97f7cd1aea6045d765e20f7a8">GenerateCave</link> (const int iterations, const <link linkend="_struct_vector2_int">Vector2Int</link> *size, const float *fillProbability)</para>
+</listitem>
+            <listitem><para>std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; <link linkend="_class_cave_generator_1a23b75da31cea10356121e1d8bd74361d">GetCave</link> () const</para>
+</listitem>
+            <listitem><para><link linkend="_struct_vector2_int">Vector2Int</link> <link linkend="_class_cave_generator_1adbb1a2d432e9826ce817a2d5d44eb72d">GetSize</link> () const</para>
+</listitem>
+            <listitem><para>int <link linkend="_class_cave_generator_1a0473c07481e181db71a9f98946130bb1">GetEmptySpaces</link> () const</para>
+</listitem>
+            <listitem><para><link linkend="_struct_vector2_int">Vector2Int</link> <link linkend="_class_cave_generator_1a5f8ada5348f66c031890f058657ce439">GetRandomEmptySpace</link> ()</para>
+</listitem>
+            <listitem><para><link linkend="_struct_vector2_int">Vector2Int</link> <link linkend="_class_cave_generator_1a5f9b37566f09c125e37f9ee83012b743">GetEnemySpace</link> (const <link linkend="_struct_vector2_int">Vector2Int</link> fromPosition, const int minDistance)</para>
+</listitem>
+            <listitem><para><link linkend="_struct_vector2_int">Vector2Int</link> <link linkend="_class_cave_generator_1a4692bbcd7cdef1c41c06f00a65f2bdb6">GetRandomDistantEmptySpace</link> (const <link linkend="_struct_vector2_int">Vector2Int</link> fromPosition, const int minDistance)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_class_cave_generator_1a60055189325dc20fb431602ad00dcca2"/><section>
+    <title>CaveGenerator()</title>
+<indexterm><primary>CaveGenerator</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>CaveGenerator</secondary></indexterm>
+<para><computeroutput>CaveGenerator::CaveGenerator (<link linkend="_struct_vector2_int">Vector2Int</link> size, float fillProbability)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_cave_generator_1a9c0e8ee97f7cd1aea6045d765e20f7a8"/><section>
+    <title>GenerateCave()</title>
+<indexterm><primary>GenerateCave</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>GenerateCave</secondary></indexterm>
+<para><computeroutput>void CaveGenerator::GenerateCave (const int iterations, const <link linkend="_struct_vector2_int">Vector2Int</link> * size, const float * fillProbability)</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a9c0e8ee97f7cd1aea6045d765e20f7a8_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_cave_generator_1a23b75da31cea10356121e1d8bd74361d"/><section>
+    <title>GetCave()</title>
+<indexterm><primary>GetCave</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>GetCave</secondary></indexterm>
+<para><computeroutput>std::shared_ptr&lt; std::vector&lt; std::vector&lt; bool &gt; &gt; &gt; CaveGenerator::GetCave ( ) const</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a23b75da31cea10356121e1d8bd74361d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_cave_generator_1a0473c07481e181db71a9f98946130bb1"/><section>
+    <title>GetEmptySpaces()</title>
+<indexterm><primary>GetEmptySpaces</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>GetEmptySpaces</secondary></indexterm>
+<para><computeroutput>int CaveGenerator::GetEmptySpaces ( ) const</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a0473c07481e181db71a9f98946130bb1_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_cave_generator_1a5f9b37566f09c125e37f9ee83012b743"/><section>
+    <title>GetEnemySpace()</title>
+<indexterm><primary>GetEnemySpace</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>GetEnemySpace</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_vector2_int">Vector2Int</link> CaveGenerator::GetEnemySpace (const <link linkend="_struct_vector2_int">Vector2Int</link> fromPosition, const int minDistance)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a5f9b37566f09c125e37f9ee83012b743_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a5f9b37566f09c125e37f9ee83012b743_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_cave_generator_1a4692bbcd7cdef1c41c06f00a65f2bdb6"/><section>
+    <title>GetRandomDistantEmptySpace()</title>
+<indexterm><primary>GetRandomDistantEmptySpace</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>GetRandomDistantEmptySpace</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_vector2_int">Vector2Int</link> CaveGenerator::GetRandomDistantEmptySpace (const <link linkend="_struct_vector2_int">Vector2Int</link> fromPosition, const int minDistance)</computeroutput></para>Here is the call graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a4692bbcd7cdef1c41c06f00a65f2bdb6_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a4692bbcd7cdef1c41c06f00a65f2bdb6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_cave_generator_1a5f8ada5348f66c031890f058657ce439"/><section>
+    <title>GetRandomEmptySpace()</title>
+<indexterm><primary>GetRandomEmptySpace</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>GetRandomEmptySpace</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_vector2_int">Vector2Int</link> CaveGenerator::GetRandomEmptySpace ( )</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_a5f8ada5348f66c031890f058657ce439_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<anchor xml:id="_class_cave_generator_1adbb1a2d432e9826ce817a2d5d44eb72d"/><section>
+    <title>GetSize()</title>
+<indexterm><primary>GetSize</primary><secondary>CaveGenerator</secondary></indexterm>
+<indexterm><primary>CaveGenerator</primary><secondary>GetSize</secondary></indexterm>
+<para><computeroutput><link linkend="_struct_vector2_int">Vector2Int</link> CaveGenerator::GetSize ( ) const</computeroutput></para>Here is the caller graph for this function:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_cave_generator_adbb1a2d432e9826ce817a2d5d44eb72d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
+<para>
+The documentation for this class was generated from the following files:</para>
+src/<link linkend="__cave_generator_8h">CaveGenerator.h</link>src/<link linkend="__cave_generator_8cpp">CaveGenerator.cpp</link></section>
+</section>

@@ -1,0 +1,5 @@
+<map id="GameField::AddFieldObject" name="GameField::AddFieldObject">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,200,34"/>
+<area shape="rect" id="Node000002" href="$class_cave_generator.html#a23b75da31cea10356121e1d8bd74361d" title=" " alt="" coords="248,5,433,34"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="200,17,232,17,232,22,200,22"/>
+</map>

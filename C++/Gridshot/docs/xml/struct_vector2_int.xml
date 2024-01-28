@@ -1,0 +1,492 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="struct_vector2_int" kind="struct" language="C++" prot="public">
+    <compoundname>Vector2Int</compoundname>
+    <includes refid="_vector2_int_8h" local="no">Vector2Int.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Vector2Int::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Vector2Int::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="8" column="5" bodyfile="src/Vector2Int.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="struct_vector2_int_1a1bd4a637f718f5324530a06eeb6648ae" compoundref="_vector2_int_8cpp" startline="18" endline="25">Distance</referencedby>
+        <referencedby refid="class_game_field_1a272fd6987bd0cffcddff9c376881d765" compoundref="_game_field_8cpp" startline="106" endline="210">GameField::Draw</referencedby>
+        <referencedby refid="class_cave_generator_1a5f9b37566f09c125e37f9ee83012b743" compoundref="_cave_generator_8cpp" startline="84" endline="89">CaveGenerator::GetEnemySpace</referencedby>
+        <referencedby refid="class_cave_generator_1a5f8ada5348f66c031890f058657ce439" compoundref="_cave_generator_8cpp" startline="75" endline="82">CaveGenerator::GetRandomEmptySpace</referencedby>
+        <referencedby refid="class_game_field_1a44c875aff7df91b6bcf7ac07d7e7bdb7" compoundref="_game_field_8cpp" startline="212" endline="220">GameField::IsOutOfBounds</referencedby>
+        <referencedby refid="class_a_star_1a12a10e1a4ab9f4de05d26ba189223da1" compoundref="_a_star_8cpp" startline="3" endline="7">AStar::IsPositionValid</referencedby>
+        <referencedby refid="struct_vector2_int_1a17576daf4474e5e9c90581dccedfbab0" compoundref="_vector2_int_8cpp" startline="32" endline="35">ManhattanDistance</referencedby>
+        <referencedby refid="class_field_object_1adcbf508ca827673eee1b27f1d8284ea8" compoundref="_field_object_8cpp" startline="45" endline="57">FieldObject::Move</referencedby>
+        <referencedby refid="struct_vector2_int_1af9b55a021fe82cdee19a5736d0e0478c" compoundref="_vector2_int_8cpp" startline="71" endline="75">Move</referencedby>
+        <referencedby refid="struct_vector2_int_1ab08cdb91427892ffa2854e8d09114cdb" compoundref="_vector2_int_8cpp" startline="47" endline="50">operator+</referencedby>
+        <referencedby refid="struct_vector2_int_1a03816fc993bf82130d2941990f9d7ef6" compoundref="_vector2_int_8cpp" startline="37" endline="40">operator-</referencedby>
+        <referencedby refid="struct_vector2_int_1af4140f0a21bfd68be482c1b1382b2d0c" compoundref="_vector2_int_8cpp" startline="42" endline="45">operator-</referencedby>
+        <referencedby refid="struct_vector2_int_1a805e463e26682c870374fe8c4348bd5b" compoundref="_vector2_int_8cpp" startline="52" endline="57">operator/</referencedby>
+        <referencedby refid="struct_vector2_int_1a3acb9c9c38ec9f7ded2f62d8ca5eb7f0" compoundref="_vector2_int_8cpp" startline="59" endline="64">operator/</referencedby>
+        <referencedby refid="struct_vector2_int_1a30bceb27193e5742ebbd3bbef61528d0" compoundref="_vector2_int_8cpp" startline="27" endline="30">operator&lt;</referencedby>
+        <referencedby refid="struct_vector2_int_1af948d9748afc6d6288e19ffcef7ef8cf" compoundref="_vector2_int_8cpp" startline="66" endline="69">operator==</referencedby>
+        <referencedby refid="struct_vector2_int_1a1ff8f0a7dfc5671cde00c238ec1f8132" compoundref="_vector2_int_8cpp" startline="13" endline="16">Sum</referencedby>
+        <referencedby refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" compoundref="_game_field_8cpp" startline="77" endline="104">GameField::Tick</referencedby>
+        <referencedby refid="class_field_object_1a9590a56551a007ab5a008055ad4ee30b" compoundref="_field_object_8cpp" startline="22" endline="30">FieldObject::WillCollideWithCave</referencedby>
+        <referencedby refid="class_field_object_1a74311d749156405632bd895ff11d6b7b" compoundref="_field_object_8cpp" startline="32" endline="43">FieldObject::WillGoOutOfBounds</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">int</ref></type>
+        <definition>int Vector2Int::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Vector2Int::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="9" column="5" bodyfile="src/Vector2Int.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_game_field_1a272fd6987bd0cffcddff9c376881d765" compoundref="_game_field_8cpp" startline="106" endline="210">GameField::Draw</referencedby>
+        <referencedby refid="class_cave_generator_1a5f9b37566f09c125e37f9ee83012b743" compoundref="_cave_generator_8cpp" startline="84" endline="89">CaveGenerator::GetEnemySpace</referencedby>
+        <referencedby refid="class_cave_generator_1a5f8ada5348f66c031890f058657ce439" compoundref="_cave_generator_8cpp" startline="75" endline="82">CaveGenerator::GetRandomEmptySpace</referencedby>
+        <referencedby refid="class_game_field_1a44c875aff7df91b6bcf7ac07d7e7bdb7" compoundref="_game_field_8cpp" startline="212" endline="220">GameField::IsOutOfBounds</referencedby>
+        <referencedby refid="class_a_star_1a12a10e1a4ab9f4de05d26ba189223da1" compoundref="_a_star_8cpp" startline="3" endline="7">AStar::IsPositionValid</referencedby>
+        <referencedby refid="struct_vector2_int_1a17576daf4474e5e9c90581dccedfbab0" compoundref="_vector2_int_8cpp" startline="32" endline="35">ManhattanDistance</referencedby>
+        <referencedby refid="class_field_object_1adcbf508ca827673eee1b27f1d8284ea8" compoundref="_field_object_8cpp" startline="45" endline="57">FieldObject::Move</referencedby>
+        <referencedby refid="struct_vector2_int_1af9b55a021fe82cdee19a5736d0e0478c" compoundref="_vector2_int_8cpp" startline="71" endline="75">Move</referencedby>
+        <referencedby refid="struct_vector2_int_1ab08cdb91427892ffa2854e8d09114cdb" compoundref="_vector2_int_8cpp" startline="47" endline="50">operator+</referencedby>
+        <referencedby refid="struct_vector2_int_1a03816fc993bf82130d2941990f9d7ef6" compoundref="_vector2_int_8cpp" startline="37" endline="40">operator-</referencedby>
+        <referencedby refid="struct_vector2_int_1af4140f0a21bfd68be482c1b1382b2d0c" compoundref="_vector2_int_8cpp" startline="42" endline="45">operator-</referencedby>
+        <referencedby refid="struct_vector2_int_1a805e463e26682c870374fe8c4348bd5b" compoundref="_vector2_int_8cpp" startline="52" endline="57">operator/</referencedby>
+        <referencedby refid="struct_vector2_int_1a3acb9c9c38ec9f7ded2f62d8ca5eb7f0" compoundref="_vector2_int_8cpp" startline="59" endline="64">operator/</referencedby>
+        <referencedby refid="struct_vector2_int_1a30bceb27193e5742ebbd3bbef61528d0" compoundref="_vector2_int_8cpp" startline="27" endline="30">operator&lt;</referencedby>
+        <referencedby refid="struct_vector2_int_1af948d9748afc6d6288e19ffcef7ef8cf" compoundref="_vector2_int_8cpp" startline="66" endline="69">operator==</referencedby>
+        <referencedby refid="class_game_field_1a7417ea928ae030016e57caa6376a5d90" compoundref="_game_field_8cpp" startline="77" endline="104">GameField::Tick</referencedby>
+        <referencedby refid="class_field_object_1a9590a56551a007ab5a008055ad4ee30b" compoundref="_field_object_8cpp" startline="22" endline="30">FieldObject::WillCollideWithCave</referencedby>
+        <referencedby refid="class_field_object_1a74311d749156405632bd895ff11d6b7b" compoundref="_field_object_8cpp" startline="32" endline="43">FieldObject::WillGoOutOfBounds</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="struct_vector2_int_1a2ee6d471baa7a6ba0e70ae11098491cf" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> <ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref></type>
+        <definition>const Vector2Int Vector2Int::Up</definition>
+        <argsstring></argsstring>
+        <name>Up</name>
+        <qualifiedname>Vector2Int::Up</qualifiedname>
+        <initializer>= { 0, 1 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="17" column="25" bodyfile="src/Vector2Int.h" bodystart="6" bodyend="6"/>
+        <referencedby refid="class_a_star_1a77dd0de7235076265b212b7d1dd4a084" compoundref="_a_star_8cpp" startline="9" endline="77">AStar::DirectionPath</referencedby>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+        <referencedby refid="class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f" compoundref="_game_field_8cpp" startline="263" endline="273">GameField::ReachedPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vector2_int_1a7cac0ab70292eaa33d1aaf634d7c9141" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> <ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref></type>
+        <definition>const Vector2Int Vector2Int::Down</definition>
+        <argsstring></argsstring>
+        <name>Down</name>
+        <qualifiedname>Vector2Int::Down</qualifiedname>
+        <initializer>= { 0, -1 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="18" column="25" bodyfile="src/Vector2Int.h" bodystart="7" bodyend="7"/>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+        <referencedby refid="class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f" compoundref="_game_field_8cpp" startline="263" endline="273">GameField::ReachedPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vector2_int_1a087472c234c9b548ed191ee0d60d22a1" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> <ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref></type>
+        <definition>const Vector2Int Vector2Int::Left</definition>
+        <argsstring></argsstring>
+        <name>Left</name>
+        <qualifiedname>Vector2Int::Left</qualifiedname>
+        <initializer>= { -1, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="19" column="25" bodyfile="src/Vector2Int.h" bodystart="8" bodyend="8"/>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+        <referencedby refid="class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f" compoundref="_game_field_8cpp" startline="263" endline="273">GameField::ReachedPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vector2_int_1a9c96b9c5aab40bf6c06f7d82aa87b3c1" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> <ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref></type>
+        <definition>const Vector2Int Vector2Int::Right</definition>
+        <argsstring></argsstring>
+        <name>Right</name>
+        <qualifiedname>Vector2Int::Right</qualifiedname>
+        <initializer>= { 1, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="20" column="25" bodyfile="src/Vector2Int.h" bodystart="9" bodyend="9"/>
+        <referencedby refid="class_a_star_1a77dd0de7235076265b212b7d1dd4a084" compoundref="_a_star_8cpp" startline="9" endline="77">AStar::DirectionPath</referencedby>
+        <referencedby refid="_gridshot_8cpp_1a1ccba604c34743e18775c4c72ff36948" compoundref="_gridshot_8cpp" startline="77" endline="167">GameLoop</referencedby>
+        <referencedby refid="class_game_field_1adf6d1d8553d11b33720f0fd7dd79456f" compoundref="_game_field_8cpp" startline="263" endline="273">GameField::ReachedPlayer</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vector2_int_1a47e1fa2c4d20433493421c8e6b393d55" prot="public" static="yes" mutable="no">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> <ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref></type>
+        <definition>const Vector2Int Vector2Int::Zero</definition>
+        <argsstring></argsstring>
+        <name>Zero</name>
+        <qualifiedname>Vector2Int::Zero</qualifiedname>
+        <initializer>= { 0, 0 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="21" column="25" bodyfile="src/Vector2Int.h" bodystart="10" bodyend="10"/>
+        <referencedby refid="class_game_field_1ab7c0e031d305f8045ed799ebd076a8aa" compoundref="_game_field_8cpp" startline="3" endline="67">GameField::GameField</referencedby>
+        <referencedby refid="class_cave_generator_1a4692bbcd7cdef1c41c06f00a65f2bdb6" compoundref="_cave_generator_8cpp" startline="91" endline="110">CaveGenerator::GetRandomDistantEmptySpace</referencedby>
+        <referencedby refid="class_enemy_1ad87fa2fc1271434d29e72d313b3413b4" compoundref="_enemy_8cpp" startline="6" endline="46">Enemy::NextDirection</referencedby>
+        <referencedby refid="class_field_object_1a9590a56551a007ab5a008055ad4ee30b" compoundref="_field_object_8cpp" startline="22" endline="30">FieldObject::WillCollideWithCave</referencedby>
+        <referencedby refid="class_field_object_1a74311d749156405632bd895ff11d6b7b" compoundref="_field_object_8cpp" startline="32" endline="43">FieldObject::WillGoOutOfBounds</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_vector2_int_1a4f216ccc717da30962930d18f5d7ff60" prot="public" static="yes" mutable="no">
+        <type>std::vector&lt; <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref> &gt; <ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref></type>
+        <definition>const std::vector&lt; Vector2Int &gt; Vector2Int::Directions</definition>
+        <argsstring></argsstring>
+        <name>Directions</name>
+        <qualifiedname>Vector2Int::Directions</qualifiedname>
+        <initializer>= { <ref refid="struct_vector2_int_1a2ee6d471baa7a6ba0e70ae11098491cf" kindref="member">Up</ref>, <ref refid="struct_vector2_int_1a7cac0ab70292eaa33d1aaf634d7c9141" kindref="member">Down</ref>, <ref refid="struct_vector2_int_1a087472c234c9b548ed191ee0d60d22a1" kindref="member">Left</ref>, <ref refid="struct_vector2_int_1a9c96b9c5aab40bf6c06f7d82aa87b3c1" kindref="member">Right</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="22" column="26" bodyfile="src/Vector2Int.h" bodystart="11" bodyend="11"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_vector2_int_1a56b72e4031645f00febf334adce5a77d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector2Int::Vector2Int</definition>
+        <argsstring>()</argsstring>
+        <name>Vector2Int</name>
+        <qualifiedname>Vector2Int::Vector2Int</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="11" column="1" bodyfile="src/Vector2Int.cpp" bodystart="3" bodyend="3"/>
+        <referencedby refid="struct_vector2_int_1a805e463e26682c870374fe8c4348bd5b" compoundref="_vector2_int_8cpp" startline="52" endline="57">operator/</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1a38b3a94e64a08a94a0197e87ffc87a83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector2Int::Vector2Int</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>Vector2Int</name>
+        <qualifiedname>Vector2Int::Vector2Int</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">int</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">int</ref></type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="12" column="1" bodyfile="src/Vector2Int.cpp" bodystart="4" bodyend="4"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1af9b55a021fe82cdee19a5736d0e0478c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">void</ref></type>
+        <definition>void Vector2Int::Move</definition>
+        <argsstring>(Vector2Int direction)</argsstring>
+        <name>Move</name>
+        <qualifiedname>Vector2Int::Move</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="13" column="6" bodyfile="src/Vector2Int.cpp" bodystart="71" bodyend="75"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+        <referencedby refid="class_field_object_1adcbf508ca827673eee1b27f1d8284ea8" compoundref="_field_object_8cpp" startline="45" endline="57">FieldObject::Move</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1a03816fc993bf82130d2941990f9d7ef6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Vector2Int::operator-</definition>
+        <argsstring>() const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>Vector2Int::operator-</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="24" column="12" bodyfile="src/Vector2Int.cpp" bodystart="37" bodyend="40"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1af4140f0a21bfd68be482c1b1382b2d0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Vector2Int::operator-</definition>
+        <argsstring>(Vector2Int other) const</argsstring>
+        <name>operator-</name>
+        <qualifiedname>Vector2Int::operator-</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="25" column="12" bodyfile="src/Vector2Int.cpp" bodystart="42" bodyend="45"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1a805e463e26682c870374fe8c4348bd5b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Vector2Int::operator/</definition>
+        <argsstring>(int scalar) const</argsstring>
+        <name>operator/</name>
+        <qualifiedname>Vector2Int::operator/</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">int</ref></type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="26" column="12" bodyfile="src/Vector2Int.cpp" bodystart="52" bodyend="57"/>
+        <references refid="struct_vector2_int_1a56b72e4031645f00febf334adce5a77d" compoundref="_vector2_int_8cpp" startline="3" endline="3">Vector2Int</references>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1ab08cdb91427892ffa2854e8d09114cdb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Vector2Int::operator+</definition>
+        <argsstring>(Vector2Int other) const</argsstring>
+        <name>operator+</name>
+        <qualifiedname>Vector2Int::operator+</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="27" column="12" bodyfile="src/Vector2Int.cpp" bodystart="47" bodyend="50"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1a3acb9c9c38ec9f7ded2f62d8ca5eb7f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Vector2Int::operator/</definition>
+        <argsstring>(Vector2Int other) const</argsstring>
+        <name>operator/</name>
+        <qualifiedname>Vector2Int::operator/</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="28" column="12" bodyfile="src/Vector2Int.cpp" bodystart="59" bodyend="64"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1af948d9748afc6d6288e19ffcef7ef8cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">bool</ref></type>
+        <definition>bool Vector2Int::operator==</definition>
+        <argsstring>(Vector2Int other) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>Vector2Int::operator==</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="29" column="6" bodyfile="src/Vector2Int.cpp" bodystart="66" bodyend="69"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1a30bceb27193e5742ebbd3bbef61528d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">bool</ref></type>
+        <definition>bool Vector2Int::operator&lt;</definition>
+        <argsstring>(const Vector2Int other) const</argsstring>
+        <name>operator&lt;</name>
+        <qualifiedname>Vector2Int::operator&lt;</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref> <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="30" column="1" bodyfile="src/Vector2Int.cpp" bodystart="27" bodyend="30"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1a17576daf4474e5e9c90581dccedfbab0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">int</ref></type>
+        <definition>int Vector2Int::ManhattanDistance</definition>
+        <argsstring>(const Vector2Int other) const</argsstring>
+        <name>ManhattanDistance</name>
+        <qualifiedname>Vector2Int::ManhattanDistance</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">const</ref> <ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="31" column="5" bodyfile="src/Vector2Int.cpp" bodystart="32" bodyend="35"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <references refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" compoundref="_vector2_int_8h" startline="9">y</references>
+        <referencedby refid="class_a_star_1a77dd0de7235076265b212b7d1dd4a084" compoundref="_a_star_8cpp" startline="9" endline="77">AStar::DirectionPath</referencedby>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_vector2_int_1a1ff8f0a7dfc5671cde00c238ec1f8132" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+        <definition>Vector2Int Vector2Int::Sum</definition>
+        <argsstring>(Vector2Int vec1, Vector2Int vec2)</argsstring>
+        <name>Sum</name>
+        <qualifiedname>Vector2Int::Sum</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="14" column="19" bodyfile="src/Vector2Int.cpp" bodystart="13" bodyend="16"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <referencedby refid="class_field_object_1a38ad1607f64d21ef7f047a420a9ddd8b" compoundref="_field_object_8cpp" startline="17" endline="17">FieldObject::NextPosition</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_vector2_int_1a1bd4a637f718f5324530a06eeb6648ae" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" kindref="member">int</ref></type>
+        <definition>int Vector2Int::Distance</definition>
+        <argsstring>(Vector2Int vec1, Vector2Int vec2)</argsstring>
+        <name>Distance</name>
+        <qualifiedname>Vector2Int::Distance</qualifiedname>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>vec1</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_vector2_int" kindref="compound">Vector2Int</ref></type>
+          <declname>vec2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/Vector2Int.h" line="15" column="12" bodyfile="src/Vector2Int.cpp" bodystart="18" bodyend="25"/>
+        <references refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" compoundref="_vector2_int_8h" startline="8">x</references>
+        <referencedby refid="class_cave_generator_1a4692bbcd7cdef1c41c06f00a65f2bdb6" compoundref="_cave_generator_8cpp" startline="91" endline="110">CaveGenerator::GetRandomDistantEmptySpace</referencedby>
+        <referencedby refid="class_enemy_1ad87fa2fc1271434d29e72d313b3413b4" compoundref="_enemy_8cpp" startline="6" endline="46">Enemy::NextDirection</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Vector2Int</label>
+        <link refid="struct_vector2_int"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>+Down</edgelabel>
+          <edgelabel>+Left</edgelabel>
+          <edgelabel>+Right</edgelabel>
+          <edgelabel>+Up</edgelabel>
+          <edgelabel>+Zero</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="src/Vector2Int.h" line="6" column="1" bodyfile="src/Vector2Int.h" bodystart="7" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_vector2_int_1a4f216ccc717da30962930d18f5d7ff60" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Directions</name></member>
+      <member refid="struct_vector2_int_1a1bd4a637f718f5324530a06eeb6648ae" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Distance</name></member>
+      <member refid="struct_vector2_int_1a7cac0ab70292eaa33d1aaf634d7c9141" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Down</name></member>
+      <member refid="struct_vector2_int_1a087472c234c9b548ed191ee0d60d22a1" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Left</name></member>
+      <member refid="struct_vector2_int_1a17576daf4474e5e9c90581dccedfbab0" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>ManhattanDistance</name></member>
+      <member refid="struct_vector2_int_1af9b55a021fe82cdee19a5736d0e0478c" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Move</name></member>
+      <member refid="struct_vector2_int_1ab08cdb91427892ffa2854e8d09114cdb" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>operator+</name></member>
+      <member refid="struct_vector2_int_1a03816fc993bf82130d2941990f9d7ef6" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>operator-</name></member>
+      <member refid="struct_vector2_int_1af4140f0a21bfd68be482c1b1382b2d0c" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>operator-</name></member>
+      <member refid="struct_vector2_int_1a805e463e26682c870374fe8c4348bd5b" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>operator/</name></member>
+      <member refid="struct_vector2_int_1a3acb9c9c38ec9f7ded2f62d8ca5eb7f0" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>operator/</name></member>
+      <member refid="struct_vector2_int_1a30bceb27193e5742ebbd3bbef61528d0" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>operator&lt;</name></member>
+      <member refid="struct_vector2_int_1af948d9748afc6d6288e19ffcef7ef8cf" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>operator==</name></member>
+      <member refid="struct_vector2_int_1a9c96b9c5aab40bf6c06f7d82aa87b3c1" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Right</name></member>
+      <member refid="struct_vector2_int_1a1ff8f0a7dfc5671cde00c238ec1f8132" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Sum</name></member>
+      <member refid="struct_vector2_int_1a2ee6d471baa7a6ba0e70ae11098491cf" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Up</name></member>
+      <member refid="struct_vector2_int_1a56b72e4031645f00febf334adce5a77d" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Vector2Int</name></member>
+      <member refid="struct_vector2_int_1a38b3a94e64a08a94a0197e87ffc87a83" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Vector2Int</name></member>
+      <member refid="struct_vector2_int_1ad870656d517f78dd1cb577e1ab29d657" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>x</name></member>
+      <member refid="struct_vector2_int_1a2ac5bfc7ded6a4c62ce3b1d5e4945839" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>y</name></member>
+      <member refid="struct_vector2_int_1a47e1fa2c4d20433493421c8e6b393d55" prot="public" virt="non-virtual"><scope>Vector2Int</scope><name>Zero</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

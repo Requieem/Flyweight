@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__node_8h_source" xml:lang="en-US">
+<title>Node.h</title>
+<indexterm><primary>src/Node.h</primary></indexterm>
+Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 <emphasis role="preprocessor">#include&#32;&lt;memory&gt;</emphasis>
+2 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__vector2_int_8h">Vector2Int.h</link>&quot;</emphasis>
+3 
+4 <emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_node">Node</link>&#32;{
+5 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_node_1ab2a550a41fdc7f44acee23c88f9bbada">gCost</link>;
+6 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_node_1a70418c874e47cb87ff4b46c29b2333e3">hCost</link>;
+7 &#32;&#32;&#32;&#32;std::shared_ptr&lt;Node&gt;&#32;<link linkend="_struct_node_1a0c951408cd646d37a4c73b378a0fdf1a">parent</link>;
+8 &#32;&#32;&#32;&#32;<link linkend="_struct_vector2_int">Vector2Int</link>&#32;<link linkend="_struct_node_1a9df6cfdb2166ee07d0fb12c94e0fd0f7">position</link>;
+9 
+10 &#32;&#32;&#32;&#32;<link linkend="_struct_node_1a835a094c534990aefd165bd6320bde4e">Node</link>(<link linkend="_struct_vector2_int">Vector2Int</link>&#32;pos,&#32;std::shared_ptr&lt;Node&gt;&#32;p&#32;=&#32;<emphasis role="keyword">nullptr</emphasis>,&#32;<emphasis role="keywordtype">int</emphasis>&#32;g&#32;=&#32;0,&#32;<emphasis role="keywordtype">int</emphasis>&#32;h&#32;=&#32;0);
+11 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_struct_node_1ab06ffeba18555738104b964e5e710115">fCost</link>()&#32;<emphasis role="keyword">const</emphasis>;
+12 };
+13 
+14 <emphasis role="keyword">struct&#32;</emphasis><link linkend="_struct_compare_node">CompareNode</link>&#32;{
+15 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_struct_compare_node_1aa629b17fc0a71350bf44acb9ee77e213">operator()</link>(<emphasis role="keyword">const</emphasis>&#32;std::shared_ptr&lt;Node&gt;&#32;a,&#32;<emphasis role="keyword">const</emphasis>&#32;std::shared_ptr&lt;Node&gt;&#32;b)&#32;<emphasis role="keyword">const</emphasis>;
+16 };
+</programlisting></section>

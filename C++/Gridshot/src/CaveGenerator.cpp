@@ -13,7 +13,6 @@ std::shared_ptr<std::vector<std::vector<bool>>> CaveGenerator::GetCave() const {
 void CaveGenerator::GenerateInitialCave()
 {
 	cave = std::make_shared<std::vector<std::vector<bool>>>();
-
 	cave->resize(size.y, std::vector<bool>(size.x));
 	for (int y = 0; y < size.y; ++y) {
 		for (int x = 0; x < size.x; ++x) {
@@ -107,4 +106,10 @@ Vector2Int CaveGenerator::GetRandomDistantEmptySpace(const Vector2Int fromPositi
 
 	emptySpaces.erase(emptySpaces.begin() + randomIndex);
 	return randomPosition;
+}
+
+std::size_t CaveHash::operator()(const std::shared_ptr<std::vector<std::vector<bool>>>& grid) const noexcept
+{
+	// Hash the pointer's address
+	return std::hash<std::vector<std::vector<bool>>*>{}(grid.get());
 }

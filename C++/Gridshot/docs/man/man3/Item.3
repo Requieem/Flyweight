@@ -1,0 +1,50 @@
+.TH "Item" 3 "Version 0.0.1" "Gridshot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Item
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Item\&.h>\fP
+.PP
+Inherited by \fBFood\fP, and \fBTreasure\fP\fR [virtual]\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBItem\fP ()"
+.br
+.ti -1c
+.RI "virtual int \fBColor\fP () const =0"
+.br
+.ti -1c
+.RI "virtual unsigned char \fBDisplayChar\fP () const =0"
+.br
+.ti -1c
+.RI "virtual void \fBEffect\fP (std::shared_ptr< \fBPlayer\fP > player) const =0"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Item::Item ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "virtual int Item::Color () const\fR [pure virtual]\fP"
+
+.PP
+Implemented in \fBFood\fP, and \fBTreasure\fP\&.
+.SS "virtual unsigned char Item::DisplayChar () const\fR [pure virtual]\fP"
+
+.PP
+Implemented in \fBFood\fP, and \fBTreasure\fP\&.
+.SS "virtual void Item::Effect (std::shared_ptr< \fBPlayer\fP > player) const\fR [pure virtual]\fP"
+
+.PP
+Implemented in \fBFood\fP, and \fBTreasure\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gridshot from the source code\&.

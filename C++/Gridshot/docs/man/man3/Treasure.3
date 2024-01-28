@@ -1,0 +1,82 @@
+.TH "Treasure" 3 "Version 0.0.1" "Gridshot" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Treasure
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fR#include <Treasure\&.h>\fP
+.PP
+Inherits \fBItem\fP, and \fBScore\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTreasure\fP (int \fBscore\fP)"
+.br
+.ti -1c
+.RI "int \fBColor\fP () const override"
+.br
+.ti -1c
+.RI "unsigned char \fBDisplayChar\fP () const override"
+.br
+.ti -1c
+.RI "void \fBEffect\fP (std::shared_ptr< \fBPlayer\fP > player) const override"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBItem\fP
+.in +1c
+.ti -1c
+.RI "\fBItem\fP ()"
+.br
+.in -1c
+
+Public Member Functions inherited from \fBScore\fP
+.in +1c
+.ti -1c
+.RI "\fBScore\fP ()"
+.br
+.ti -1c
+.RI "\fBScore\fP (int startingScore)"
+.br
+.ti -1c
+.RI "int \fBGetScore\fP () const"
+.br
+.ti -1c
+.RI "void \fBChangeScore\fP (int amount)"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+
+
+Protected Attributes inherited from \fBScore\fP
+.in +1c
+.ti -1c
+.RI "int \fBscore\fP"
+.br
+.in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "Treasure::Treasure (int score)"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "int Treasure::Color () const\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Implements \fBItem\fP\&.
+.SS "unsigned char Treasure::DisplayChar () const\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Implements \fBItem\fP\&.
+.SS "void Treasure::Effect (std::shared_ptr< \fBPlayer\fP > player) const\fR [override]\fP, \fR [virtual]\fP"
+
+.PP
+Implements \fBItem\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Gridshot from the source code\&.

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_compare_node" xml:lang="en-US">
+<title>CompareNode Struct Reference</title>
+<indexterm><primary>CompareNode</primary></indexterm>
+<para>
+<computeroutput>#include &lt;Node.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_struct_compare_node_1aa629b17fc0a71350bf44acb9ee77e213">operator()</link> (const std::shared_ptr&lt; <link linkend="_struct_node">Node</link> &gt; a, const std::shared_ptr&lt; <link linkend="_struct_node">Node</link> &gt; b) const</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_struct_compare_node_1aa629b17fc0a71350bf44acb9ee77e213"/><section>
+    <title>operator()()</title>
+<indexterm><primary>operator()</primary><secondary>CompareNode</secondary></indexterm>
+<indexterm><primary>CompareNode</primary><secondary>operator()</secondary></indexterm>
+<para><computeroutput>bool CompareNode::operator() (const std::shared_ptr&lt; <link linkend="_struct_node">Node</link> &gt; a, const std::shared_ptr&lt; <link linkend="_struct_node">Node</link> &gt; b) const</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following files:</para>
+src/<link linkend="__node_8h">Node.h</link>src/<link linkend="__node_8cpp">Node.cpp</link></section>
+</section>

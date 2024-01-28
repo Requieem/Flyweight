@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_x86-debug_2_c_make_files_2_show_includes_2main_8c" xml:lang="en-US">
+<title>out/build/x86-debug/CMakeFiles/ShowIncludes/main.c File Reference</title>
+<indexterm><primary>out/build/x86-debug/CMakeFiles/ShowIncludes/main.c</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &quot;foo.h&quot;<?linebreak?></programlisting>Include dependency graph for main.c:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="x86-debug_2_c_make_files_2_show_includes_2main_8c__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_x86-debug_2_c_make_files_2_show_includes_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4">main</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_x86-debug_2_c_make_files_2_show_includes_2main_8c_1ae66f6b31b5ad750f1fe042a706a4e3d4"/><section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>main.c</secondary></indexterm>
+<indexterm><primary>main.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main ( )</computeroutput></para></section>
+</section>
+</section>
