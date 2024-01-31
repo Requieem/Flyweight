@@ -1,4 +1,4 @@
-#include "AStar.h"
+#include "../include/AStar.h"
 
 //typedef std::shared_ptr<Node> SharedNode;
 //typedef std::unordered_set<Vector2Int, Vector2IntHash> PositionSet;

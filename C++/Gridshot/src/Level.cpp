@@ -1,14 +1,20 @@
-#include "Level.h"
+#include "../include/Level.h"
 
-std::shared_ptr<Room> Level::AdjacentRoom(Vector2Int dir)
+void Level::ChangeRoom(Vector2Int dir, std::shared_ptr<Player> player, std::shared_ptr<Vector2Int> position)
 {
 	Vector2Int pos = currentPosition + dir;
 
 	int x = pos.x;
 	int y = pos.y;
 
-	if (!(*roomGrid)[y][x]) return roomMap[currentPosition + dir];
-	else return nullptr;
+	if (!(*roomGrid)[y][x]) 
+	{
+		auto cave = CurrentRoom()->caveGenerator->GetCave();
+		Vector2Int playerPos = player->Position();
+		(*cave)[playerPos.y][playerPos.x] = false;
+		currentPosition = pos;
+		roomMap[currentPosition]->Activate(player, position);
+	}
 }
 
 Level::Level(Vector2Int size, Vector2Int roomSize) : roomGrid(std::make_shared<std::vector<std::vector<bool>>>())
@@ -19,9 +25,9 @@ Level::Level(Vector2Int size, Vector2Int roomSize) : roomGrid(std::make_shared<s
 	{
 		for (int y = 0; y < size.y; ++y) {
 			for (int x = 0; x < size.x; ++x) {
-				bool roomPresent = !((rand() / static_cast<float>(RAND_MAX)) < 0.25f);
-				(*roomGrid)[y][x] = roomPresent;
-				if (!roomPresent)
+				bool noRoom = ((rand() / static_cast<float>(RAND_MAX)) < 0.5f);
+				(*roomGrid)[y][x] = noRoom;
+				if (!noRoom)
 				{
 					roomMap[{x, y}] = std::make_shared<Room>(roomSize);
 				}
@@ -61,7 +67,11 @@ Level::Level(Vector2Int size, Vector2Int roomSize) : roomGrid(std::make_shared<s
 
 std::shared_ptr<Room> Level::CurrentRoom()
 {
-	return AdjacentRoom({ 0,0 });
+	int x = currentPosition.x;
+	int y = currentPosition.y;
+
+	if (!(*roomGrid)[y][x]) return roomMap[currentPosition];
+	else return nullptr;
 }
 
 Vector2Int Level::CurrentPosition() { return currentPosition; }

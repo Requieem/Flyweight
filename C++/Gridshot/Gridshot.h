@@ -8,15 +8,15 @@
 #include <chrono>
 #include <cstdlib>
 
+#include "include/Colors.h"
+#include "include/Enemy.h"
+#include "include/Soldier.h"
+#include "include/GameField.h"
+#include "include/Projectile.h"
+#include "include/FieldObject.h"
+#include "include/DisplayStrings.h"
 #include PLATFORM_HEADER
 
-#include "src/Colors.h"
-#include <src/Enemy.h>
-#include "src/Soldier.h"
-#include "src/GameField.h"
-#include "src/Projectile.h"
-#include "src/FieldObject.h"
-#include "src/DisplayStrings.h"
 
 namespace Time = std::chrono;
 namespace ThisThread = std::this_thread;

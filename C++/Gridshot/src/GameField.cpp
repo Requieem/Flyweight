@@ -1,10 +1,37 @@
-﻿#include "GameField.h"
+#include "../include/GameField.h"
 
 GameField::GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Player> player) : size(size), padding(padding), player(player)
 {
 	level = std::make_unique<Level>(Vector2Int(5,5), size);
 	room = level->CurrentRoom();
 	room->Activate(player, nullptr);
+}
+
+
+/// left -> right at equal height 	// (-1, 0) -> (width, pos.y)
+/// right -> left at equal height 	// (1, 0) -> (0, pos.y)
+/// up -> down at equal width 		// (0, 1) -> (pos.x, height)
+/// down -> up at equal width 		// (0, -1) -> (pos.x, 0)
+void GameField::ChangeRoom(Vector2Int direction)
+{
+	auto roomGrid = *level->roomGrid;
+
+		Vector2Int nextRoom = level->CurrentPosition() + direction;
+
+		int roomX = nextRoom.x;
+		int roomY = nextRoom.y;
+
+		Vector2Int playerPos = player->Position();
+		int x = playerPos.x;
+		int y = playerPos.y;
+
+		int newX = direction.x == 0 ? x : direction.x > 0 ? 0 : size.x - 1;
+		int newY = direction.y == 0 ? y : direction.y > 0 ? 0 : size.y - 1;
+
+		if(roomY >= 0 && roomY < roomGrid.size() && roomX >= 0 && roomX < roomGrid[roomY].size() && !roomGrid[roomY][roomX])
+		{
+			level->ChangeRoom(direction, player, std::make_shared<Vector2Int>(newX, newY));
+		}
 }
 
 bool GameField::Tick()
@@ -16,6 +43,17 @@ bool GameField::Tick()
 	for (auto it = fieldObjects->begin(); it != fieldObjects->end();) {
 		const std::shared_ptr<FieldObject>& obj = *it;
 
+		Vector2Int playerDirection = player->Direction();
+
+		if(obj == player && obj->WillGoOutOfBounds(playerDirection) && obj->IsMoving())
+		{
+			ChangeRoom(playerDirection);
+			room = level->CurrentRoom();
+			clear();
+			wrefresh(stdscr);
+			return player->IsDead();
+		}
+		
 		bool reachedPlayer = obj->TeamColor() == ENEMY_COLOR && ReachedPlayer(obj);
 		bool deadAfterHit = reachedPlayer || CheckHit(obj);
 		bool caveHit = reachedPlayer || MakeFieldMove(obj);
@@ -38,11 +76,10 @@ bool GameField::Tick()
 		else ++it;
 	}
 
-	return player->IsDead() || IsOutOfBounds(player->Position());
+	return player->IsDead();
 }
 
 void GameField::Draw() const {
-	clear();
 	curs_set(0);
 	attron(COLOR_PAIR(1));
 
@@ -52,16 +89,13 @@ void GameField::Draw() const {
 	auto caveGenerator = room->caveGenerator;
 
 	std::shared_ptr<std::vector<std::vector<bool>>> cave = caveGenerator->GetCave();
-	std::shared_ptr<std::vector<std::vector<bool>>> field = caveGenerator->GetCave();
 	Vector2Int caveSize = caveGenerator->GetSize();
 
-	for (int caveY = 0; caveY < size.y; ++caveY) {
-		for (int caveX = 0; caveX < size.x; ++caveX) {
-			if (objectMap->find({ caveX, caveY }) != objectMap->end()) continue;
-
+	for (int caveY = 0; caveY < size.y; caveY++) {
+		for (int caveX = 0; caveX < size.x; caveX++) {
 			if ((*cave)[caveY][caveX])
 			{
-				mvaddch(caveY, caveX, 176);
+				mvaddstr(caveY, caveX, "\u2591");
 			}
 			else
 			{
@@ -75,13 +109,12 @@ void GameField::Draw() const {
 					((caveX >= 1 && caveY <= size.y - 2) && (*cave)[caveY + 1][caveX - 1] && objectMap->find({ caveX - 1, caveY + 1 }) == mapEnd) ||
 					((caveY >= 1 && caveX <= size.x - 2) && (*cave)[caveY - 1][caveX + 1] && objectMap->find({ caveX + 1, caveY - 1 }) == mapEnd))
 				{
-					mvaddch(caveY, caveX, 178);
+					mvaddstr(caveY, caveX, "\u2593");
 				}
 				else
 				{
-					mvaddch(caveY, caveX, 219);
+					mvaddstr(caveY, caveX, "\u2588");
 				}
-
 			}
 		}
 	}
@@ -93,7 +126,7 @@ void GameField::Draw() const {
 
 	for (const auto& [pos, item] : *itemMap) {
 		int color = item->Color();
-		unsigned char objectChar = item->DisplayChar();
+		std::string objectChar = item->DisplayChar();
 
 		std::pair<int, int> colorCombination = { color, CAVE_COLOR };
 
@@ -111,7 +144,7 @@ void GameField::Draw() const {
 		int gridY = pos.y;
 
 		// Print the character
-		mvprintw(gridY, gridX, "%c", objectChar);
+		mvaddstr(gridY, gridX, objectChar.c_str());
 
 		// Turn off color
 		attroff(COLOR_PAIR(n));
@@ -120,7 +153,7 @@ void GameField::Draw() const {
 	// Drawing logic...
 	for (const auto& obj : *fieldObjects) {
 		int color = obj->TeamColor();
-		unsigned char objectChar = obj->DisplayChar();
+		std::string objectChar = obj->DisplayChar();
 
 		std::pair<int, int> colorCombination = { color, CAVE_COLOR };
 
@@ -140,14 +173,11 @@ void GameField::Draw() const {
 		int gridY = position.y;
 
 		// Print the character
-		mvprintw(gridY, gridX, "%c", objectChar);
+		mvaddstr(gridY, gridX, objectChar.c_str()); 
 
 		// Turn off color
 		attroff(COLOR_PAIR(n));
 	}
-
-	// Refresh to update the screen
-	refresh();
 }
 
 Vector2Int GameField::CurrentLevelPosition()

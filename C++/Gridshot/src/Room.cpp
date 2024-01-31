@@ -1,16 +1,17 @@
-#include "Room.h"
+#include "../include/Room.h"
 
 const int Room::minHearts = 2;
 const int Room::maxHearts = 5;
 const int Room::iterations = 25;
-const int Room::minEnemies = 10;
-const int Room::maxEnemies = 25;
+const int Room::minEnemies = 0;
+const int Room::maxEnemies = 0;
 const int Room::minTreasures = 5;
 const int Room::maxTreasures = 15;
 const float Room::fillProbability = 0.45f;
 
 Room::Room(Vector2Int size)
 {
+	activated = false;
 	caveGenerator = new CaveGenerator(size, fillProbability);
 	caveGenerator->GenerateCave(iterations, nullptr, nullptr);
 	itemMap = std::make_shared<std::map<Vector2Int, std::shared_ptr<Item>>>();
@@ -25,10 +26,11 @@ void Room::AddFieldObject(const std::shared_ptr<FieldObject> object)
 	fieldObjects->push_back(object);
 }
 
-void Room::Activate(std::shared_ptr<Player> player, Vector2Int* position)
-{
+void Room::Activate(std::shared_ptr<Player> player, std::shared_ptr<Vector2Int> position)
+{	
 	Vector2Int playerStartingPos;
 	auto cave = caveGenerator->GetCave();
+	
 
 	if (position == nullptr)
 	{
@@ -40,6 +42,7 @@ void Room::Activate(std::shared_ptr<Player> player, Vector2Int* position)
 		Vector2Int caveSize = caveGenerator->GetSize();
 		int x = playerStartingPos.x;
 		int y = playerStartingPos.y;
+		(*cave)[y][x] = true;
 
 		// Carve a hole around the player
 		for (int i = std::max(0, y - 2); i < std::min(caveSize.y, y + 2); i++) {
@@ -56,7 +59,9 @@ void Room::Activate(std::shared_ptr<Player> player, Vector2Int* position)
 		player->SetCave(cave);
 		player->SetPosition(playerStartingPos);
 		(*objectMap)[playerStartingPos] = player;
+		if(activated) return;
 		fieldObjects->push_back(player);
+
 
 		std::random_device rd;
 		std::mt19937 heartGen(rd());
@@ -101,4 +106,6 @@ void Room::Activate(std::shared_ptr<Player> player, Vector2Int* position)
 			enemy->SetCave(cave);
 			(*objectMap)[enemy->Position()] = enemy;
 	}
+
+	activated = true;
 }

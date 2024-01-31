@@ -1,4 +1,4 @@
-#include "Enemy.h"
+#include "../include/Enemy.h"
 
 Enemy::Enemy(int teamColor, int speed, float startingHealth, Vector2Int position, Vector2Int direction, std::shared_ptr<FieldObject> targetObject)
 	: Soldier(teamColor, speed, startingHealth, position, direction), Damage(1), targetObject(targetObject), tickRate(100), lastDecisionTime(std::chrono::steady_clock::now()) {}

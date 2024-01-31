@@ -1,0 +1,22 @@
+# ninja log v5
+5	131	1706663359187254824	CMakeFiles/Gridshot.dir/src/Damage.cpp.o	a1233e2637a1f38c
+4	1414	1706663360462845348	CMakeFiles/Gridshot.dir/src/Life.cpp.o	31556eacd54bf3ea
+1419	1515	1706663360570052029	CMakeFiles/Gridshot.dir/src/Score.cpp.o	c969adc4f83e545e
+4	1553	1706663360592431460	CMakeFiles/Gridshot.dir/src/Node.cpp.o	229a97d272ea0fa9
+2	1691	1706663360740546642	CMakeFiles/Gridshot.dir/src/Vector2Int.cpp.o	a7116b6ebb2dec5f
+2	2362	1706663361407904611	CMakeFiles/Gridshot.dir/src/FieldObject.cpp.o	5eb1ad5ae8dafd75
+7	2426	1706663361475805709	CMakeFiles/Gridshot.dir/src/Treasure.cpp.o	a0dc7a86223164e
+3	2431	1706663361480760262	CMakeFiles/Gridshot.dir/src/Player.cpp.o	cad61d75094fec0e
+3	2443	1706663361484576493	CMakeFiles/Gridshot.dir/src/Projectile.cpp.o	dbe8a144c6133633
+5	2447	1706663361486089780	CMakeFiles/Gridshot.dir/src/Food.cpp.o	7d8a1f2c810d393b
+3	2486	1706663361535331520	CMakeFiles/Gridshot.dir/src/Soldier.cpp.o	5c2d1a747a205230
+131	2508	1706663361554783041	CMakeFiles/Gridshot.dir/src/Item.cpp.o	48fcc3c416516e89
+4	3002	1706663362050440744	CMakeFiles/Gridshot.dir/src/Enemy.cpp.o	b417ab456187124c
+2	3084	1706663362134522976	CMakeFiles/Gridshot.dir/src/CaveGenerator.cpp.o	986c4a736b847e5a
+3	3740	1706663362786249485	CMakeFiles/Gridshot.dir/src/GameField.cpp.o	6b5619e810b5964c
+1515	3778	1706663362830533834	CMakeFiles/Gridshot.dir/src/DisplayStrings.cpp.o	2533086f958c1a08
+4	3891	1706663362941644950	CMakeFiles/Gridshot.dir/src/AStar.cpp.o	c66a5bf73ca36f3a
+1692	4212	1706663363266106691	CMakeFiles/Gridshot.dir/src/Level.cpp.o	a88ca9ffd8937642
+1554	4294	1706663363347889247	CMakeFiles/Gridshot.dir/src/Room.cpp.o	6328530bfa774e69
+2363	4562	1706663363616244792	CMakeFiles/Gridshot.dir/Gridshot.cpp.o	d8a6a7b35c34c2d3
+4562	4683	1706663363738399164	Gridshot	d9f2abc33e11ebdd

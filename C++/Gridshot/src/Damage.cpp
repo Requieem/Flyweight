@@ -1,4 +1,4 @@
-#include "Damage.h"
+#include "../include/Damage.h"
 
 float Damage::GetDamage() const { return damage; }
 

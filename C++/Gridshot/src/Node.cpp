@@ -1,4 +1,4 @@
-#include "Node.h"
+#include "../include/Node.h"
 
 Node::Node(Vector2Int pos, std::shared_ptr<Node> p, int g, int h)
     : position(pos), gCost(g), hCost(h), parent(p) {}

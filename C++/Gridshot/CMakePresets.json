@@ -1,74 +1,53 @@
-﻿{
-  "version": 3,
-  "configurePresets": [
-    {
-      "name": "default",
-      "hidden": true,
-      "vendor": {
-        "microsoft.com/VisualStudioSettings/CMake/1.0": {
-          "hostOS": [ "Windows", "Linux", "macOS" ]
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 21,
+      "patch": 1
+    },
+    "configurePresets": [
+      {
+        "name": "default",
+        "hidden": true,
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/out/build/${presetName}",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_CXX_STANDARD": "20",
+          "CMAKE_OSX_ARCHITECTURES": "x86_64"
         }
-      }
-    },
-    {
-      "name": "windows-base",
-      "displayName": "Windows x64 Debug",
-      "description": "Sets Ninja generator, compilers, x64 architecture, build and install directory, debug build type",
-      "generator": "Ninja",
-      "binaryDir": "${sourceDir}/out/build/${presetName}",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
       },
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug",
-        "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}"
+      {
+        "name": "macos",
+        "inherits": "default",
+        "description": "Build for macOS with default settings",
+        "hidden": false
+      }
+    ],
+    "buildPresets": [
+      {
+        "name": "default",
+        "hidden": true,
+        "configuration": "Debug"
       },
-      "vendor": {
-        "microsoft.com/VisualStudioSettings/CMake/1.0": {
-          "hostOS": [ "Windows" ]
-        }
+      {
+        "name": "macos",
+        "inherits": "default",
+        "description": "Build for macOS with default settings",
+        "jobs": 4,
+        "configuration": "Debug"
       }
-    },
-    {
-      "name": "x64-debug",
-      "displayName": "x64 Debug",
-      "inherits": "windows-base",
-      "architecture": {
-        "value": "x64",
-        "strategy": "external"
+    ],
+    "testPresets": [
+      {
+        "name": "default",
+        "hidden": true,
+        "configuration": "Debug"
       },
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug"
+      {
+        "name": "macos",
+        "inherits": "default",
+        "description": "Test for macOS with default settings"
       }
-    },
-    {
-      "name": "x64-release",
-      "displayName": "x64 Release",
-      "inherits": "x64-debug",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
-      }
-    },
-    {
-      "name": "x86-debug",
-      "displayName": "x86 Debug",
-      "inherits": "windows-base",
-      "architecture": {
-        "value": "x86",
-        "strategy": "external"
-      },
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Debug"
-      }
-    },
-    {
-      "name": "x86-release",
-      "displayName": "x86 Release",
-      "inherits": "x86-debug",
-      "cacheVariables": {
-        "CMAKE_BUILD_TYPE": "Release"
-      }
-    }
-  ]
-}
+    ]
+  }

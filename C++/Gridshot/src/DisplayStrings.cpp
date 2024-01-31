@@ -1,5 +1,5 @@
-#include "DisplayStrings.h"
-#include "Vector2Int.h"
+#include "../include/DisplayStrings.h"
+#include "../include/Vector2Int.h"
 
 int DisplayStrings::gridWidth = 0;
 int DisplayStrings::gridHeight = 0;
@@ -90,7 +90,7 @@ std::string DisplayStrings::CenterStringInGrid(std::string str, int gridWidth, i
 	return std::move(centeredStr);
 }
 
-unsigned char DisplayStrings::MapCharacter(Vector2Int pos, std::vector<std::vector<bool>> grid)
+std::string DisplayStrings::MapCharacter(Vector2Int pos, std::vector<std::vector<bool>> grid)
 {
 	Vector2Int up = pos + Vector2Int::Up;
 	Vector2Int down = pos + Vector2Int::Down;
@@ -112,27 +112,27 @@ unsigned char DisplayStrings::MapCharacter(Vector2Int pos, std::vector<std::vect
 	bool leftNeighbor = hasNeighbor(left);
 	bool rightNeighbor = hasNeighbor(right);
 
-	if (neighborCount == 1) return 254;
+	if (neighborCount == 1) return "\u25A0";
 	
 	if (neighborCount == 2)
 	{
-		if (upNeighbor && downNeighbor) return 186;
-		if (leftNeighbor && downNeighbor) return 187;
-		if (leftNeighbor && upNeighbor) return 188;
-		if (rightNeighbor && upNeighbor) return 200;
-		if (rightNeighbor && downNeighbor) return 201;
-		if (leftNeighbor && rightNeighbor) return 205;
+		if (upNeighbor && downNeighbor) return "\u2551";
+		if (leftNeighbor && upNeighbor) return "\u2557";
+		if (leftNeighbor && downNeighbor) return "\u255D";
+		if (rightNeighbor && downNeighbor) return "\u255A";
+		if (rightNeighbor && upNeighbor) return "\u2554";
+		if (leftNeighbor && rightNeighbor) return "\u2550";
 	}
 
 	if (neighborCount == 3)
 	{
-		if (!downNeighbor) return 202;
-		if (!upNeighbor) return 203;
-		if (!leftNeighbor) return 204;
-		if (!rightNeighbor) return 185;
+		if (!upNeighbor) return "\u2569";
+		if (!downNeighbor) return "\u2566";
+		if (!leftNeighbor) return "\u2560";
+		if (!rightNeighbor) return "\u2563";
 	}
 
-	if (neighborCount == 4) return 206;
+	if (neighborCount == 4) return "\u256C";
 
-	return 176;
+	return "\u2591";
 }

@@ -1,8 +1,7 @@
-#include "CaveGenerator.h"
+#include "../include/CaveGenerator.h"
 
 CaveGenerator::CaveGenerator(Vector2Int size, float fillProbability) : size(size), fillProbability(fillProbability)
 {
-	srand(static_cast<unsigned int>(time(nullptr)));
 	GenerateInitialCave();
 }
 
@@ -12,6 +11,12 @@ std::shared_ptr<std::vector<std::vector<bool>>> CaveGenerator::GetCave() const {
 
 void CaveGenerator::GenerateInitialCave()
 {
+	// Use high-resolution clock to seed the random number generator
+	auto now = std::chrono::high_resolution_clock::now();
+	auto duration = now.time_since_epoch();
+	auto nanoseconds = std::chrono::duration_cast<std::chrono::nanoseconds>(duration).count();
+	srand(static_cast<unsigned int>(nanoseconds));
+	
 	cave = std::make_shared<std::vector<std::vector<bool>>>();
 	cave->resize(size.y, std::vector<bool>(size.x));
 	for (int y = 0; y < size.y; ++y) {
