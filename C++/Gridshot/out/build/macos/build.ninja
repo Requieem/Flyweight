@@ -52,202 +52,162 @@ build cmake_object_order_depends_target_Gridshot: phony || CMakeFiles/Gridshot.d
 build CMakeFiles/Gridshot.dir/src/Vector2Int.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Vector2Int.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Vector2Int.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/CaveGenerator.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/CaveGenerator.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/CaveGenerator.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/FieldObject.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/FieldObject.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/FieldObject.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/GameField.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/GameField.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/GameField.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Projectile.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Projectile.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Projectile.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Soldier.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Soldier.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Soldier.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Player.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Player.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Player.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Enemy.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Enemy.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Enemy.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Node.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Node.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Node.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/AStar.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/AStar.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/AStar.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Life.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Life.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Life.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Damage.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Damage.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Damage.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Food.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Food.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Food.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Treasure.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Treasure.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Treasure.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Item.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Item.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Item.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Score.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Score.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Score.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/DisplayStrings.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/DisplayStrings.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/DisplayStrings.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Room.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Room.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Room.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/src/Level.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/src/Level.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/src/Level.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir/src
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 build CMakeFiles/Gridshot.dir/Gridshot.cpp.o: CXX_COMPILER__Gridshot_unscanned_Debug /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/Gridshot.cpp || cmake_object_order_depends_target_Gridshot
   DEFINES = -DPLATFORM_HEADER=\"include/UNIXGridshot.h\"
   DEP_FILE = CMakeFiles/Gridshot.dir/Gridshot.cpp.o.d
-  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -std=c++2b -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   INCLUDES = -I/Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   OBJECT_FILE_DIR = CMakeFiles/Gridshot.dir
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
-  TARGET_PDB = Gridshot.pdb
 
 
 # =============================================================================
@@ -258,15 +218,14 @@ build CMakeFiles/Gridshot.dir/Gridshot.cpp.o: CXX_COMPILER__Gridshot_unscanned_D
 # Link the executable Gridshot
 
 build Gridshot: CXX_EXECUTABLE_LINKER__Gridshot_Debug CMakeFiles/Gridshot.dir/src/Vector2Int.cpp.o CMakeFiles/Gridshot.dir/src/CaveGenerator.cpp.o CMakeFiles/Gridshot.dir/src/FieldObject.cpp.o CMakeFiles/Gridshot.dir/src/GameField.cpp.o CMakeFiles/Gridshot.dir/src/Projectile.cpp.o CMakeFiles/Gridshot.dir/src/Soldier.cpp.o CMakeFiles/Gridshot.dir/src/Player.cpp.o CMakeFiles/Gridshot.dir/src/Enemy.cpp.o CMakeFiles/Gridshot.dir/src/Node.cpp.o CMakeFiles/Gridshot.dir/src/AStar.cpp.o CMakeFiles/Gridshot.dir/src/Life.cpp.o CMakeFiles/Gridshot.dir/src/Damage.cpp.o CMakeFiles/Gridshot.dir/src/Food.cpp.o CMakeFiles/Gridshot.dir/src/Treasure.cpp.o CMakeFiles/Gridshot.dir/src/Item.cpp.o CMakeFiles/Gridshot.dir/src/Score.cpp.o CMakeFiles/Gridshot.dir/src/DisplayStrings.cpp.o CMakeFiles/Gridshot.dir/src/Room.cpp.o CMakeFiles/Gridshot.dir/src/Level.cpp.o CMakeFiles/Gridshot.dir/Gridshot.cpp.o
-  FLAGS = -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -g -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.5
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/Cellar/ncurses/6.4/lib  -lncursesw
   LINK_PATH = -L/usr/local/Cellar/ncurses/6.4/lib
   OBJECT_DIR = CMakeFiles/Gridshot.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/Gridshot.dir/
   TARGET_FILE = Gridshot
-  TARGET_PDB = Gridshot.pdb
+  TARGET_PDB = Gridshot.dbg
 
 
 #############################################
@@ -312,14 +271,14 @@ build all: phony Gridshot
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/CMakeLists.txt /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystem.cmake.in /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/CMakeLists.txt /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/CMakeLists.txt /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompiler.cmake.in /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCCompilerABI.c /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompiler.cmake.in /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXCompilerABI.cpp /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCompilerIdDetection.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerABI.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineCompilerId.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeDetermineSystem.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeFindBinUtils.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeNinjaFindMake.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystem.cmake.in /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCXXCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeTestCompilerCommon.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Internal/FeatureTesting.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin-Determine-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build /Users/marcofarace/Documents/GitHub/Flyweight/C++/Gridshot/CMakeLists.txt /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCXXInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeGenericSystem.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Compiler/GNU.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-C.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Apple-Clang.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin-Initialize.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/Darwin.cmake /usr/local/Cellar/cmake/3.28.1/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -1,4 +1,4 @@
-#include "../include/Treasure.h"
+#include "include/Treasure.h"
 
 Treasure::Treasure(int score) : Item(), Score(score) {}
 int Treasure::Color() const { return TREASURE_COLOR; }

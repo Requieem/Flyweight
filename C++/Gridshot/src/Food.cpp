@@ -1,4 +1,4 @@
-#include "../include/Food.h"
+#include "include/Food.h"
 
 Food::Food(int healAmount) : Item(), Damage(healAmount) {}
 int Food::Color() const { return PLAYER_COLOR; }

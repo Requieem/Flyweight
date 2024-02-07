@@ -1,10 +1,10 @@
-#include "../include/Room.h"
+#include "include/Room.h"
 
 const int Room::minHearts = 2;
 const int Room::maxHearts = 5;
 const int Room::iterations = 25;
-const int Room::minEnemies = 0;
-const int Room::maxEnemies = 0;
+const int Room::minEnemies = 10;
+const int Room::maxEnemies = 25;
 const int Room::minTreasures = 5;
 const int Room::maxTreasures = 15;
 const float Room::fillProbability = 0.45f;

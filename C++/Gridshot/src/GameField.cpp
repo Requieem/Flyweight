@@ -1,4 +1,4 @@
-#include "../include/GameField.h"
+#include "include/GameField.h"
 
 GameField::GameField(Vector2Int size, Vector2Int padding, std::shared_ptr<Player> player) : size(size), padding(padding), player(player)
 {

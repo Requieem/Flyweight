@@ -1,4 +1,4 @@
-#include "../include/FieldObject.h"
+#include "include/FieldObject.h"
 
 FieldObject::FieldObject(int teamColor, int speed, Vector2Int position, Vector2Int direction) 
 	: isMoving(true), teamColor(teamColor), speed(speed), position(position), previousPosition(position), direction(direction), cave(nullptr) {}

@@ -1,4 +1,4 @@
-#include "../include/CaveGenerator.h"
+#include "include/CaveGenerator.h"
 
 CaveGenerator::CaveGenerator(Vector2Int size, float fillProbability) : size(size), fillProbability(fillProbability)
 {

@@ -41,7 +41,7 @@ void CursesInit()
 	nodelay(stdscr, TRUE);
 
 	start_color();
-	init_color(CAVE_COLOR, 200, 50, 25);
+	init_color(CAVE_COLOR, 83, 27, 0);
 
 	init_pair(1, CAVE_COLOR, COLOR_BLACK);
 	init_pair(2, PLAYER_COLOR, COLOR_BLACK);

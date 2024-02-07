@@ -1,5 +1,5 @@
-#include "../include/DisplayStrings.h"
-#include "../include/Vector2Int.h"
+#include "include/DisplayStrings.h"
+#include "include/Vector2Int.h"
 
 int DisplayStrings::gridWidth = 0;
 int DisplayStrings::gridHeight = 0;
